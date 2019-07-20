@@ -1,0 +1,1865 @@
+swagger: "2.0"
+info:
+  description: Provide all APIs belong to backend module of Assets 360 application.
+  version: 1.0.0
+  title: Swagger Assets 360
+host: ppaldev-assets360-ppaldev.eu1.mindsphere.io
+basePath: /backend
+schemes:
+- https
+- http
+paths:
+  /asset-type/by-group-id/{groupId}:
+    get:
+      tags:
+      - Asset Type
+      summary: Get asset type by group id
+      produces:
+      - application/json
+      parameters:
+      - name: groupId
+        description: group id
+        in: path
+        type: integer
+        required: true
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: array
+              items:
+                type: object
+                properties:
+                  assetId:
+                    type: string
+                  assetName:
+                    type: string
+                  typeId: 
+                    type: string
+                  typeName:
+                    type: string
+                required:
+                - assetId
+                - assetName
+                - typeId
+                - typeName
+          required:
+            - code
+            - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+        404:
+          description: Not Found
+          schema:
+            $ref: '#/components/schemas/Common'
+  /asset-type:
+    get:
+      tags:
+      - Asset Type
+      summary: Get all asset types without paging, sort and filter
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: object
+            properties:
+              code:
+                type: string
+                description: Message code use for display a message
+              data:
+                type: array
+                description: List of asset type
+                items:
+                  $ref: '#/definitions/AspectType'
+            required:
+              - code
+              - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+      deprecated: true
+  /asset-group:
+    post:
+      tags:
+      - Asset Group
+      summary: Add new Asset Group
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          schema:
+            type: object
+            properties:
+              name:
+                description: Asset Group Name
+                type: string
+                required: true
+              assetsList:
+                description: List of asset id
+                type: array
+                items:
+                  type: string
+                minItems: 1
+                uniqueItems: true
+                required: true
+              variables:
+                description: List variables
+                required: true
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    givenName:
+                      type: string
+                      nullable: true
+                    visibility:
+                      type: boolean
+                    description:
+                      type: string
+                      nullable: true
+                  required:
+                    - id
+                    - visibility
+          required: true
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/components/schemas/Common'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+
+    get:
+      tags:
+      - Asset Group
+      summary: Get all asset group with paging, sort and filter.
+      produces:
+        - application/json
+      parameters:
+        - name: page_index
+          in: query
+          type: string
+          description: Current index page
+          required: false
+        - name: page_size
+          in: query
+          type: string
+          description: Total items will display in 1 page
+          required: false
+        - name: sort_type
+          in: query
+          type: string
+          description: Sort by ASC or DESC
+          required: false
+        - name: sort_field
+          in: query
+          type: string
+          description: Field use to sort
+          required: false
+        - name: filter
+          in: query
+          type: string
+          description: Value use to search
+          required: false
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: object
+              properties:
+                totalItems:
+                  type: number
+                totalPages:
+                  type: number
+                items:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      name:
+                        type: string
+                      numberOfAsset:
+                        type: number
+                      numberOfConfig:
+                        type: number
+                      numberOfAbnormalAsset:
+                        type: number
+                    required:
+                      - id
+                      - name
+                      - numberOfAsset
+                      - numberOfConfig
+                      - numberOfAbnormalAsset
+              required:
+                - totalItems
+                - totalPages
+                - items
+          required:
+            - code
+            - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+
+    put:
+      tags:
+      - Asset Group
+      summary: Update an existing asset group
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: An object need to be updated
+          required: true
+          schema:
+            type: object
+            properties:
+              assetGroupId:
+                type: string
+                description: Id of asset group
+                required: true
+              assetIds:
+                type: array
+                description: List of asset id
+                required: true
+                items:
+                  type: string
+                  minItems: 1
+                  uniqueItems: true
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/components/schemas/Common'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+      deprecated: true
+  /asset-group/assets:
+    put:
+      tags:
+      - Asset Group
+      summary: Update assets
+      description: 'Update asset in group id'
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: An object need to be updated
+          required: true
+          schema:
+            type: object
+            properties:
+              assetGroupId:
+                type: integer
+                description: asset group id
+                required: true
+              assetIds:
+                type: array
+                description: List of asset id
+                required: true
+                items:
+                  type: string
+              required:
+                - assetGroupId
+                - assetIds
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/components/schemas/Common'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+  /asset-group/variables:
+    put: 
+      tags:
+      - Asset Group
+      summary: Update variable
+      description: 'Update asset belong to group id'
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: An object need to be updated
+          required: true
+          schema:
+            type: object
+            properties:
+              assetGroupId:
+                type: integer
+                description: asset group id
+                required: true
+              variables:
+                type: array
+                description: List of variables
+                items:
+                  type: object
+                  properties:
+                    description:
+                      type: string
+                    givenName:
+                      type: string
+                    id:
+                      type: integer
+                    thresholdConf:
+                      type: object
+                    visibility:
+                      type: boolean
+                  required:
+                  - description
+                  - givenName
+                  - id
+                  - thresholdConf
+                  - visibility
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/components/schemas/Common'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'  
+
+  /asset-group/by-id/{id}:
+    get:
+      tags:
+      - Asset Group
+      summary: Get asset group by id
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          type: string
+          description: The id of asset group
+          required: true
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: The name of asset group
+              required:
+                - name
+          required:
+            - code
+            - string
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+  /asset/{groupId}/assets/{assetId}:
+    get:
+      tags:
+      - Asset
+      summary: Get information of asset by id
+      produces:
+      - application/json
+      parameters:
+      - name: groupId
+        in: path
+        required: true
+        description: Group Id
+      - name: assetId
+        in: path
+        required: true
+        description: Asset Id
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: object
+              properties:
+                assetId:
+                  type: string
+                  description: asset id
+                assetName:
+                  type: string
+                  description: asset name
+                type:
+                  type: string
+                  description: asset type id
+                characteristics:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                      name:
+                        type: string
+                      value:
+                        type: string
+                      unit:
+                        type: string
+                      dataType:
+                        type: string
+                      defaultValue:
+                        type: string
+                      length:
+                        type: number
+                        default: null
+                      givenName: 
+                        type: string
+                      aspectName:
+                        type: string
+                    required:
+                      - name
+                      - unit
+                      - dataType
+                      - length
+                sensorsMounted:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: number
+                      name:
+                        type: string
+                      givenName: 
+                        type: string
+                      description:
+                        type: string
+                        default: null
+                    required:
+                      - name
+                      - givenName
+                      - description
+              required:
+                - assetId
+                - assetName
+                - type
+                - characteristics
+                - sensorsMounted
+          required:
+            - code
+            - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+  /asset/condition/{groupId}/{assetId}:
+    get:
+      tags:
+      - Asset
+      summary: Get condition of asset by group id and asset 
+      produces:
+      - application/json
+      parameters:
+      - name: groupId
+        in: path
+        required: true
+        description: Group Id
+      - name: assetId
+        in: path
+        required: true
+        description: Asset Id
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: object
+              properties:
+                condition:
+                  type: string
+                  description: condition of asset
+            required:
+            - code
+            - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'     
+        404:
+          description: NotFound
+          schema:
+            $ref: '#/components/schemas/Common'  
+
+  /asset/by-id/{id}:
+    get:
+      tags:
+      - Asset
+      summary: Get asset by id
+      produces:
+      - application/json
+      parameters:
+      - name: id
+        description: Asset id
+        in: path
+        type: string
+        required: true
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: object
+              properties:
+                name: 
+                  type: string
+              required:
+                - name
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+        404:
+          description: NotFound
+          schema:
+            $ref: '#/components/schemas/Common'              
+  /asset/by-name:
+    get:
+      tags:
+      - Asset
+      summary: Get asset by name
+      produces:
+      - application/json
+      parameters:
+      - name: name
+        description: Asset name
+        in: query
+        type: string
+        required: true
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: object
+              properties:
+                assetId:
+                  type: string
+                  description: Id of asset
+                name:
+                  type: string
+                  description: Name of asset
+            required:
+              - code
+              - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+
+  /asset/by-parent-id:
+    get:
+      tags:
+      - Asset
+      summary: Get asset by parent id
+      produces:
+      - application/json
+      parameters:
+      - name: parent_id
+        description: Parent asset id
+        in: query
+        type: string
+        required: true
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: array
+              items:
+                type: object
+                properties:
+                  assetId:
+                    type: string
+                    description: Id of asset
+                  name:
+                    type: string
+                    description: Name of asset
+                  assetType:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        typeId:
+                          type: string
+                          description: Asset type id
+                        name:
+                          type: string
+                          description: Asset type name
+                  required:
+                    - assetId
+                    - name
+                    - assetType
+            required:
+              - code
+              - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+
+  /asset/by-type-id-and-parent-id:
+    get:
+      tags:
+      - Asset
+      summary: Get asset by type id and parent id
+      produces:
+      - application/json
+      parameters:
+      - name: parent_id
+        description: Parent asset id
+        in: query
+        type: string
+        required: true
+      - name: type_id
+        description: Asset type id
+        in: query
+        type: string
+        required: true
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: array
+              items:
+                type: object
+                properties:
+                  assetId:
+                    type: string
+                    description: Id of asset
+                  name:
+                    type: string
+                    description: Name of asset
+                  typeId:
+                    type: string
+                    description: Asset type
+                  required:
+                    - assetId
+                    - name
+                    - typeId
+            required:
+              - code
+              - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+  /asset/{groupId}:
+    get:
+      tags:
+      - Asset
+      summary: Get all asset belong to an asset-group with paging, sort and filter.
+      produces:
+        - application/json
+      parameters:
+      - name: groupId
+        in: path
+        description: Asset Group id
+        required: true
+      - name: page_index
+        in: query
+        type: string
+        description: Current index page
+        required: false
+      - name: page_size
+        in: query
+        type: string
+        description: Total items will display in 1 page
+        required: false
+      - name: sort_type
+        in: query
+        type: string
+        description: Sort by ASC or DESC
+        required: false
+      - name: sort_field
+        in: query
+        type: string
+        description: Field use to sort
+        required: false
+      - name: filter
+        in: query
+        type: string
+        description: Value use to search
+        required: false
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: object
+              properties:
+                totalItems:
+                  type: number
+                totalPages:
+                  type: number
+                items:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      assetId:  
+                        type: string
+                      name:
+                        type: string
+                      assetType:
+                        type: string
+                othersData:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                      unit: 
+                        type: string
+                      dataType:
+                        type: string
+                      length:
+                        type: string
+                      givenName:
+                        type:string
+                    required:
+                      - name
+                      - unit
+                      - dataType
+                      - length
+                      - givenName
+                      
+              required:
+                - totalItems
+                - totalPages
+                - items
+          required:
+            - code
+            - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+    put:
+      tags:
+      - Asset
+      produces:
+      - application/json
+      summary: Update asset information
+      parameters:
+      - in: path
+        name: id
+        description: Asset id
+        type: string
+        required: true
+      - in: body
+        name: body
+        description: An object need to be updated
+        required: true
+        type: object
+        schema:
+          properties:
+            type:
+              type: string
+              description: Asset type
+            characteristics:
+              type: array
+              description: List variables with value updated
+              items:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    description: Name of variable
+                  value:
+                    type: string
+                    description: Variable updated value
+                  aspectName:
+                    type: string
+                    describe: Aspect type name
+                uniqueItems: true
+                required:
+                  - name
+                  - value
+            sensorsMounted:
+              type: string
+            required:
+              - type
+              - characteristics
+              - sensorsMounted
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/components/schemas/Common'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+  /asset/by-asset-types-in-asset-group/{groupId}:
+    get:
+      tags:
+      - Asset
+      summary: Get all assets belong to an asset-group with asset types return.
+      produces:
+        - application/json
+      parameters:
+      - name: groupId
+        type: integer
+        in: path
+        description: Asset Group id
+        required: true
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  Assets:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        assetId:
+                          type: string
+                        name:
+                          type: string
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+      required:
+        - code
+        - data
+
+  /asset/timelines/{assetGroupId}/{assetId}:
+    get:
+      tags:
+      - Asset
+      summary: Get all timelines belong to an asset
+      produces:
+        - application/json
+      parameters:
+      - name: assetId
+        type: string
+        in: path
+        description: Asset Id
+        required: true
+      - name: assetGroupId
+        type: string
+        in: path
+        description: Asset Group Id
+        required: true
+      - name: page_index
+        type: string
+        in: query
+        default: 1
+      responses:
+        200:
+          description: Successfull operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: array
+              items:
+                oneOf:
+                  - $ref: '#/definitions/AssetConditionTimelines'
+                  - $ref: '#/definitions/AssetCharacteristicTimelines'
+                  - $ref: '#/definitions/AssetDocumentTimelines'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+      required:
+        - code
+        - data
+
+  /document:
+    post:
+      tags:
+      - Document
+      summary: Add new document to an asset
+      operationId: uploadFile
+      consumes:
+        - multipart/form-data
+      produces:
+        - application/json
+      parameters:
+      - in: body
+        name: body
+        description: An object storage information
+        type: object
+        properties:
+          assetId:
+            type: string
+            description: Asset id
+          description:
+            type: string
+            description: The description describe to the upload file
+          required:
+            - assetId
+            - description
+      - in: formData
+        name: file
+        type: file
+        describe: file to upload
+        required: true
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/components/schemas/Common'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+  /document/download/by-ids:
+    get:
+      tags:
+      - Document
+      summary: Download documents
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - in: query
+        name: ids
+        description: List array document id, use ',' as separate. Ex {document_id_1},{document_id_2},{document_id_3}. If have only one document type, do not add ',' at the end.
+        required: true
+      responses:
+        200:
+          description: successful operation
+          type: file
+        400:
+            description: Bad request
+            schema:
+              $ref: '#/components/schemas/Common'
+        404:
+            description: NotFound
+            schema:
+              $ref: '#/components/schemas/Common'
+  /document/download/{id}:
+    get:
+      tags:
+      - Document
+      summary: Download single document
+      parameters:
+      - name: id
+        in: path
+        description: Document id
+        required: true
+      responses:
+        200:
+          description: successful operation
+          type: file
+        400:
+            description: Bad request
+            schema:
+              $ref: '#/components/schemas/Common'
+        404:
+            description: NotFound
+            schema:
+              $ref: '#/components/schemas/Common'
+  /document/by-asset-id/{id}:
+    get:
+      tags:
+      - Document
+      summary: Get all document belong to an asset with paging, sort and filter.
+      produces:
+        - application/json
+      parameters:
+      - name: assetId
+        in: path
+        description: Asset id
+        required: true
+      - name: page_index
+        in: query
+        type: string
+        description: Current index page
+        required: false
+      - name: page_size
+        in: query
+        type: string
+        description: Total items will display in 1 page
+        required: false
+      - name: sort_type
+        in: query
+        type: string
+        description: Sort by ASC or DESC
+        required: false
+      - name: sort_field
+        in: query
+        type: string
+        description: Field use to sort
+        required: false
+      - name: filter
+        in: query
+        type: string
+        description: Value use to search
+        required: false
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: object
+              properties:
+                totalItems:
+                  type: number
+                totalPages:
+                  type: number
+                items:
+                  type: array
+                  items:
+                    $ref: '#/definitions/DocumentListItem'
+              required:
+                - totalItems
+                - totalPages
+                - items
+          required:
+            - code
+            - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+  /document/by-ids:
+    delete:
+      tags:
+      - Document
+      summary: Delete single/multiple document.
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        required: true
+        description: List document id use to delete
+        schema:
+          type: object
+          properties:
+            ids:
+              type: array
+              items:
+                type: string
+                description: Document id  
+              minItems: 1
+              uniqueItems: true
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/components/schemas/Common'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+  /document/rename:
+    put:
+      tags:
+      - Document
+      summary: Rename of existing document
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: body
+        required: true
+        type: object
+        properties:
+          id:
+            type: string
+            description: Document id
+          assetId:
+            type: string
+            description: Asset id
+          oldFileName:
+            type: string
+            description: Old name of document
+          newFileName:
+            type: string
+            description: New name of document
+          required:
+            - id
+            - assetId
+            - oldFileName
+            - newFileName
+      responses:
+        200:
+          description: successful operation
+          schema:
+            $ref: '#/components/schemas/Common'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'  
+  /asset-monitoring/{groupId}/fleet-status:
+    get:
+      tags:
+      - Asset Condition Monitoring
+      summary: Get data for doughnut chart
+      parameters:
+      - in: path
+        name: groupId
+        type: string
+        required: true
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: object
+              properties:
+                datasets:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      data:
+                        type: array
+                        items:
+                          type: number
+                          description: Value of each part
+                labels:
+                  type: array
+                  items:
+                    type: string
+                    describe: Label of each part
+                totalItems:
+                  type: number
+          required:
+            - code
+            - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+  /asset-monitoring/{groupId}/fleet-condition-history:
+    get:
+      tags:
+      - Asset Condition Monitoring
+      summary: Get data for bar chart
+      parameters:
+      - in: query
+        name: type
+        type: string
+        required: true
+        description: View data in 3 weeks, 3 months or 13 months
+      - in: query
+        name: status
+        type: string
+        description: View only Critical or Moderate
+      responses:
+        200:
+          type: object
+          properties:
+            code:
+              type: string
+              required: true
+            data:
+              type: object
+              required: true
+              properties:
+                datasets:
+                  type: array
+                  required: true
+                  items:
+                    type: object
+                    properties:
+                      label:
+                        type: string
+                        description: Moderate or Critical
+                      data:
+                        type: array
+                        items:
+                          type: number
+                labels:
+                  type: array
+                  items:
+                    type: string
+                    description: Day of week / Week of year / Month of year
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+  /asset-monitoring/{groupId}:
+    get:
+      tags:
+      - Asset Condition Monitoring
+      summary: List all assets belong to an asset group with visibility sensor information
+      parameters:
+      - name: groupId
+        in: path
+        description: Asset Group id
+        required: true
+      - name: page_index
+        in: query
+        type: string
+        description: Current index page
+        required: false
+      - name: page_size
+        in: query
+        type: string
+        description: Total items will display in 1 page
+        required: false
+      - name: sort_type
+        in: query
+        type: string
+        description: Sort by ASC or DESC
+        required: false
+      - name: sort_field
+        in: query
+        type: string
+        description: Fields use to sort( asset_name:name of asset, condition:condition of asset)
+        required: false
+      - name: filter
+        in: query
+        type: string
+        description: Value use to search( search in Asset name and Asset type)
+        required: false
+      - name: legend_filter
+        in: query
+        type: string
+        description: Value use to filter legend( 0:normal, 1:abnormal, 2:critical)
+        required: false
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data:
+              type: object
+              properties:
+                totalItems:
+                  type: number
+                totalPages:
+                  type: number
+                items:
+                  type: array
+                  items:
+                    $ref: '#/definitions/AssetMonitoringListItem'
+                othersData:
+                  type: object
+                  properties:
+                    aspectVariableHeaders:
+                      type: array
+                      items:
+                        type: string
+                        description: Header of dynamic columns (Name of variables).
+                    units:
+                      type: array
+                      items:
+                        type: string
+                        description: Unit of variables
+                    variableKeys:
+                      type: array
+                      items:
+                        type: string
+                        description: Key of variables (use for sorting)
+              required:
+                - totalItems
+                - totalPages
+                - items
+          required:
+            - code
+            - data
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+        404:
+          description: Not found
+          schema:
+            $ref: '#/components/schemas/Common'
+
+  /variable/by-asset-types:
+    get:
+      tags:
+      - Variable
+      summary: Get all variables based on list asset type ids.
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - in: query
+        name: asset_type_id
+        description: List array asset type, use ',' as separate. Ex {asset_type_1},{asset_type_2},{asset_type_3}. If have only one asset type, do not add ',' at the end.
+        required: true
+        default: ppaldev.DCVAgent
+      responses:
+        200:
+          description: successful operation
+          schema:
+            type: object
+            properties:
+              code:
+                type: string
+                required: true
+              data:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: Asset type id
+                    name:
+                      type: string
+                      description: Asset type name
+                    AspectTypeWrappers:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          id:
+                            type: string
+                            description: Aspect Type Wrapper id
+                          AspectType:
+                            type: object
+                            properties:
+                              id:
+                                type: string
+                                description: Aspect type id
+                              name:
+                                type: string
+                                description: Aspect Type name
+                              category:
+                                type: string
+                                description: static or dynamic aspect type
+                              Variables:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    id:
+                                      type: string
+                                      description: Variable id
+                                    name:
+                                      type: string
+                                      description: Variable name
+        400:
+            description: Bad request
+            schema:
+              $ref: '#/components/schemas/Common'
+
+  /breadcrumb/asset/{id}:
+    get:
+      tags:
+      - Breadcrumb
+      summary: Get name of asset based on asset id.
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: Asset id
+      responses:
+        200:
+          schema:
+          type: object
+          properties:
+            code:
+              type: string
+              required: true
+              description: Message code
+            data:
+              type: object
+              required: true
+              properties:
+                name:
+                  type: string
+                  description: Asset name
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+    
+  /breadcrumb/asset-group/{id}:
+    get:
+      tags:
+      - Breadcrumb
+      summary: Get name of asset group based on asset group id.
+      parameters:
+      - name: id
+        in: path
+        required: true
+        description: Asset Group id
+      responses:
+        200:
+          schema:
+          type: object
+          properties:
+            code:
+              type: string
+              required: true
+              description: Message code
+            data:
+              type: object
+              required: true
+              properties:
+                name:
+                  type: string
+                  description: Asset Group name
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+
+  /var-asset-group-conf/by-group-id/{id}:
+    get:
+      tags:
+      - Variable asset group configuration
+      summary: Get all variable configuration by group id
+      parameters:
+      - name: id
+        in: path
+        description: The id of asset group
+        required: true
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data: 
+              type: array
+              items:
+                type: object
+                properties:
+                  id: 
+                    type: integer
+                  givenName:
+                    type: string
+                  description:
+                    type: string
+                  visibility:
+                    type: boolean
+                  ThresholdConfigurations:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        normalFrom:
+                          type: string
+                        normalTo:
+                          type: string
+                        belowNormalFrom:
+                          type: string
+                        aboveNormalTo: 
+                          type: string
+                  required:
+                    - id
+                    - givenName
+                    - description
+                    - visibility
+                    - ThresholdConfigurations
+            required:
+              - code
+              - data
+        400:
+            description: Bad request
+            schema:
+              $ref: '#/components/schemas/Common'
+
+  /language/{languageCode}:
+    get:
+      tags:
+      - Language
+      summary: Get all labels and message belong to an specified language
+      parameters:
+      - name: languageCode
+        in: path
+        description: English (en) or German (ge)
+        required: true
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data: 
+              type: object
+              properties:
+                code:
+                  type: string
+                value:
+                  type: string
+            required:
+              - code
+              - data
+        400:
+            description: Bad request
+            schema:
+              $ref: '#/components/schemas/Common'
+
+  /database/reset:
+    delete:
+      tags:
+      - Database
+      parameters:
+      - name: destroy_all
+        in: query
+        description: Delete records in master tables or not
+        required: false
+        default: false
+      summary: Reset database except master data
+      responses:
+        200:
+          description: Successful operation
+          schema:
+            $ref: '#/components/schemas/Common'
+        400:
+          description: Bad request
+          schema:
+            $ref: '#/components/schemas/Common'
+
+  /user/check-is-app-admin:
+    get:
+      tags:
+      - Users
+      summary: Check user has Assets 360 admin role
+      responses:
+        200:
+          description: successful operation
+          type: object
+          properties:
+            code:
+              type: string
+            data: 
+              type: object
+              properties:
+                isAppAdmin:
+                  type: boolean
+                  description: True if user have admin role, False if not.
+            required:
+              - code
+              - data
+        400:
+            description: Bad request
+            schema:
+              $ref: '#/components/schemas/Common'
+
+# Define common schemma
+components:
+  responses:
+    NotFound:
+      description: The specified resource was not found
+      schema:
+        $ref: '#/components/schemas/Common'
+    Unauthorized:
+      description: Unauthorized
+      schema:
+        $ref: '#/components/schemas/Common'
+  schemas:
+    Common:
+      type: object
+      properties:
+        code:
+          type: string
+      required:
+        - code
+
+#Define modesl
+definitions:
+  AspectType:
+    type: object
+    properties:
+      id:
+        type: string
+      tenantId:
+        type: string
+      name:
+        type: string
+      category:
+        type: string
+      scope:
+        type: string
+      description:
+        type: string
+      variables:
+        type: string
+      etag:
+        type: "number"
+      links:
+        type: string
+      aspectTypeName:
+        type: string
+      typeId:
+        type: string
+    xml:
+      name: AspectType
+  AssetType:
+    type: object
+    properties:
+      id:
+        type: string
+      parentTypeId:
+        type: string
+      instantiable:
+        type: boolean
+      tenantId:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      scope:
+        type: string
+      etag:
+        type: number
+      variables:
+        type: string
+      fileAssignments:
+        type: string
+      aspects:
+        type: "array"
+        description: List of Aspect Type
+        items:
+          $ref: '#/definitions/AspectType'
+      links:
+        type: string
+    xml:
+      name: AssetType
+  AssetGroupListItem:
+    type: object
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      numberOfAsset:
+        type: number
+      numberOfConfig:
+        type: number
+    required:
+      - id
+      - name
+      - numberOfAsset
+      - numberOfConfig
+  AssetListItem:
+    type: object
+    properties:
+      assetId:
+        type: string
+        description: Asset id
+      name:
+        type: string
+        description: Asset name
+      typeId:
+        type: string
+        description: Asset type id
+      aspects:
+        type: string
+        description: List variables with value and unit
+    required:
+      - assetId
+      - name
+      - typeId
+      - aspects
+  DocumentListItem:
+    type: object
+    properties:
+      id:
+        type: string
+        description: Document id
+      name:
+        type: string
+        description: Document file name
+      uploadedBy:
+        type: string
+        description: Name of user upload file
+      uploadDate:
+        type: date
+        description: Uploaded date
+      link:
+        type: string
+        description: The link of document file
+      description:
+        type: string
+        description: Description when uploading file
+    required:
+      - id
+      - name
+      - uploadedBy
+      - uploadDate
+      - link
+      - description
+  AssetMonitoringListItem:
+    type: object
+    properties:
+      assetName:
+        type: string
+        description: Asset name
+      condition:
+        type: number
+        description: Status of asset. Normal/Critical or Moderate
+      aspectVariables:
+        type: array
+        items:
+          type: object
+          properties:
+            name:
+              type: string
+              description: Name of variable.
+            value:
+              type: number
+              description: Value of variable.
+            subCondition:
+              type: number
+              description: Status of variable
+  AssetConditionTimelines:
+    type: object
+    description: List of abnormal condition of asset
+    properties:
+      type:
+        type: string
+      metaInfo:
+        type: object
+        properties:
+          status:
+            type: number
+            description: Condition/Status of Asset
+          updatedBy:
+            type: string
+            description: An actor do this action.
+        required:
+          - status
+          - updatedBy
+    required:
+      - type
+      - metaInfo
+  AssetCharacteristicTimelines:
+    type: object
+    properties:
+      type:
+        type: string
+      metaInfo:
+        type: object
+        properties:
+          updateBy:
+            type: string
+          updatedDate:
+            type: string
+        required:
+          - updateBy:
+          - updatedDate:
+    required:
+      - type
+      - metaInfo
+  AssetDocumentTimelines:
+    type: object
+    properties:
+      type:
+        type: string
+      metaInfo:
+        type: object
+        properties:
+          updatedDate:
+            type: string
+          updatedBy:
+            type: string
+          fileName:
+            type: string
+          oldFileName:
+            type: string
+          action:
+            type: string
+            description: Upload/Rename or Delete document
+        required:
+          - updatedDate
+          - updatedBy
+          - fileName
+          - action
+    required:
+      - type
+      - metaInfo 
+
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
