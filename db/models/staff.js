@@ -2,14 +2,9 @@
 
 module.exports = (sequelize, DataTypes) => {
   const Staff = sequelize.define('Staff', {
-    'staffId': {
-      'field': 'staff_id',
-      'primaryKey': true,
-      'type': DataTypes.INTEGER,
-      'autoIncrement': true
-    },
     'staffUserName': {
       'field': 'staff_username',
+      'primaryKey': true,
       'type': DataTypes.STRING,
       'allowNull': false
     },
@@ -41,13 +36,12 @@ module.exports = (sequelize, DataTypes) => {
     'isFirstTimeLogin': {
       'field': 'is_first_time_login',
       'type': DataTypes.BOOLEAN,
-      'defaultValue': false
+      'defaultValue': true
     }
   }, {
     'tableName': 'staff',
-    'timestamps': false,
-    'createAt': false,
-    'updateAt': false
+    'charset': 'utf8',
+    'collate': 'utf8_general_ci'
 });
   Staff.associate = function(models) {
     // associations can be defined here

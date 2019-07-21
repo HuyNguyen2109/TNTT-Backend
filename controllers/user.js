@@ -26,11 +26,9 @@ const getAll = (req, res) => {
 };
 
 const create = (req, res) => {
-  const salt = bcrypt.genSaltSync(saltRounds);
-  const hashPassword = bcrypt.hashSync(req.body.password, salt)
   const data = {
     'staffUserName': req.body.username,
-    'staffPassword': hashPassword,
+    'staffPassword': req.body.password,
     'staffFullName': req.body.fullname,
     'staffPhoneNumber': req.body.phone,
     'staffBirthday': req.body.birthday,
@@ -63,7 +61,59 @@ const create = (req, res) => {
     
 };
 
+const getUserByUsername = (req, res) => {
+  const username = req.params.username;
+  const conditions = {
+    'staffUserName': username
+  }
+  const attributes = ['staffFullName', 'staffPhoneNumber', 'staffBirthday', 'staffPosition']; 
+
+  return userService.getUserByUsername(conditions, attributes)
+    .then((user) => {
+      res.sendSuccess(resultDto.success(messageCodes.I005, user));
+    })
+    .catch((err) => {
+      log.error('Can not retreive user. Error: ', err);
+      res.sendError(err);
+    })
+};
+
+const updateUserbyUsername = (req, res) => {
+  const username = req.params.username;
+  const conditions = {
+    'staffUserName': username
+  };
+  const data = {
+    'staffPassword': req.body.password,
+    'staffFullName': req.body.fullname,
+    'staffPhoneNumber': req.body.phone,
+    'staffBirthday': req.body.birthday,
+    'staffPosition': req.body.postition
+  };
+  let transaction;
+
+  return models.sequelize.transaction()
+  .then((t) => {
+    transaction = t;
+
+    return userService.updateUserbyUsername(data, conditions, transaction);
+  })
+  .then(() => {
+    transaction.commit();
+    res.sendSuccess(resultDto.success(messageCodes.I004, {
+      'message': 'User updated successfully!'
+    }));
+  })
+  .catch((err) => {
+    transaction.rollback();
+    log.error('Can not update user. Error: ', err);
+    res.sendError(err);
+  });
+};
+
 module.exports = {
   'getAll': getAll,
-  'create': create
+  'create': create,
+  'getUserByUsername': getUserByUsername,
+  'updateUserbyUsername': updateUserbyUsername
 };

@@ -32,6 +32,11 @@ const sequelize = new Sequelize(dbConfig.databaseName, dbConfig.userName, dbConf
     'idle': 1000,
     'handleDisconnects': true
   },
+  'define': {
+    'charset': 'utf8',
+    'collate': 'utf8_genaral_ci',
+    'timestamps': false
+  },
   'logging': false
 });
 
