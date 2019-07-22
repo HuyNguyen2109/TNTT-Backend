@@ -28,6 +28,11 @@ module.exports = (sequelize, DataTypes) => {
       'type': DataTypes.STRING,
       'allowNull': false
     },
+    'staffHolyBirthday': {
+      'field': 'staff_holy_birthday',
+      'type': DataTypes.STRING,
+      'allowNull': false
+    },
     'staffPosition': {
       'field': 'staff_position',
       'type': DataTypes.STRING,

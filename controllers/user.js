@@ -9,6 +9,7 @@ const config = require('config');
 const models = require('../db/models/index');
 const resultDto = require('../common/dto/result');
 const messageCodes = require('../common/message-codes');
+const requestor = require('../common/utils/requestor');
 
 const userService = require('../services/user');
 
@@ -32,7 +33,8 @@ const create = (req, res) => {
     'staffFullName': req.body.fullname,
     'staffPhoneNumber': req.body.phone,
     'staffBirthday': req.body.birthday,
-    'staffPosition': req.body.postition
+    'staffHolyBirthday': req.body.holyBirthday,
+    'staffPosition': req.body.position
   };
   let transaction;
 
@@ -57,8 +59,7 @@ const create = (req, res) => {
       transaction.rollback();
       log.error('Cannot create user. Error: ', err);
       res.sendError(err);
-    })
-    
+    }); 
 };
 
 const getUserByUsername = (req, res) => {
@@ -66,7 +67,7 @@ const getUserByUsername = (req, res) => {
   const conditions = {
     'staffUserName': username
   }
-  const attributes = ['staffFullName', 'staffPhoneNumber', 'staffBirthday', 'staffPosition']; 
+  const attributes = ['staffFullName', 'staffPhoneNumber', 'staffBirthday', 'staffHolyBirthday', 'staffPosition', 'isFirstTimeLogin']; 
 
   return userService.getUserByUsername(conditions, attributes)
     .then((user) => {
@@ -75,7 +76,7 @@ const getUserByUsername = (req, res) => {
     .catch((err) => {
       log.error('Can not retreive user. Error: ', err);
       res.sendError(err);
-    })
+    });
 };
 
 const updateUserbyUsername = (req, res) => {
@@ -88,13 +89,21 @@ const updateUserbyUsername = (req, res) => {
     'staffFullName': req.body.fullname,
     'staffPhoneNumber': req.body.phone,
     'staffBirthday': req.body.birthday,
-    'staffPosition': req.body.postition
+    'staffPosition': req.body.position
   };
   let transaction;
+  const attributes = ['staffFullName', 'staffPhoneNumber', 'staffBirthday', 'staffHolyBirthday', 'staffPosition', 'isFirstTimeLogin'];
 
   return models.sequelize.transaction()
   .then((t) => {
     transaction = t;
+
+    return userService.getUserByUsername(conditions, attributes);
+  })
+  .then((users) => {
+    if(users.length == 0) {
+      throw resultDto.notFound(messageCodes.E004)
+    }
 
     return userService.updateUserbyUsername(data, conditions, transaction);
   })
@@ -111,9 +120,44 @@ const updateUserbyUsername = (req, res) => {
   });
 };
 
+const deleteUserByUsername = (req, res) => {
+  const username = req.params.username;
+  let transaction;
+  const conditions = {
+    'staffUserName': username
+  }
+  const attributes = ['staffFullName', 'staffPhoneNumber', 'staffBirthday', 'staffHolyBirthday', 'staffPosition', 'isFirstTimeLogin']; 
+
+  return models.sequelize.transaction()
+    .then((t) => {
+      transaction = t;
+  
+      return userService.getUserByUsername(conditions, attributes); 
+    })
+    .then((users) => {
+      if(users.length == 0) {
+        throw resultDto.notFound(messageCodes.E004);
+      }
+  
+      return userService.deleteUser(conditions, transaction);
+    })
+    .then(() => {
+      transaction.commit();
+      res.sendSuccess(resultDto.success(messageCodes.I004, {
+        'message': 'User deleted successfully!'
+      }));
+    })
+    .catch((err) => {
+      transaction.rollback();
+      log.error('Can not delete user. Error: ', err);
+      res.sendError(err);
+    });
+}
+
 module.exports = {
   'getAll': getAll,
   'create': create,
   'getUserByUsername': getUserByUsername,
-  'updateUserbyUsername': updateUserbyUsername
+  'updateUserbyUsername': updateUserbyUsername,
+  'deleteUserByUsername': deleteUserByUsername
 };

@@ -11,6 +11,7 @@ const bodyParser = require('body-parser');
 const httpStatusCode = require('http-status-codes');
 const multer = require('multer');
 const userRouter = require('./routes/user');
+const classRouter = require('./routes/class');
 
 const resultDto = require('./common/dto/result');
 const messageCodes = require('./common/message-codes');
@@ -105,7 +106,7 @@ app.use(function (req, res, next) {
 // }));
 
 app.use(BASE_URL + '/user', userRouter);
-
+app.use(BASE_URL + '/class', classRouter);
 
 /**
  * Catch 404 and forward to error handler
