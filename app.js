@@ -1,73 +1,64 @@
+/* eslint-disable no-prototype-builtins */
 'use strict';
 
-const config = require('config');
 const cors = require('cors');
-const log4js = require('log4js');
-const log4jsExtend = require('log4js-extend');
-const path = require('path');
+const log4js = require ('log4js');
+const log4jsExtend = require ('log4js-extend');
+const express = require ('express');
+const bodyParser = require ('body-parser');
+const httpStatusCodes = require ('http-status-codes');
 
-const express = require('express');
-const bodyParser = require('body-parser');
-const httpStatusCode = require('http-status-codes');
-const multer = require('multer');
-const userRouter = require('./routes/user');
-const classRouter = require('./routes/class');
+const resultDto = require ('./common/dto/result');
+const messageCodes = require ('./common/message-codes');
 
-const resultDto = require('./common/dto/result');
-const messageCodes = require('./common/message-codes');
+const mongoDB = require ('./models/index');
+const listingsAndReviewsRouter = require ('./routes/listingsAndReviews');
+const demoRouter = require ('./routes/demo');
+const emailRouter = require ('./routes/email');
 
+const config = require('config');
 const app = express();
 
-// Set configuration for multer
-const storage = multer.diskStorage({
-  'destination': (req, file, cb) => {
-    cb(null, 'public/uploads');
-  }
-});
-const upload = multer({ 'storage': storage }).any();
+mongoDB.clientConnect();
+
 app.use(cors());
-
 app.use(bodyParser());
-app.use(bodyParser.json({ 'limit': '50mb' }));
-app.use(bodyParser.urlencoded({ 'limit': '50mb', 'extended': true }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ 'extended': true }));
 
-const BASE_URL = config.get('baseUrl');
+const BASE_URL = config.get('baseURL');
+const port = config.get('applicationPort');
 
-app.use('/static', express.static(path.join(__dirname, 'public')));
-app.use(BASE_URL + '/static', express.static(path.join(__dirname, 'public')));
-app.use('/static', express.static(path.join(__dirname, 'data')));
-
-/* Load log4js configuration */
+// Load log4js configuration
+// eslint-disable-next-line no-useless-catch
 try {
   const logConfig = config.get('logConfig');
   log4js.configure(logConfig);
-} catch (error) {
-  throw error;
+} catch (err) {
+  throw err;
 }
 
-/* Use for format log file */
+// Using format log file
 log4jsExtend(log4js, {
   'path': __dirname,
   'format': 'at @name (@file:@line:@column)'
 });
 
-/* Logger */
+// Logger
 const log = log4js.getLogger();
 log.debug('Starting server...!');
 
 app.use((req, res, next) => {
   res.sendError = error => {
     log.error('Error before sending response: ', error);
-    // Detect an error throw by Assets360 or default error message
-    // eslint-disable-next-line no-prototype-builtins
-    if (error && error.hasOwnProperty('httpCode')) {
+    if(error && error.hasOwnProperty('httpCode')) {
       res.status(error.httpCode);
       delete error.httpCode;
 
       return res.send(error);
     }
 
-    res.status(httpStatusCode.INTERNAL_SERVER_ERROR).send(resultDto.internalServerError(messageCodes.E001));
+    res.status(httpStatusCodes.INTERNAL_SERVER_ERROR).send(resultDto.internalServerError(messageCodes.E001));
   };
 
   res.sendSuccess = result => {
@@ -80,17 +71,6 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res, next) => {
-  upload(req, res, (err) => {
-    if (err) {
-      log.debug('Upload file failed. Error: ', err);
-
-      return res.sendError(err);
-    }
-    next();
-  });
-});
-
-app.use(function (req, res, next) {
   log.debug(' ==== Request information ==== ');
   log.debug('Original URL: ', req.originalUrl);
   log.debug('Method: ', req.method);
@@ -101,16 +81,11 @@ app.use(function (req, res, next) {
   next();
 });
 
-// app.use(BASE_URL + '/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, {
-//   'explorer': true
-// }));
+app.use(BASE_URL + '/demo', demoRouter);
+app.use(BASE_URL + '/listings-and-reviews', listingsAndReviewsRouter);
+app.use(BASE_URL + '/email', emailRouter);
 
-app.use(BASE_URL + '/user', userRouter);
-app.use(BASE_URL + '/class', classRouter);
-
-/**
- * Catch 404 and forward to error handler
- */
+// Catch 404 error
 app.use((req, res, next) => {
   const error = resultDto.notFound(messageCodes.E004);
   next(error);
@@ -135,4 +110,6 @@ process.on('uncaughtException', (error) => {
   });
 });
 
-module.exports = app;
+app.listen(port, () => {
+  log.info(`Server is running on port: ${port}`);
+});

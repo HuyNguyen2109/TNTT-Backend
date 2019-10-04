@@ -43,7 +43,7 @@ const buidResponseForAssetWithSensorsList = (assetWithSensorsList, pageSize) => 
         'subCondition': assetWithSensors[keyOfStatus]
       };
       aspectVariables.push(aspectVariable);
-      variableKeys.push(keyOfStatus);
+      variableKeys.push(keyOfValue);
     });
     let item = {
       'assetName': assetWithSensors.asset_name,

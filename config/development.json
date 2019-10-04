@@ -1,15 +1,24 @@
 {
-  "authorKey": "Bearer ",
-  "applicationPort": 8888,
-  "baseUrl": "/backend",
-  "dbConfig": {
-    "host": "127.0.0.1",
-    "userName": "tntt",
-    "password": "@TnttGXCaoThai360",
-    "databaseName": "QuanLiTNTT",
-    "port": 3306
+  "applicationPort": "6000",
+  "baseURL": "/backend",
+  "emailConfig": {
+    "username": "JohnasHuy21091996@gmail.com",
+    "password": "Master2109"
   },
-  "host": "http://localhost:8888",
+  "dbConfig": {
+    "protocol": "mongodb+srv",
+    "username": "Admin",
+    "password": "Password",
+    "host": "testdatabase-qp7sm.mongodb.net",
+    "dbType": "test",
+    "option": "retryWrites=true&w=majority",
+    "dbName": "sample_airbnb",
+    "collectionName": "listingsAndReviews"
+  },
+  "dbTargetConfig": {
+    "dbName": "NodeJSWithMongo",
+    "collectionName": "MyCollections"
+  },
   "logConfig": {
     "appenders": {
       "backend": {
