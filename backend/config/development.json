@@ -1,0 +1,41 @@
+{
+  "authorKey": "Bearer ",
+  "applicationPort": 8888,
+  "baseUrl": "/backend",
+  "dbConfig": {
+    "host": "127.0.0.1",
+    "userName": "assets360",
+    "password": "assets360",
+    "databaseName": "assets360",
+    "port": 5432
+  },
+  "host": "http://localhost:8888",
+  "logConfig": {
+    "appenders": {
+      "backend": {
+        "type": "console"
+      },
+      "backend-file": {
+        "type": "file",
+        "filename": "log/file.log"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": [
+          "backend",
+          "backend-file"
+        ],
+        "level": "ALL"
+      }
+    }
+  },
+  "synchronizerUrl": "http://localhost:8889/synchronizer",
+  "cronJobTimer": {
+    "assetGroupCalculation": "00 15 00 * * * *"
+  },
+  "mdspConfInfo": {
+    "region": "eu1",
+    "tenant": "ppaldev"
+  }
+}

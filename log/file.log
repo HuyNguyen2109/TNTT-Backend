@@ -1,0 +1,1656 @@
+[2019-07-22T09:46:27.624] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T09:46:27.754] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T09:46:28.237] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T09:48:31.101] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T09:48:31.102] [DEBUG] default - Original URL:  /backend/user/create?username=HuyNN17&password=P@ssw0rd&fullname=Nguyen%20Nhut%20Huy&birthday=21/09/1996&phone=0389423079&position=Admin at <anonymous> (app.js:94:7)
+[2019-07-22T09:48:31.102] [DEBUG] default - Method:  POST at <anonymous> (app.js:95:7)
+[2019-07-22T09:48:31.103] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T09:48:31.103] [DEBUG] default - Query params:  { username: 'HuyNN17',
+  password: 'P@ssw0rd',
+  fullname: 'Nguyen Nhut Huy',
+  birthday: '21/09/1996',
+  phone: '0389423079',
+  position: 'Admin' } at <anonymous> (app.js:97:7)
+[2019-07-22T09:48:31.105] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T09:48:31.119] [ERROR] default - Cannot create user. Error:  { SequelizeValidationError: notNull Violation: Staff.staffUserName cannot be null,
+notNull Violation: Staff.staffPassword cannot be null,
+notNull Violation: Staff.staffFullName cannot be null,
+notNull Violation: Staff.staffPhoneNumber cannot be null,
+notNull Violation: Staff.staffBirthday cannot be null,
+notNull Violation: Staff.staffPosition cannot be null
+    at Promise.all.then (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/instance-validator.js:74:15)
+    at tryCatcher (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at Promise._fulfill (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:638:18)
+    at PromiseArray._resolve (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise_array.js:144:14)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:574:26)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at _drainQueueStep (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:138:12)
+    at _drainQueue (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:131:9)
+    at Async._drainQueues (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+  name: 'SequelizeValidationError',
+  errors:
+   [ ValidationErrorItem {
+       message: 'Staff.staffUserName cannot be null',
+       type: 'notNull Violation',
+       path: 'staffUserName',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] },
+     ValidationErrorItem {
+       message: 'Staff.staffPassword cannot be null',
+       type: 'notNull Violation',
+       path: 'staffPassword',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] },
+     ValidationErrorItem {
+       message: 'Staff.staffFullName cannot be null',
+       type: 'notNull Violation',
+       path: 'staffFullName',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] },
+     ValidationErrorItem {
+       message: 'Staff.staffPhoneNumber cannot be null',
+       type: 'notNull Violation',
+       path: 'staffPhoneNumber',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] },
+     ValidationErrorItem {
+       message: 'Staff.staffBirthday cannot be null',
+       type: 'notNull Violation',
+       path: 'staffBirthday',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] },
+     ValidationErrorItem {
+       message: 'Staff.staffPosition cannot be null',
+       type: 'notNull Violation',
+       path: 'staffPosition',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] } ] } at Promise.resolve.then.then.then.then.catch (controllers/user.js:58:11)
+[2019-07-22T09:48:31.121] [ERROR] default - Error before sending response:  { SequelizeValidationError: notNull Violation: Staff.staffUserName cannot be null,
+notNull Violation: Staff.staffPassword cannot be null,
+notNull Violation: Staff.staffFullName cannot be null,
+notNull Violation: Staff.staffPhoneNumber cannot be null,
+notNull Violation: Staff.staffBirthday cannot be null,
+notNull Violation: Staff.staffPosition cannot be null
+    at Promise.all.then (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/instance-validator.js:74:15)
+    at tryCatcher (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at Promise._fulfill (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:638:18)
+    at PromiseArray._resolve (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise_array.js:144:14)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:574:26)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at _drainQueueStep (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:138:12)
+    at _drainQueue (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:131:9)
+    at Async._drainQueues (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+  name: 'SequelizeValidationError',
+  errors:
+   [ ValidationErrorItem {
+       message: 'Staff.staffUserName cannot be null',
+       type: 'notNull Violation',
+       path: 'staffUserName',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] },
+     ValidationErrorItem {
+       message: 'Staff.staffPassword cannot be null',
+       type: 'notNull Violation',
+       path: 'staffPassword',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] },
+     ValidationErrorItem {
+       message: 'Staff.staffFullName cannot be null',
+       type: 'notNull Violation',
+       path: 'staffFullName',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] },
+     ValidationErrorItem {
+       message: 'Staff.staffPhoneNumber cannot be null',
+       type: 'notNull Violation',
+       path: 'staffPhoneNumber',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] },
+     ValidationErrorItem {
+       message: 'Staff.staffBirthday cannot be null',
+       type: 'notNull Violation',
+       path: 'staffBirthday',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] },
+     ValidationErrorItem {
+       message: 'Staff.staffPosition cannot be null',
+       type: 'notNull Violation',
+       path: 'staffPosition',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] } ] } at sendError (app.js:59:9)
+[2019-07-22T09:48:54.461] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T09:48:54.673] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T09:48:54.691] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T09:49:37.910] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T09:49:38.022] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T09:49:38.041] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T09:50:05.190] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T09:50:05.193] [DEBUG] default - Original URL:  /backend/user/create at <anonymous> (app.js:94:7)
+[2019-07-22T09:50:05.196] [DEBUG] default - Method:  POST at <anonymous> (app.js:95:7)
+[2019-07-22T09:50:05.198] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T09:50:05.201] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T09:50:05.203] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T09:50:05.220] [ERROR] default - Cannot create user. Error:  { SequelizeValidationError: notNull Violation: Staff.staffPosition cannot be null
+    at Promise.all.then (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/instance-validator.js:74:15)
+    at tryCatcher (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at Promise._fulfill (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:638:18)
+    at PromiseArray._resolve (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise_array.js:144:14)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:574:26)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at _drainQueueStep (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:138:12)
+    at _drainQueue (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:131:9)
+    at Async._drainQueues (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+  name: 'SequelizeValidationError',
+  errors:
+   [ ValidationErrorItem {
+       message: 'Staff.staffPosition cannot be null',
+       type: 'notNull Violation',
+       path: 'staffPosition',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] } ] } at Promise.resolve.then.then.then.then.catch (controllers/user.js:58:11)
+[2019-07-22T09:50:05.223] [ERROR] default - Error before sending response:  { SequelizeValidationError: notNull Violation: Staff.staffPosition cannot be null
+    at Promise.all.then (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/instance-validator.js:74:15)
+    at tryCatcher (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at Promise._fulfill (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:638:18)
+    at PromiseArray._resolve (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise_array.js:126:19)
+    at PromiseArray._promiseFulfilled (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise_array.js:144:14)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:574:26)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at _drainQueueStep (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:138:12)
+    at _drainQueue (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:131:9)
+    at Async._drainQueues (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)
+  name: 'SequelizeValidationError',
+  errors:
+   [ ValidationErrorItem {
+       message: 'Staff.staffPosition cannot be null',
+       type: 'notNull Violation',
+       path: 'staffPosition',
+       value: null,
+       origin: 'CORE',
+       instance: [Staff],
+       validatorKey: 'is_null',
+       validatorName: null,
+       validatorArgs: [] } ] } at sendError (app.js:59:9)
+[2019-07-22T09:50:26.208] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T09:50:26.345] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T09:50:26.364] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T09:50:48.269] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T09:50:48.402] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T09:50:48.424] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T09:50:51.627] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T09:50:51.629] [DEBUG] default - Original URL:  /backend/user/create at <anonymous> (app.js:94:7)
+[2019-07-22T09:50:51.631] [DEBUG] default - Method:  POST at <anonymous> (app.js:95:7)
+[2019-07-22T09:50:51.636] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T09:50:51.638] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T09:50:51.640] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T09:52:10.546] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T09:52:10.688] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T09:52:10.702] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T09:52:35.653] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T09:52:35.655] [DEBUG] default - Original URL:  /backend/user/HuyNN17 at <anonymous> (app.js:94:7)
+[2019-07-22T09:52:35.659] [DEBUG] default - Method:  GET at <anonymous> (app.js:95:7)
+[2019-07-22T09:52:35.661] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T09:52:35.665] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T09:52:35.668] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T09:57:09.041] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T09:57:09.043] [DEBUG] default - Original URL:  /backend/user/update/HuyNN17 at <anonymous> (app.js:94:7)
+[2019-07-22T09:57:09.050] [DEBUG] default - Method:  PUT at <anonymous> (app.js:95:7)
+[2019-07-22T09:57:09.058] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T09:57:09.062] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T09:57:09.068] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:04:38.892] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T10:04:39.122] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T10:04:39.140] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T10:04:45.237] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:04:45.239] [DEBUG] default - Original URL:  /backend/user/update/HuyNN18 at <anonymous> (app.js:94:7)
+[2019-07-22T10:04:45.241] [DEBUG] default - Method:  PUT at <anonymous> (app.js:95:7)
+[2019-07-22T10:04:45.243] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:04:45.245] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:04:45.247] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:04:45.268] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:04:45.272] [DEBUG] default - Original URL:  //backend/user/HuyNN18 at <anonymous> (app.js:94:7)
+[2019-07-22T10:04:45.275] [DEBUG] default - Method:  GET at <anonymous> (app.js:95:7)
+[2019-07-22T10:04:45.276] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:04:45.278] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:04:45.279] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:04:45.282] [ERROR] default - Error before sending response:  { httpCode: 404, code: 'E004' } at sendError (app.js:59:9)
+[2019-07-22T10:04:45.293] [ERROR] default - Can not update user. Error:  { Error: Request failed with status code 404
+    at createError (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/adapters/http.js:237:11)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1129:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  config:
+   { url: 'http://localhost:8888//backend/user/HuyNN18',
+     method: 'get',
+     headers:
+      { Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
+        'User-Agent': 'axios/0.19.0' },
+     transformRequest: [ [Function: transformRequest] ],
+     transformResponse: [ [Function: transformResponse] ],
+     timeout: 0,
+     adapter: [Function: httpAdapter],
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     data: undefined },
+  request:
+   ClientRequest {
+     _events:
+      [Object: null prototype] {
+        socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: 0,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [TCP],
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 221,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     connection:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [TCP],
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 221,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _header:
+      'GET //backend/user/HuyNN18 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/0.19.0\r\nHost: localhost:8888\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent:
+      Agent {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 80,
+        protocol: 'http:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256 },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'GET',
+     path: '//backend/user/HuyNN18',
+     _ended: true,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [Socket],
+        connection: [Socket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 404,
+        statusMessage: 'Not Found',
+        client: [Socket],
+        _consuming: false,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'http://localhost:8888//backend/user/HuyNN18',
+        redirects: [] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable:
+      Writable {
+        _writableState: [WritableState],
+        writable: true,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _redirects: [],
+        _requestBodyLength: 0,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'http://localhost:8888//backend/user/HuyNN18' },
+     [Symbol(isCorked)]: false,
+     [Symbol(outHeadersKey)]:
+      [Object: null prototype] {
+        accept: [Array],
+        'content-type': [Array],
+        'user-agent': [Array],
+        host: [Array] } },
+  response:
+   { status: 404,
+     statusText: 'Not Found',
+     headers:
+      { 'x-powered-by': 'Express',
+        'access-control-allow-origin': '*',
+        'content-type': 'application/json; charset=utf-8',
+        'content-length': '15',
+        etag: 'W/"f-5xCVPG9+Od6gUGx/iYvGForQ/RU"',
+        date: 'Mon, 22 Jul 2019 03:04:45 GMT',
+        connection: 'close' },
+     config:
+      { url: 'http://localhost:8888//backend/user/HuyNN18',
+        method: 'get',
+        headers: [Object],
+        transformRequest: [Array],
+        transformResponse: [Array],
+        timeout: 0,
+        adapter: [Function: httpAdapter],
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        data: undefined },
+     request:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Socket],
+        connection: [Socket],
+        _header:
+         'GET //backend/user/HuyNN18 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/0.19.0\r\nHost: localhost:8888\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        path: '//backend/user/HuyNN18',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Writable],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     data: { code: 'E004' } },
+  isAxiosError: true,
+  toJSON: [Function] } at models.sequelize.transaction.then.then.then.catch (controllers/user.js:122:9)
+[2019-07-22T10:04:45.296] [ERROR] default - Error before sending response:  { Error: Request failed with status code 404
+    at createError (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/adapters/http.js:237:11)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1129:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  config:
+   { url: 'http://localhost:8888//backend/user/HuyNN18',
+     method: 'get',
+     headers:
+      { Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
+        'User-Agent': 'axios/0.19.0' },
+     transformRequest: [ [Function: transformRequest] ],
+     transformResponse: [ [Function: transformResponse] ],
+     timeout: 0,
+     adapter: [Function: httpAdapter],
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     data: undefined },
+  request:
+   ClientRequest {
+     _events:
+      [Object: null prototype] {
+        socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: 0,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [TCP],
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 221,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     connection:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [TCP],
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 221,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _header:
+      'GET //backend/user/HuyNN18 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/0.19.0\r\nHost: localhost:8888\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent:
+      Agent {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 80,
+        protocol: 'http:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256 },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'GET',
+     path: '//backend/user/HuyNN18',
+     _ended: true,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [Socket],
+        connection: [Socket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 404,
+        statusMessage: 'Not Found',
+        client: [Socket],
+        _consuming: false,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'http://localhost:8888//backend/user/HuyNN18',
+        redirects: [] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable:
+      Writable {
+        _writableState: [WritableState],
+        writable: true,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _redirects: [],
+        _requestBodyLength: 0,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'http://localhost:8888//backend/user/HuyNN18' },
+     [Symbol(isCorked)]: false,
+     [Symbol(outHeadersKey)]:
+      [Object: null prototype] {
+        accept: [Array],
+        'content-type': [Array],
+        'user-agent': [Array],
+        host: [Array] } },
+  response:
+   { status: 404,
+     statusText: 'Not Found',
+     headers:
+      { 'x-powered-by': 'Express',
+        'access-control-allow-origin': '*',
+        'content-type': 'application/json; charset=utf-8',
+        'content-length': '15',
+        etag: 'W/"f-5xCVPG9+Od6gUGx/iYvGForQ/RU"',
+        date: 'Mon, 22 Jul 2019 03:04:45 GMT',
+        connection: 'close' },
+     config:
+      { url: 'http://localhost:8888//backend/user/HuyNN18',
+        method: 'get',
+        headers: [Object],
+        transformRequest: [Array],
+        transformResponse: [Array],
+        timeout: 0,
+        adapter: [Function: httpAdapter],
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        data: undefined },
+     request:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Socket],
+        connection: [Socket],
+        _header:
+         'GET //backend/user/HuyNN18 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/0.19.0\r\nHost: localhost:8888\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        path: '//backend/user/HuyNN18',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Writable],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     data: { code: 'E004' } },
+  isAxiosError: true,
+  toJSON: [Function] } at sendError (app.js:59:9)
+[2019-07-22T10:05:29.183] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T10:05:29.329] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T10:05:29.358] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T10:05:32.025] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:05:32.027] [DEBUG] default - Original URL:  /backend/user/update/HuyNN18 at <anonymous> (app.js:94:7)
+[2019-07-22T10:05:32.028] [DEBUG] default - Method:  PUT at <anonymous> (app.js:95:7)
+[2019-07-22T10:05:32.030] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:05:32.032] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:05:32.034] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:05:32.062] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:05:32.064] [DEBUG] default - Original URL:  //backend/user/HuyNN18 at <anonymous> (app.js:94:7)
+[2019-07-22T10:05:32.066] [DEBUG] default - Method:  GET at <anonymous> (app.js:95:7)
+[2019-07-22T10:05:32.067] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:05:32.069] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:05:32.074] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:05:32.076] [ERROR] default - Error before sending response:  { httpCode: 404, code: 'E004' } at sendError (app.js:59:9)
+[2019-07-22T10:05:32.088] [ERROR] default - Can not update user. Error:  { Error: Request failed with status code 404
+    at createError (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/adapters/http.js:237:11)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1129:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  config:
+   { url: 'http://localhost:8888//backend/user/HuyNN18',
+     method: 'get',
+     headers:
+      { Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
+        'User-Agent': 'axios/0.19.0' },
+     transformRequest: [ [Function: transformRequest] ],
+     transformResponse: [ [Function: transformResponse] ],
+     timeout: 0,
+     adapter: [Function: httpAdapter],
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     data: undefined },
+  request:
+   ClientRequest {
+     _events:
+      [Object: null prototype] {
+        socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: 0,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [TCP],
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 217,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     connection:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [TCP],
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 217,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _header:
+      'GET //backend/user/HuyNN18 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/0.19.0\r\nHost: localhost:8888\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent:
+      Agent {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 80,
+        protocol: 'http:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256 },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'GET',
+     path: '//backend/user/HuyNN18',
+     _ended: true,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [Socket],
+        connection: [Socket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 404,
+        statusMessage: 'Not Found',
+        client: [Socket],
+        _consuming: false,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'http://localhost:8888//backend/user/HuyNN18',
+        redirects: [] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable:
+      Writable {
+        _writableState: [WritableState],
+        writable: true,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _redirects: [],
+        _requestBodyLength: 0,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'http://localhost:8888//backend/user/HuyNN18' },
+     [Symbol(isCorked)]: false,
+     [Symbol(outHeadersKey)]:
+      [Object: null prototype] {
+        accept: [Array],
+        'content-type': [Array],
+        'user-agent': [Array],
+        host: [Array] } },
+  response:
+   { status: 404,
+     statusText: 'Not Found',
+     headers:
+      { 'x-powered-by': 'Express',
+        'access-control-allow-origin': '*',
+        'content-type': 'application/json; charset=utf-8',
+        'content-length': '15',
+        etag: 'W/"f-5xCVPG9+Od6gUGx/iYvGForQ/RU"',
+        date: 'Mon, 22 Jul 2019 03:05:32 GMT',
+        connection: 'close' },
+     config:
+      { url: 'http://localhost:8888//backend/user/HuyNN18',
+        method: 'get',
+        headers: [Object],
+        transformRequest: [Array],
+        transformResponse: [Array],
+        timeout: 0,
+        adapter: [Function: httpAdapter],
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        data: undefined },
+     request:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Socket],
+        connection: [Socket],
+        _header:
+         'GET //backend/user/HuyNN18 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/0.19.0\r\nHost: localhost:8888\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        path: '//backend/user/HuyNN18',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Writable],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     data: { code: 'E004' } },
+  isAxiosError: true,
+  toJSON: [Function] } at models.sequelize.transaction.then.then.then.catch (controllers/user.js:123:9)
+[2019-07-22T10:05:32.092] [ERROR] default - Error before sending response:  { Error: Request failed with status code 404
+    at createError (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/axios/lib/adapters/http.js:237:11)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1129:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+  config:
+   { url: 'http://localhost:8888//backend/user/HuyNN18',
+     method: 'get',
+     headers:
+      { Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json',
+        'User-Agent': 'axios/0.19.0' },
+     transformRequest: [ [Function: transformRequest] ],
+     transformResponse: [ [Function: transformResponse] ],
+     timeout: 0,
+     adapter: [Function: httpAdapter],
+     xsrfCookieName: 'XSRF-TOKEN',
+     xsrfHeaderName: 'X-XSRF-TOKEN',
+     maxContentLength: -1,
+     validateStatus: [Function: validateStatus],
+     data: undefined },
+  request:
+   ClientRequest {
+     _events:
+      [Object: null prototype] {
+        socket: [Function],
+        abort: [Function],
+        aborted: [Function],
+        error: [Function],
+        timeout: [Function],
+        prefinish: [Function: requestOnPrefinish] },
+     _eventsCount: 6,
+     _maxListeners: undefined,
+     output: [],
+     outputEncodings: [],
+     outputCallbacks: [],
+     outputSize: 0,
+     writable: true,
+     _last: true,
+     chunkedEncoding: false,
+     shouldKeepAlive: false,
+     useChunkedEncodingByDefault: false,
+     sendDate: false,
+     _removedConnection: false,
+     _removedContLen: false,
+     _removedTE: false,
+     _contentLength: 0,
+     _hasBody: true,
+     _trailer: '',
+     finished: true,
+     _headerSent: true,
+     socket:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [TCP],
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 217,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     connection:
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [TCP],
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [ReadableState],
+        readable: true,
+        _events: [Object],
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: [WritableState],
+        writable: false,
+        allowHalfOpen: false,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        parser: null,
+        _httpMessage: [Circular],
+        [Symbol(asyncId)]: 217,
+        [Symbol(lastWriteQueueSize)]: 0,
+        [Symbol(timeout)]: null,
+        [Symbol(kBytesRead)]: 0,
+        [Symbol(kBytesWritten)]: 0 },
+     _header:
+      'GET //backend/user/HuyNN18 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/0.19.0\r\nHost: localhost:8888\r\nConnection: close\r\n\r\n',
+     _onPendingData: [Function: noopPendingOutput],
+     agent:
+      Agent {
+        _events: [Object],
+        _eventsCount: 1,
+        _maxListeners: undefined,
+        defaultPort: 80,
+        protocol: 'http:',
+        options: [Object],
+        requests: {},
+        sockets: [Object],
+        freeSockets: {},
+        keepAliveMsecs: 1000,
+        keepAlive: false,
+        maxSockets: Infinity,
+        maxFreeSockets: 256 },
+     socketPath: undefined,
+     timeout: undefined,
+     method: 'GET',
+     path: '//backend/user/HuyNN18',
+     _ended: true,
+     res:
+      IncomingMessage {
+        _readableState: [ReadableState],
+        readable: false,
+        _events: [Object],
+        _eventsCount: 3,
+        _maxListeners: undefined,
+        socket: [Socket],
+        connection: [Socket],
+        httpVersionMajor: 1,
+        httpVersionMinor: 1,
+        httpVersion: '1.1',
+        complete: true,
+        headers: [Object],
+        rawHeaders: [Array],
+        trailers: {},
+        rawTrailers: [],
+        aborted: false,
+        upgrade: false,
+        url: '',
+        method: null,
+        statusCode: 404,
+        statusMessage: 'Not Found',
+        client: [Socket],
+        _consuming: false,
+        _dumped: false,
+        req: [Circular],
+        responseUrl: 'http://localhost:8888//backend/user/HuyNN18',
+        redirects: [] },
+     aborted: undefined,
+     timeoutCb: null,
+     upgradeOrConnect: false,
+     parser: null,
+     maxHeadersCount: null,
+     _redirectable:
+      Writable {
+        _writableState: [WritableState],
+        writable: true,
+        _events: [Object],
+        _eventsCount: 2,
+        _maxListeners: undefined,
+        _options: [Object],
+        _redirectCount: 0,
+        _redirects: [],
+        _requestBodyLength: 0,
+        _requestBodyBuffers: [],
+        _onNativeResponse: [Function],
+        _currentRequest: [Circular],
+        _currentUrl: 'http://localhost:8888//backend/user/HuyNN18' },
+     [Symbol(isCorked)]: false,
+     [Symbol(outHeadersKey)]:
+      [Object: null prototype] {
+        accept: [Array],
+        'content-type': [Array],
+        'user-agent': [Array],
+        host: [Array] } },
+  response:
+   { status: 404,
+     statusText: 'Not Found',
+     headers:
+      { 'x-powered-by': 'Express',
+        'access-control-allow-origin': '*',
+        'content-type': 'application/json; charset=utf-8',
+        'content-length': '15',
+        etag: 'W/"f-5xCVPG9+Od6gUGx/iYvGForQ/RU"',
+        date: 'Mon, 22 Jul 2019 03:05:32 GMT',
+        connection: 'close' },
+     config:
+      { url: 'http://localhost:8888//backend/user/HuyNN18',
+        method: 'get',
+        headers: [Object],
+        transformRequest: [Array],
+        transformResponse: [Array],
+        timeout: 0,
+        adapter: [Function: httpAdapter],
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        validateStatus: [Function: validateStatus],
+        data: undefined },
+     request:
+      ClientRequest {
+        _events: [Object],
+        _eventsCount: 6,
+        _maxListeners: undefined,
+        output: [],
+        outputEncodings: [],
+        outputCallbacks: [],
+        outputSize: 0,
+        writable: true,
+        _last: true,
+        chunkedEncoding: false,
+        shouldKeepAlive: false,
+        useChunkedEncodingByDefault: false,
+        sendDate: false,
+        _removedConnection: false,
+        _removedContLen: false,
+        _removedTE: false,
+        _contentLength: 0,
+        _hasBody: true,
+        _trailer: '',
+        finished: true,
+        _headerSent: true,
+        socket: [Socket],
+        connection: [Socket],
+        _header:
+         'GET //backend/user/HuyNN18 HTTP/1.1\r\nAccept: application/json, text/plain, */*\r\nContent-Type: application/json\r\nUser-Agent: axios/0.19.0\r\nHost: localhost:8888\r\nConnection: close\r\n\r\n',
+        _onPendingData: [Function: noopPendingOutput],
+        agent: [Agent],
+        socketPath: undefined,
+        timeout: undefined,
+        method: 'GET',
+        path: '//backend/user/HuyNN18',
+        _ended: true,
+        res: [IncomingMessage],
+        aborted: undefined,
+        timeoutCb: null,
+        upgradeOrConnect: false,
+        parser: null,
+        maxHeadersCount: null,
+        _redirectable: [Writable],
+        [Symbol(isCorked)]: false,
+        [Symbol(outHeadersKey)]: [Object] },
+     data: { code: 'E004' } },
+  isAxiosError: true,
+  toJSON: [Function] } at sendError (app.js:59:9)
+[2019-07-22T10:06:23.420] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T10:06:23.552] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T10:06:23.574] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T10:06:27.929] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:06:27.932] [DEBUG] default - Original URL:  /backend/user/update/HuyNN18 at <anonymous> (app.js:94:7)
+[2019-07-22T10:06:27.935] [DEBUG] default - Method:  PUT at <anonymous> (app.js:95:7)
+[2019-07-22T10:06:27.937] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:06:27.939] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:06:27.941] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:06:27.985] [ERROR] default - Can not update user. Error:  Error: Support for `{where: 'raw query'}` has been removed.
+    at MySQLQueryGenerator.whereItemsQuery (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2041:13)
+    at MySQLQueryGenerator.getWhereConditions (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2486:19)
+    at MySQLQueryGenerator.selectQuery (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1283:28)
+    at QueryInterface.select (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/model.js:1755:34)
+    at tryCatcher (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at _drainQueueStep (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:138:12)
+    at _drainQueue (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:131:9)
+    at Async._drainQueues (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5) at models.sequelize.transaction.then.then.then.catch (controllers/user.js:117:9)
+[2019-07-22T10:06:27.990] [ERROR] default - Error before sending response:  Error: Support for `{where: 'raw query'}` has been removed.
+    at MySQLQueryGenerator.whereItemsQuery (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2041:13)
+    at MySQLQueryGenerator.getWhereConditions (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2486:19)
+    at MySQLQueryGenerator.selectQuery (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1283:28)
+    at QueryInterface.select (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/query-interface.js:1121:27)
+    at Promise.try.then.then.then (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/model.js:1755:34)
+    at tryCatcher (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at _drainQueueStep (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:138:12)
+    at _drainQueue (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:131:9)
+    at Async._drainQueues (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5) at sendError (app.js:59:9)
+[2019-07-22T10:07:20.426] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T10:07:20.529] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T10:07:20.548] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T10:07:24.958] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:07:24.960] [DEBUG] default - Original URL:  /backend/user/update/HuyNN18 at <anonymous> (app.js:94:7)
+[2019-07-22T10:07:24.961] [DEBUG] default - Method:  PUT at <anonymous> (app.js:95:7)
+[2019-07-22T10:07:24.963] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:07:24.964] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:07:24.965] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:07:47.968] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:07:47.970] [DEBUG] default - Original URL:  /backend/user/update/HuyNN18 at <anonymous> (app.js:94:7)
+[2019-07-22T10:07:47.973] [DEBUG] default - Method:  PUT at <anonymous> (app.js:95:7)
+[2019-07-22T10:07:47.975] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:07:47.977] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:07:47.980] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:07:58.930] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T10:07:59.065] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T10:07:59.079] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T10:08:04.235] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:08:04.238] [DEBUG] default - Original URL:  /backend/user/update/HuyNN18 at <anonymous> (app.js:94:7)
+[2019-07-22T10:08:04.246] [DEBUG] default - Method:  PUT at <anonymous> (app.js:95:7)
+[2019-07-22T10:08:04.247] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:08:04.249] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:08:04.253] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:08:55.823] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T10:08:56.034] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T10:08:56.046] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T10:09:00.064] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:09:00.066] [DEBUG] default - Original URL:  /backend/user/update/HuyNN18 at <anonymous> (app.js:94:7)
+[2019-07-22T10:09:00.069] [DEBUG] default - Method:  PUT at <anonymous> (app.js:95:7)
+[2019-07-22T10:09:00.071] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:09:00.074] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:09:00.076] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:09:02.681] [ERROR] default - Can not update user. Error:  { httpCode: 404, code: 'E004' } at models.sequelize.transaction.then.then.then.catch (controllers/user.js:121:9)
+[2019-07-22T10:09:02.683] [ERROR] default - Error before sending response:  { httpCode: 404, code: 'E004' } at sendError (app.js:59:9)
+[2019-07-22T10:09:25.990] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:09:25.993] [DEBUG] default - Original URL:  /backend/user/update/HuyNN17 at <anonymous> (app.js:94:7)
+[2019-07-22T10:09:25.995] [DEBUG] default - Method:  PUT at <anonymous> (app.js:95:7)
+[2019-07-22T10:09:25.997] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:09:26.002] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:09:26.005] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:09:37.748] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:09:37.749] [DEBUG] default - Original URL:  /backend/user/update/HuyNN17 at <anonymous> (app.js:94:7)
+[2019-07-22T10:09:37.752] [DEBUG] default - Method:  PUT at <anonymous> (app.js:95:7)
+[2019-07-22T10:09:37.754] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:09:37.757] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:09:37.759] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:18:19.046] [DEBUG] default - Starting server...! at <anonymous> (app.js:55:5)
+[2019-07-22T10:18:19.148] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T10:18:19.168] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T10:18:32.472] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:18:32.475] [DEBUG] default - Original URL:  /backend/user/delete/HuyNN17 at <anonymous> (app.js:94:7)
+[2019-07-22T10:18:32.477] [DEBUG] default - Method:  DELETE at <anonymous> (app.js:95:7)
+[2019-07-22T10:18:32.479] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:18:32.481] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:18:32.483] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:19:41.822] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:19:41.824] [DEBUG] default - Original URL:  /backend/user/create at <anonymous> (app.js:94:7)
+[2019-07-22T10:19:41.826] [DEBUG] default - Method:  POST at <anonymous> (app.js:95:7)
+[2019-07-22T10:19:41.828] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:19:41.830] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:19:41.833] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:20:23.967] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:20:23.969] [DEBUG] default - Original URL:  /backend/user/create at <anonymous> (app.js:94:7)
+[2019-07-22T10:20:23.971] [DEBUG] default - Method:  POST at <anonymous> (app.js:95:7)
+[2019-07-22T10:20:23.974] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:20:23.976] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:20:23.978] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:28:19.266] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:93:7)
+[2019-07-22T10:28:19.271] [DEBUG] default - Original URL:  /backend/user at <anonymous> (app.js:94:7)
+[2019-07-22T10:28:19.276] [DEBUG] default - Method:  GET at <anonymous> (app.js:95:7)
+[2019-07-22T10:28:19.279] [DEBUG] default - Path params:  {} at <anonymous> (app.js:96:7)
+[2019-07-22T10:28:19.282] [DEBUG] default - Query params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:28:19.286] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:98:7)
+[2019-07-22T10:28:19.298] [ERROR] default - Cannot retreive users. Error:  { SequelizeDatabaseError: Unknown column 'staff_id' in 'field list'
+    at Query.formatError (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/dialects/mysql/query.js:243:16)
+    at Query.handler [as onResult] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/dialects/mysql/query.js:50:23)
+    at Query.execute (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:72:12)
+    at PacketParser.executeStart (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'staff_id' in 'field list'
+       at Packet.asError (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/packets/packet.js:684:17)
+       at Query.execute (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/commands/command.js:28:26)
+       at Connection.handlePacket (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:449:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:72:12)
+       at PacketParser.executeStart (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:79:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'staff_id\' in \'field list\'',
+     sql:
+      'select staff_id as "staffId", \n            staff_username as "staffUserName", \n            staff_fullname as "staffFullName",\n            staff_phonenumber as "staffPhoneNumber",\n            staff_birthday as "staffBirthday",\n            staff_position as "staffPosition",\n            is_first_time_login as "isFirstTimeLogin"\n    from staff;' },
+  original:
+   { Error: Unknown column 'staff_id' in 'field list'
+       at Packet.asError (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/packets/packet.js:684:17)
+       at Query.execute (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/commands/command.js:28:26)
+       at Connection.handlePacket (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:449:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:72:12)
+       at PacketParser.executeStart (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:79:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'staff_id\' in \'field list\'',
+     sql:
+      'select staff_id as "staffId", \n            staff_username as "staffUserName", \n            staff_fullname as "staffFullName",\n            staff_phonenumber as "staffPhoneNumber",\n            staff_birthday as "staffBirthday",\n            staff_position as "staffPosition",\n            is_first_time_login as "isFirstTimeLogin"\n    from staff;' },
+  sql:
+   'select staff_id as "staffId", \n            staff_username as "staffUserName", \n            staff_fullname as "staffFullName",\n            staff_phonenumber as "staffPhoneNumber",\n            staff_birthday as "staffBirthday",\n            staff_position as "staffPosition",\n            is_first_time_login as "isFirstTimeLogin"\n    from staff;' } at userService.getAllUser.then.catch (controllers/user.js:24:11)
+[2019-07-22T10:28:19.301] [ERROR] default - Error before sending response:  { SequelizeDatabaseError: Unknown column 'staff_id' in 'field list'
+    at Query.formatError (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/dialects/mysql/query.js:243:16)
+    at Query.handler [as onResult] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/sequelize/lib/dialects/mysql/query.js:50:23)
+    at Query.execute (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:449:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:72:12)
+    at PacketParser.executeStart (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:79:25)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at Socket.Readable.push (_stream_readable.js:224:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+  name: 'SequelizeDatabaseError',
+  parent:
+   { Error: Unknown column 'staff_id' in 'field list'
+       at Packet.asError (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/packets/packet.js:684:17)
+       at Query.execute (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/commands/command.js:28:26)
+       at Connection.handlePacket (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:449:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:72:12)
+       at PacketParser.executeStart (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:79:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'staff_id\' in \'field list\'',
+     sql:
+      'select staff_id as "staffId", \n            staff_username as "staffUserName", \n            staff_fullname as "staffFullName",\n            staff_phonenumber as "staffPhoneNumber",\n            staff_birthday as "staffBirthday",\n            staff_position as "staffPosition",\n            is_first_time_login as "isFirstTimeLogin"\n    from staff;' },
+  original:
+   { Error: Unknown column 'staff_id' in 'field list'
+       at Packet.asError (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/packets/packet.js:684:17)
+       at Query.execute (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/commands/command.js:28:26)
+       at Connection.handlePacket (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:449:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:72:12)
+       at PacketParser.executeStart (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/mysql2/lib/connection.js:79:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     code: 'ER_BAD_FIELD_ERROR',
+     errno: 1054,
+     sqlState: '42S22',
+     sqlMessage: 'Unknown column \'staff_id\' in \'field list\'',
+     sql:
+      'select staff_id as "staffId", \n            staff_username as "staffUserName", \n            staff_fullname as "staffFullName",\n            staff_phonenumber as "staffPhoneNumber",\n            staff_birthday as "staffBirthday",\n            staff_position as "staffPosition",\n            is_first_time_login as "isFirstTimeLogin"\n    from staff;' },
+  sql:
+   'select staff_id as "staffId", \n            staff_username as "staffUserName", \n            staff_fullname as "staffFullName",\n            staff_phonenumber as "staffPhoneNumber",\n            staff_birthday as "staffBirthday",\n            staff_position as "staffPosition",\n            is_first_time_login as "isFirstTimeLogin"\n    from staff;' } at sendError (app.js:59:9)
+[2019-07-22T10:31:26.505] [DEBUG] default - Starting server...! at <anonymous> (app.js:56:5)
+[2019-07-22T10:31:26.680] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T10:31:26.694] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T10:31:28.981] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:94:7)
+[2019-07-22T10:31:28.984] [DEBUG] default - Original URL:  /backend/user at <anonymous> (app.js:95:7)
+[2019-07-22T10:31:28.991] [DEBUG] default - Method:  GET at <anonymous> (app.js:96:7)
+[2019-07-22T10:31:28.996] [DEBUG] default - Path params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:31:29.000] [DEBUG] default - Query params:  {} at <anonymous> (app.js:98:7)
+[2019-07-22T10:31:29.003] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:99:7)
+[2019-07-22T10:39:50.619] [DEBUG] default - Starting server...! at <anonymous> (app.js:56:5)
+[2019-07-22T10:39:50.818] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T10:39:51.094] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T10:40:13.175] [DEBUG] default - Starting server...! at <anonymous> (app.js:56:5)
+[2019-07-22T10:40:13.258] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T10:40:13.505] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T10:42:56.452] [DEBUG] default - Starting server...! at <anonymous> (app.js:56:5)
+[2019-07-22T10:42:56.555] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T10:42:56.567] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T10:43:55.157] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:94:7)
+[2019-07-22T10:43:55.159] [DEBUG] default - Original URL:  /backend/user/create at <anonymous> (app.js:95:7)
+[2019-07-22T10:43:55.161] [DEBUG] default - Method:  POST at <anonymous> (app.js:96:7)
+[2019-07-22T10:43:55.165] [DEBUG] default - Path params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T10:43:55.168] [DEBUG] default - Query params:  {} at <anonymous> (app.js:98:7)
+[2019-07-22T10:43:55.170] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:99:7)
+[2019-07-22T14:53:32.651] [DEBUG] default - Starting server...! at <anonymous> (app.js:56:5)
+[2019-07-22T14:53:32.850] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T14:53:32.869] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T14:54:33.629] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:94:7)
+[2019-07-22T14:54:33.631] [DEBUG] default - Original URL:  /backend/class/create at <anonymous> (app.js:95:7)
+[2019-07-22T14:54:33.633] [DEBUG] default - Method:  POST at <anonymous> (app.js:96:7)
+[2019-07-22T14:54:33.635] [DEBUG] default - Path params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T14:54:33.636] [DEBUG] default - Query params:  {} at <anonymous> (app.js:98:7)
+[2019-07-22T14:54:33.638] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:99:7)
+[2019-07-22T14:54:33.653] [ERROR] default - Cannot create class. Error:  ReferenceError: commit is not defined
+    at models.sequelize.transaction.then.then (/home/huynn17/Documents/MyProject/TNTT-Backend/controllers/class.js:41:7)
+    at tryCatcher (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at _drainQueueStep (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:138:12)
+    at _drainQueue (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:131:9)
+    at Async._drainQueues (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5) at models.sequelize.transaction.then.then.catch (controllers/class.js:47:11)
+[2019-07-22T14:54:33.654] [ERROR] default - Error before sending response:  ReferenceError: commit is not defined
+    at models.sequelize.transaction.then.then (/home/huynn17/Documents/MyProject/TNTT-Backend/controllers/class.js:41:7)
+    at tryCatcher (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/promise.js:694:18)
+    at _drainQueueStep (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:138:12)
+    at _drainQueue (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:131:9)
+    at Async._drainQueues (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:147:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/huynn17/Documents/MyProject/TNTT-Backend/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:705:18)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5) at sendError (app.js:60:9)
+[2019-07-22T14:54:52.899] [DEBUG] default - Starting server...! at <anonymous> (app.js:56:5)
+[2019-07-22T14:54:53.103] [INFO] default - Connection to the database has been established successfully. at sequelize.authenticate.then (db/models/index.js:64:9)
+[2019-07-22T14:54:53.116] [INFO] default - Listening on:  port 8888 at onListening (bin/www:81:7)
+[2019-07-22T14:54:55.653] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:94:7)
+[2019-07-22T14:54:55.654] [DEBUG] default - Original URL:  /backend/class/create at <anonymous> (app.js:95:7)
+[2019-07-22T14:54:55.657] [DEBUG] default - Method:  POST at <anonymous> (app.js:96:7)
+[2019-07-22T14:54:55.659] [DEBUG] default - Path params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T14:54:55.662] [DEBUG] default - Query params:  {} at <anonymous> (app.js:98:7)
+[2019-07-22T14:54:55.664] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:99:7)
+[2019-07-22T14:55:23.084] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:94:7)
+[2019-07-22T14:55:23.087] [DEBUG] default - Original URL:  /backend/class/CC at <anonymous> (app.js:95:7)
+[2019-07-22T14:55:23.090] [DEBUG] default - Method:  GET at <anonymous> (app.js:96:7)
+[2019-07-22T14:55:23.093] [DEBUG] default - Path params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T14:55:23.097] [DEBUG] default - Query params:  {} at <anonymous> (app.js:98:7)
+[2019-07-22T14:55:23.100] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:99:7)
+[2019-07-22T14:55:44.035] [DEBUG] default -  ==== Request information ====  at <anonymous> (app.js:94:7)
+[2019-07-22T14:55:44.037] [DEBUG] default - Original URL:  /backend/class/delete/CC at <anonymous> (app.js:95:7)
+[2019-07-22T14:55:44.040] [DEBUG] default - Method:  DELETE at <anonymous> (app.js:96:7)
+[2019-07-22T14:55:44.044] [DEBUG] default - Path params:  {} at <anonymous> (app.js:97:7)
+[2019-07-22T14:55:44.047] [DEBUG] default - Query params:  {} at <anonymous> (app.js:98:7)
+[2019-07-22T14:55:44.049] [DEBUG] default -  ==== End request information ====  at <anonymous> (app.js:99:7)
