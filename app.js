@@ -19,7 +19,7 @@ const emailRouter = require ('./routes/email');
 const config = require('config');
 const app = express();
 
-mongoDB.clientConnect();
+//mongoDB.clientConnect();
 
 app.use(cors());
 app.use(bodyParser());
