@@ -22,7 +22,7 @@ const sendEmail = (req, res) => {
   const mailOptions = {
     'from': `${req.body.email}`,
     'to': `${emailConfig.username}`,
-    'subject': `Yêu cầu mở tài khoản cho anh/chị GLV / Quý sơ/thầy: ${req.body.holyName} ${req.body.firstName} ${req.body.lastName}`,
+    'subject': `${req.body.subject}`,
     'text': req.body.text
   };
 
