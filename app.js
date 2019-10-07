@@ -1,10 +1,10 @@
 /* eslint-disable no-prototype-builtins */
 'use strict';
 
-const cors = require('cors');
 const log4js = require ('log4js');
 const log4jsExtend = require ('log4js-extend');
 const express = require ('express');
+const cors = require('cors');
 const bodyParser = require ('body-parser');
 const httpStatusCodes = require ('http-status-codes');
 
@@ -19,7 +19,7 @@ const emailRouter = require ('./routes/email');
 const config = require('config');
 const app = express();
 
-//mongoDB.clientConnect();
+// mongoDB.clientConnect();
 
 app.use(cors());
 app.use(bodyParser());
