@@ -12,14 +12,14 @@ const resultDto = require ('./common/dto/result');
 const messageCodes = require ('./common/message-codes');
 
 const mongoDB = require ('./models/index');
-const listingsAndReviewsRouter = require ('./routes/listingsAndReviews');
 const demoRouter = require ('./routes/demo');
 const emailRouter = require ('./routes/email');
+const userRouter = require('./routes/user');
 
 const config = require('config');
 const app = express();
 
-// mongoDB.clientConnect();
+mongoDB.clientConnect();
 
 app.use(cors());
 app.use(bodyParser());
@@ -82,8 +82,8 @@ app.use((req, res, next) => {
 });
 
 app.use(BASE_URL + '/demo', demoRouter);
-app.use(BASE_URL + '/listings-and-reviews', listingsAndReviewsRouter);
 app.use(BASE_URL + '/email', emailRouter);
+app.use(BASE_URL + '/user', userRouter);
 
 // Catch 404 error
 app.use((req, res, next) => {

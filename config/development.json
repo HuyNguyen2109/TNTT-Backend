@@ -15,6 +15,13 @@
     "dbName": "sample_airbnb",
     "collectionName": "listingsAndReviews"
   },
+  "dbConfigLocal": {
+    "protocol": "mongodb",
+    "server": "localhost:27017",
+    "username": "TNTT-Admin",
+    "password": "Password",
+    "dbName": "TNTT"
+  },
   "dbTargetConfig": {
     "dbName": "NodeJSWithMongo",
     "collectionName": "MyCollections"
