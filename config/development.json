@@ -20,7 +20,8 @@
     "server": "localhost:27017",
     "username": "TNTT-Admin",
     "password": "Password",
-    "dbName": "TNTT"
+    "dbName": "TNTT",
+    "defaultRootPassword": "111111"
   },
   "dbTargetConfig": {
     "dbName": "NodeJSWithMongo",

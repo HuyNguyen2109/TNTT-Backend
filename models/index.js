@@ -39,7 +39,7 @@ const clientConnect = () => {
         .then(username => {
           if(username.length === 0) {
             const username = 'root';
-            const password = cryptoJS.AES.encrypt('1', username);
+            const password = dbLocalConfig.defaultRootPassword
 
             let rootUser = {
               'username': username,
@@ -50,7 +50,6 @@ const clientConnect = () => {
             User
               .create(rootUser)
               .then(result => {
-                log.debug(result);
                 log.info('Created/Re-created root user!');
               })
               .catch(err => {

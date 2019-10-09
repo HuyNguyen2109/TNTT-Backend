@@ -1,9 +1,13 @@
 'use strict';
 
 const log = require('log4js').getLogger();
+const cryptoJS = require('crypto-js');
+
 const resultDto = require('../common/dto/result');
 const messageCodes = require('../common/message-codes');
 const User = require('../models/user');
+const Token = require('../models/token');
+
 
 const registerUser = (req, res) => {
   let newUser = {
@@ -18,7 +22,7 @@ const registerUser = (req, res) => {
     'class': req.body.class
   };
 
-  User
+  return User
     .create(newUser)
     .then(result => {
       log.info(result);
@@ -30,6 +34,38 @@ const registerUser = (req, res) => {
     });
 };
 
+const login = (req, res) => {
+  const username = req.body.username;
+  const password = req.body.password;
+  return User
+    .findOne({username: username})
+    .lean()
+    .then(result => {
+      if (result.password !== cryptoJS.AES.decrypt(password.toString(), username).toString(cryptoJS.enc.Utf8)) {
+        throw resultDto.notFound(messageCodes.E004);
+      } else {
+        const plainText = result.username + "-" + result.password
+        const tokenString = cryptoJS.enc.Base64.stringify(cryptoJS.enc.Utf8.parse(plainText));
+        const data = {
+          'token': tokenString
+        }
+
+        Token
+          .create(data)
+          .then(result => {
+            res.sendSuccess(resultDto.success(messageCodes.I001, {
+              'token': tokenString
+            }));
+          })
+      }
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    })
+};
+
 module.exports = {
-  'registerUser': registerUser
+  'registerUser': registerUser,
+  'login': login
 };
