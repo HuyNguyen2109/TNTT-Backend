@@ -39,7 +39,7 @@ const clientConnect = () => {
         .then(username => {
           if(username.length === 0) {
             const username = 'root';
-            const password = dbLocalConfig.defaultRootPassword
+            const password = dbLocalConfig.defaultRootPassword;
 
             let rootUser = {
               'username': username,
