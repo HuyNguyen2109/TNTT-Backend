@@ -16,6 +16,7 @@ const registerUser = (req, res) => {
     'email': req.body.email,
     'holyname': req.body.holyname,
     'fullname': req.body.fullname,
+    'phone_number': req.body.phoneNumber, 
     'birthday': req.body.birthday,
     'holy_birthday': req.body.holyBirthday,
     'type': req.body.type,
@@ -42,7 +43,7 @@ const login = (req, res) => {
     .findOne({'username': username})
     .lean()
     .then(result => {
-      if (result.password !== cryptoJS.AES.decrypt(password.toString(), username).toString(cryptoJS.enc.Utf8)) {
+      if (!result || result.password !== cryptoJS.AES.decrypt(password.toString(), username).toString(cryptoJS.enc.Utf8)) {
         throw resultDto.notFound(messageCodes.E004);
       } else {
         const plainText = result.username + '-' + result.password;
@@ -75,6 +76,7 @@ const updateUser = (req, res) => {
     'holyname': req.body.holyname,
     'fullname': req.body.fullname,
     'birthday': req.body.birthday,
+    'phone_number': req.body.phoneNumber, 
     'holy_birthday': req.body.holyBirthday,
     'type': req.body.type,
     'class': req.body.class
@@ -91,8 +93,24 @@ const updateUser = (req, res) => {
     });
 };
 
+const getUser = (req, res) => {
+  const username = req.params.username;
+  
+  return User
+    .findOne({'username': username})
+    .lean()
+    .then(result => {
+      res.sendSuccess(resultDto.success(messageCodes.I001, result));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    })
+}
+
 module.exports = {
   'registerUser': registerUser,
   'login': login,
-  'updateUser': updateUser
+  'updateUser': updateUser,
+  'getUser': getUser
 };

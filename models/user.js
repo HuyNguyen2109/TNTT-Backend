@@ -9,6 +9,7 @@ const userSchema = new Schema({
   'email': String,
   'holyname': String,
   'fullname': String,
+  'phone_number': String,
   'birthday': String,
   'holy_birthday': String,
   'type': String,
