@@ -100,6 +100,7 @@ const getUser = (req, res) => {
     .findOne({'username': username})
     .lean()
     .then(result => {
+      delete result.password;
       res.sendSuccess(resultDto.success(messageCodes.I001, result));
     })
     .catch(err => {

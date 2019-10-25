@@ -55,6 +55,28 @@ const clientConnect = () => {
               .catch(err => {
                 log.error(err);
               });
+
+            // This below block-code is temporary for development purpose
+            const adminUser = {
+              "birthday" : "1996-09-21",
+              "class" : "Bao Dong 1A",
+              "fullname" : "Nguyen Nhut Huy",
+              "holy_birthday" : "1996-06-29",
+              "holyname" : "Phero",
+              "password" : "111111",
+              "phone_number" : "0389423079",
+              "type" : "admin",
+              "username" : "admin",
+              "email" : "JohnasHuy2109@outlook.com"
+            }
+            User
+              .create(adminUser)
+              .then(result => {
+                log.info('Created/Re-created admin user!');
+              })
+              .catch(err => {
+                log.error(err);
+              })
           }
         })
         .catch(error => {
