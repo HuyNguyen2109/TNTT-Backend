@@ -71,20 +71,16 @@ const login = (req, res) => {
 const updateUser = (req, res) => {
   const username = req.body.username;
   const updateUser = {
-    'password': req.body.password,
-    'email': req.body.email,
-    'holyname': req.body.holyname,
-    'fullname': req.body.fullname,
-    'birthday': req.body.birthday,
-    'phone_number': req.body.phoneNumber, 
-    'holy_birthday': req.body.holyBirthday,
-    'type': req.body.type,
-    'class': req.body.class
+    'username': req.body.username,
+    'content': req.body.content
   };
+  if(updateUser.content.hasOwnProperty('password')) {
+    updateUser.content.password = cryptoJS.AES.decrypt(updateUser.content.password.toString(), updateUser.username).toString(cryptoJS.enc.Utf8)
+  }
   User
-    .findOneAndUpdate({'username': username}, {'$set': updateUser})
+    .findOneAndUpdate({'username': username}, {'$set': updateUser.content})
     .then(result => {
-      log.info(result);
+      log.info(`Received Data!!!`);
       res.sendSuccess(resultDto.success(messageCodes.I001));
     })
     .catch(err => {
