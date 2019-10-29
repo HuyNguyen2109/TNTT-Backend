@@ -35,6 +35,28 @@ const registerUser = (req, res) => {
     });
 };
 
+const generateToken = (req, res) => {
+  const username = req.body.username;
+  const password = req.body.password;
+  const data = {
+    'username': username,
+    'token': cryptoJS.enc.Base64.stringify(cryptoJS.enc.Utf8.parse(username + '-' + password))
+  }
+
+  return Token
+    .create(data)
+    .then(result => {
+      log.info(`Token created! ${result}`);
+      res.sendSuccess(resultDto.success(messageCodes.I001, {
+        'token': data.token
+      }));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    })
+}
+
 const login = (req, res) => {
   const username = req.body.username;
   const password = req.body.password;
@@ -46,20 +68,7 @@ const login = (req, res) => {
       if (!result || result.password !== cryptoJS.AES.decrypt(password.toString(), username).toString(cryptoJS.enc.Utf8)) {
         throw resultDto.notFound(messageCodes.E004);
       } else {
-        const plainText = result.username + '-' + result.password;
-        const tokenString = cryptoJS.enc.Base64.stringify(cryptoJS.enc.Utf8.parse(plainText));
-        const data = {
-          'token': tokenString
-        };
-
-        Token
-          .create(data)
-          .then(result => {
-            log.info(`Token created! ${result}`);
-            res.sendSuccess(resultDto.success(messageCodes.I001, {
-              'token': tokenString
-            }));
-          });
+        res.sendSuccess(resultDto.success(messageCodes.I001));        
       }
     })
     .catch(err => {
@@ -109,5 +118,6 @@ module.exports = {
   'registerUser': registerUser,
   'login': login,
   'updateUser': updateUser,
-  'getUser': getUser
+  'getUser': getUser,
+  'generateToken': generateToken
 };

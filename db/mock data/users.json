@@ -1,21 +1,3 @@
-{
-	"__v" : NumberInt(0),
-	"_id" : ObjectId("5d9e00e5244bab57870187e0"),
-	"fullname" : "Root User",
-	"password" : "111111",
-	"type" : "root",
-	"username" : "root"
-},
-{
-	"__v" : NumberInt(0),
-	"_id" : ObjectId("5da91f6b31b0a62e9e97fbc8"),
-	"birthday" : "1996-09-21",
-	"class" : "Bao Dong 1A",
-	"fullname" : "Nguyen Nhut Huy",
-	"holy_birthday" : "1996-06-29",
-	"holyname" : "Phero",
-	"password" : "111111",
-	"phone_number" : "0389423079",
-	"type" : "admin",
-	"username" : "admin"
-},
+{"_id":{"$oid":"5db45446ca66931ca4492f95"},"username":"root","password":"111111","fullname":"Root User","type":"root","__v":0}
+{"_id":{"$oid":"5db4611f69b62c20a2eb911b"},"birthday":"","class":"","fullname":"","holy_birthday":"","holyname":"","password":"111111","phone_number":"","type":"admin","username":"user","email":"","__v":0}
+{"_id":{"$oid":"5db7ecd06eac8b4be5366c85"},"birthday":"1996-09-21","class":"Bao Đồng 1A","fullname":"Nguyễn Nhựt Huy","holy_birthday":"1996-06-29","holyname":"Phêrô","password":"111111","phone_number":"0389423079","type":"Admin","username":"admin","email":"JohnasHuy2109@outlook.com","__v":0}

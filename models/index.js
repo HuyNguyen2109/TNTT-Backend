@@ -63,13 +63,13 @@ const clientConnect = () => {
       // This below block-code is temporary for development purpose
       const adminUser = {
         "birthday" : "1996-09-21",
-        "class" : "Bao Dong 1A",
-        "fullname" : "Nguyen Nhut Huy",
+        "class" : "Bao Đồng 1A",
+        "fullname" : "Nguyễn Nhựt Huy",
         "holy_birthday" : "1996-06-29",
-        "holyname" : "Phero",
+        "holyname" : "Phêrô",
         "password" : "111111",
         "phone_number" : "0389423079",
-        "type" : "admin",
+        "type" : "Admin",
         "username" : "admin",
         "email" : "JohnasHuy2109@outlook.com"
       }

@@ -12,4 +12,6 @@ router.post('/update', userController.updateUser);
 
 router.get('/get-user/:username', userController.getUser);
 
+router.post('/token', userController.generateToken);
+
 module.exports = router;
