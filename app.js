@@ -15,6 +15,7 @@ const mongoDB = require ('./models/index');
 const demoRouter = require ('./routes/demo');
 const emailRouter = require ('./routes/email');
 const userRouter = require('./routes/user');
+const childrenRouter = require('./routes/children');
 
 const config = require('config');
 const app = express();
@@ -84,6 +85,7 @@ app.use((req, res, next) => {
 app.use(BASE_URL + '/demo', demoRouter);
 app.use(BASE_URL + '/email', emailRouter);
 app.use(BASE_URL + '/user', userRouter);
+app.use(BASE_URL + '/children', childrenRouter);
 
 // Catch 404 error
 app.use((req, res, next) => {

@@ -16,7 +16,7 @@ const registerUser = (req, res) => {
     'email': req.body.email,
     'holyname': req.body.holyname,
     'fullname': req.body.fullname,
-    'phone_number': req.body.phoneNumber, 
+    'phone_number': req.body.phoneNumber,
     'birthday': req.body.birthday,
     'holy_birthday': req.body.holyBirthday,
     'type': req.body.type,
@@ -41,7 +41,7 @@ const generateToken = (req, res) => {
   const data = {
     'username': username,
     'token': cryptoJS.enc.Base64.stringify(cryptoJS.enc.Utf8.parse(username + '-' + password))
-  }
+  };
 
   return Token
     .create(data)
@@ -54,8 +54,8 @@ const generateToken = (req, res) => {
     .catch(err => {
       log.error(err);
       res.sendError(err);
-    })
-}
+    });
+};
 
 const login = (req, res) => {
   const username = req.body.username;
@@ -68,7 +68,7 @@ const login = (req, res) => {
       if (!result || result.password !== cryptoJS.AES.decrypt(password.toString(), username).toString(cryptoJS.enc.Utf8)) {
         throw resultDto.notFound(messageCodes.E004);
       } else {
-        res.sendSuccess(resultDto.success(messageCodes.I001));        
+        res.sendSuccess(resultDto.success(messageCodes.I001));
       }
     })
     .catch(err => {
@@ -83,13 +83,15 @@ const updateUser = (req, res) => {
     'username': req.body.username,
     'content': req.body.content
   };
+  // eslint-disable-next-line no-prototype-builtins
   if(updateUser.content.hasOwnProperty('password')) {
-    updateUser.content.password = cryptoJS.AES.decrypt(updateUser.content.password.toString(), updateUser.username).toString(cryptoJS.enc.Utf8)
+    // eslint-disable-next-line max-len
+    updateUser.content.password = cryptoJS.AES.decrypt(updateUser.content.password.toString(), updateUser.username).toString(cryptoJS.enc.Utf8);
   }
   User
     .findOneAndUpdate({'username': username}, {'$set': updateUser.content})
-    .then(result => {
-      log.info(`Received Data!!!`);
+    .then(() => {
+      log.info('Received Data!!!');
       res.sendSuccess(resultDto.success(messageCodes.I001));
     })
     .catch(err => {
@@ -100,7 +102,7 @@ const updateUser = (req, res) => {
 
 const getUser = (req, res) => {
   const username = req.params.username;
-  
+
   return User
     .findOne({'username': username})
     .lean()
@@ -111,8 +113,8 @@ const getUser = (req, res) => {
     .catch(err => {
       log.error(err);
       res.sendError(err);
-    })
-}
+    });
+};
 
 module.exports = {
   'registerUser': registerUser,
