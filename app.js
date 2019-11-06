@@ -16,6 +16,7 @@ const demoRouter = require ('./routes/demo');
 const emailRouter = require ('./routes/email');
 const userRouter = require('./routes/user');
 const childrenRouter = require('./routes/children');
+const classRouter = require('./routes/class');
 
 const config = require('config');
 const app = express();
@@ -86,6 +87,7 @@ app.use(BASE_URL + '/demo', demoRouter);
 app.use(BASE_URL + '/email', emailRouter);
 app.use(BASE_URL + '/user', userRouter);
 app.use(BASE_URL + '/children', childrenRouter);
+app.use(BASE_URL + '/class', classRouter);
 
 // Catch 404 error
 app.use((req, res, next) => {

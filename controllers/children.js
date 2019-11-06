@@ -4,12 +4,13 @@ const Children = require('../models/children');
 
 const WithPagination = (req, res) => {
   const itemPerPage = parseInt(req.query.itemPerPage);
-  const page = Math.max(0, req.params.page);
+  const page = Math.max(0, parseInt(req.params.page));
+  const classes = req.query.class;
 
   return Children
-    .find({})
+    .find((classes === 'all')? {} : {'class': classes})
     .limit(itemPerPage)
-    .skip(itemPerPage * (page-1))
+    .skip(itemPerPage * (page))
     .lean()
     .then((records) => {
       if(!records) {
@@ -23,6 +24,19 @@ const WithPagination = (req, res) => {
     });
 };
 
+const countDocument = (req, res) => {
+  return Children
+    .countDocuments()
+    .then(result => {
+      res.sendSuccess(resultDto.success(messageCodes.I001, result));
+    })
+    .catch(err => {
+      res.sendError(err)
+      log.error(err);
+    })
+}
+
 module.exports = {
-  'WithPagination': WithPagination
+  'WithPagination': WithPagination,
+  'countDocument': countDocument
 };

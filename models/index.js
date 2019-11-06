@@ -6,6 +6,7 @@ const log = require('log4js').getLogger();
 const cryptoJS = require('crypto-js');
 
 const User = require('./user');
+const Class = require('./classes');
 
 const clientConnect = () => {
   /* Connection for Mongodb Atlas */
@@ -85,6 +86,20 @@ const clientConnect = () => {
         })
         .catch(err => {
           log.error(err);
+        })
+      Class
+        .findOneAndDelete({'ID': 'Chung'})
+        .then(result => {
+          log.info('Resetted!')
+        })
+      Class
+        .create({
+          'ID': 'Chung',
+          'value': '',
+          'path': '/dashboard/all'
+        })
+        .then(result => {
+          log.info('Created/Re-created class!');
         })
     })
     .catch(err => {
