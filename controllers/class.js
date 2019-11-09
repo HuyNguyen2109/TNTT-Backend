@@ -15,6 +15,21 @@ const getAllClasses = (req, res) => {
   });
 };
 
+const getByPath = (req, res) => {
+  const pathname = req.query.path;
+
+  return Class
+    .find({'path': pathname})
+    .then(result => {
+      res.sendSuccess(resultDto.success(messageCodes.I001, result));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
+
 module.exports = {
-  'getAllClasses': getAllClasses
-}
+  'getAllClasses': getAllClasses,
+  'getByPath': getByPath
+};

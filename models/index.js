@@ -88,16 +88,20 @@ const clientConnect = () => {
           log.error(err);
         })
       Class
-        .findOneAndDelete({'ID': 'Chung'})
+        .deleteMany({})
         .then(result => {
           log.info('Resetted!')
         })
       Class
-        .create({
-          'ID': 'Chung',
-          'value': '',
+        .create([{
+          'ID': 'all',
+          'Value': 'Chung',
           'path': '/dashboard/all'
-        })
+        }, {
+          'ID': 'CC',
+          'Value': 'Chiên Con',
+          'path': '/dashboard/cc'
+        }])
         .then(result => {
           log.info('Created/Re-created class!');
         })

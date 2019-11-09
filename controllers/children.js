@@ -25,8 +25,9 @@ const WithPagination = (req, res) => {
 };
 
 const countDocument = (req, res) => {
+  const condition = req.query.condition;
   return Children
-    .countDocuments()
+    .countDocuments((condition === 'all')? {}: {'class': condition})
     .then(result => {
       res.sendSuccess(resultDto.success(messageCodes.I001, result));
     })

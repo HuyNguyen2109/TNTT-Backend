@@ -6,4 +6,6 @@ const classController = require('../controllers/class');
 
 router.get('/all', classController.getAllClasses);
 
+router.get('/by-path', classController.getByPath);
+
 module.exports = router;
