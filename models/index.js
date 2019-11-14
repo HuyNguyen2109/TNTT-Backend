@@ -100,7 +100,7 @@ const clientConnect = () => {
         }, {
           'ID': 'CC',
           'Value': 'Chiên Con',
-          'path': '/dashboard/cc'
+          'path': '/dashboard/CC'
         }])
         .then(result => {
           log.info('Created/Re-created class!');

@@ -26,16 +26,17 @@ const WithPagination = (req, res) => {
 
 const countDocument = (req, res) => {
   const condition = req.query.condition;
+
   return Children
     .countDocuments((condition === 'all')? {}: {'class': condition})
     .then(result => {
       res.sendSuccess(resultDto.success(messageCodes.I001, result));
     })
     .catch(err => {
-      res.sendError(err)
+      res.sendError(err);
       log.error(err);
-    })
-}
+    });
+};
 
 module.exports = {
   'WithPagination': WithPagination,
