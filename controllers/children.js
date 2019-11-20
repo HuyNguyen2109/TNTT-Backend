@@ -38,7 +38,36 @@ const countDocument = (req, res) => {
     });
 };
 
+const search = (req, res) => {
+  const searchQuery = `.*${req.query.search}.*`;
+
+  return Children
+    .find({
+      $and: [
+        {
+          $or: [
+            { firstname: { $regex: searchQuery} },
+            { lastname: { $regex: searchQuery} },
+            { father_name: { $regex: searchQuery} },
+            { mother_name: { $regex: searchQuery} },
+            { diocese: { $regex: searchQuery} },
+            { adress: { $regex: searchQuery} },
+            { contact: { $regex: searchQuery} },
+          ]
+        }
+      ]
+    })
+    .then(result => {
+      res.sendSuccess(resultDto.success(messageCodes.I001, result));
+    })
+    .catch(err => {
+      res.sendError(err);
+      log.error(err);
+    });
+}
+
 module.exports = {
   'WithPagination': WithPagination,
-  'countDocument': countDocument
+  'countDocument': countDocument,
+  'search': search
 };
