@@ -10,4 +10,6 @@ router.get('/count', childrenController.countDocument);
 
 router.get('/find', childrenController.search);
 
+router.get('/all', childrenController.findAll);
+
 module.exports = router;

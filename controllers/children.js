@@ -24,6 +24,20 @@ const WithPagination = (req, res) => {
     });
 };
 
+const findAll = (req, res) => {
+  const classes = req.query.class;
+
+  return Children
+  .find((classes === 'all')? {} : {'class': classes})
+  .then(result => {
+    res.sendSuccess(resultDto.success(messageCodes.I001, result));
+  })
+  .catch(err => {
+    res.sendError(err);
+    log.error(err);
+  });
+}
+
 const countDocument = (req, res) => {
   const condition = req.query.condition;
 
@@ -69,5 +83,6 @@ const search = (req, res) => {
 module.exports = {
   'WithPagination': WithPagination,
   'countDocument': countDocument,
-  'search': search
+  'search': search,
+  'findAll': findAll
 };
