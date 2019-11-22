@@ -5,8 +5,7 @@ const Schema = mongoose.Schema;
 
 const childrenScema = new Schema({
   'ID': Number,
-  'firstname': String,
-  'lastname': String,
+  'name': String,
   'father_name': String,
   'mother_name': String,
   'diocese': String,
