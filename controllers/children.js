@@ -9,17 +9,53 @@ const capitalizeWord = (text) => {
     // Assign it back to the array
     splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
   }
+
   // Directly return the joined string
   return splitStr.join(' ');
-}
+};
 
 const WithPagination = (req, res) => {
   const itemPerPage = parseInt(req.query.itemPerPage);
   const page = Math.max(0, parseInt(req.params.page));
+  const search = req.query.search;
   const classes = req.query.class;
 
+  let searchQueryUpperCase;
+  let searchQueryLowerCase;
+  let searchQueryCapitalize;
+
+  if (search !== undefined) {
+    searchQueryUpperCase = req.query.search.toUpperCase();
+    searchQueryLowerCase = req.query.search.toLowerCase();
+    searchQueryCapitalize = capitalizeWord(req.query.search);
+  }
+
+
   return Children
-    .find((classes === 'all') ? {} : { 'class': classes })
+    .find((search === undefined) ?
+      ((classes === 'all') ? {} : { 'class': classes }) :
+      (classes === 'all') ? {
+        '$and': [
+          {
+            '$or': [
+              { 'name': { '$regex': searchQueryUpperCase } },
+              { 'name': { '$regex': searchQueryLowerCase } },
+              { 'name': { '$regex': searchQueryCapitalize } }
+            ]
+          }
+        ]
+      } : {
+        '$and': [
+          {
+            '$or': [
+              { 'name': { '$regex': searchQueryUpperCase } },
+              { 'name': { '$regex': searchQueryLowerCase } },
+              { 'name': { '$regex': searchQueryCapitalize } }
+            ]
+          },
+          { 'class': classes }
+        ]
+      })
     .limit(itemPerPage)
     .skip(itemPerPage * (page))
     .lean()
@@ -35,20 +71,6 @@ const WithPagination = (req, res) => {
     });
 };
 
-const findAll = (req, res) => {
-  const classes = req.query.class;
-
-  return Children
-    .find((classes === 'all') ? {} : { 'class': classes })
-    .then(result => {
-      res.sendSuccess(resultDto.success(messageCodes.I001, result));
-    })
-    .catch(err => {
-      res.sendError(err);
-      log.error(err);
-    });
-}
-
 const countDocument = (req, res) => {
   const condition = req.query.condition;
 
@@ -63,34 +85,7 @@ const countDocument = (req, res) => {
     });
 };
 
-const search = (req, res) => {
-  const searchQueryUpperCase = req.query.search.toUpperCase();
-  const searchQueryLowerCase = req.query.search.toLowerCase();
-  const searchQueryCapitalize = capitalizeWord(req.query.search);
-  return Children
-    .find({
-      $and: [
-        {
-          $or: [
-            { name: { $regex: searchQueryUpperCase } },
-            { name: { $regex: searchQueryLowerCase } },
-            { name: { $regex: searchQueryCapitalize } },
-          ]
-        }
-      ]
-    })
-    .then(result => {
-      res.sendSuccess(resultDto.success(messageCodes.I001, result));
-    })
-    .catch(err => {
-      res.sendError(err);
-      log.error(err);
-    });
-}
-
 module.exports = {
   'WithPagination': WithPagination,
-  'countDocument': countDocument,
-  'search': search,
-  'findAll': findAll
+  'countDocument': countDocument
 };
