@@ -85,7 +85,24 @@ const countDocument = (req, res) => {
     });
 };
 
+const exportData = (req, res) => {
+  return Children
+    .find({})
+    .lean()
+    .then((records) => {
+      if (!records) {
+        throw resultDto.notFound(messageCodes.E004);
+      }
+      res.sendSuccess(resultDto.success(messageCodes.I001, records));
+    })
+    .catch((err) => {
+      res.sendError(err);
+      log.error('Problem when retreiving data: ', err);
+    });
+};
+
 module.exports = {
   'WithPagination': WithPagination,
-  'countDocument': countDocument
+  'countDocument': countDocument,
+  'exportData': exportData
 };

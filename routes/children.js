@@ -8,4 +8,6 @@ router.get('/all/:page', childrenController.WithPagination);
 
 router.get('/count', childrenController.countDocument);
 
+router.get('/export', childrenController.exportData);
+
 module.exports = router;
