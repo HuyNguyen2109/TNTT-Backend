@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const childrenScema = new Schema({
-  'ID': Number,
+  'ID': String,
   'name': String,
   'father_name': String,
   'mother_name': String,
@@ -13,9 +13,9 @@ const childrenScema = new Schema({
   'female': String,
   'class': String,
   'birthday': String,
-  'day_of_Baptism': String,
-  'day_of_Eucharist': String,
-  'day_of_Confirmation': String,
+  'day_of_baptism': String,
+  'day_of_eucharist': String,
+  'day_of_confirmation': String,
   'address': String,
   'contact': String
 });

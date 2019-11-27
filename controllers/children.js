@@ -2,6 +2,9 @@ const resultDto = require('../common/dto/result');
 const messageCodes = require('../common/message-codes');
 const Children = require('../models/children');
 
+const moment = require('moment');
+const csv = require('csv-express');
+
 const capitalizeWord = (text) => {
   var splitStr = text.toLowerCase().split(' ');
   for (var i = 0; i < splitStr.length; i++) {
@@ -93,7 +96,26 @@ const exportData = (req, res) => {
       if (!records) {
         throw resultDto.notFound(messageCodes.E004);
       }
-      res.sendSuccess(resultDto.success(messageCodes.I001, records));
+      // const fields = {
+      //   'ID': 'ID',
+      //   'name': 'name',
+      //   'father_name': 'father_name',
+      //   'mother_name': 'mother_name',
+      //   'diocese': 'diocese',
+      //   'male': 'male',
+      //   'female': 'female',
+      //   'class': 'class',
+      //   'birthday': 'birthday',
+      //   'day_of_baptism': 'day_of_baptism',
+      //   'day_of_eucharist': 'day_of_eucharist',
+      //   'day_of_confirmation': 'day_of_confirmation',
+      //   'address': 'address',
+      //   'contact': 'contact'
+      // };
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'text/csv');
+      res.setHeader('Content-Disposition', `attachment; filename=${moment().format()}.csv`);
+      res.csv(records, true);
     })
     .catch((err) => {
       res.sendError(err);
