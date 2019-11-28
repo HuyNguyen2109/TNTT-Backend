@@ -7,6 +7,7 @@ const express = require ('express');
 const cors = require('cors');
 const bodyParser = require ('body-parser');
 const httpStatusCodes = require ('http-status-codes');
+const multer = require('multer');
 
 const resultDto = require ('./common/dto/result');
 const messageCodes = require ('./common/message-codes');
@@ -22,6 +23,14 @@ const config = require('config');
 const app = express();
 
 mongoDB.clientConnect();
+
+const storage = multer.diskStorage({
+  'destination': (req, file, cb) => {
+    cb(null, 'public/restored');
+  }
+});
+
+const upload = multer({'storage': storage}).any();
 
 app.use(cors());
 app.use(bodyParser());
@@ -81,6 +90,17 @@ app.use((req, res, next) => {
   log.debug(' ==== End request information ==== ');
 
   next();
+});
+
+app.use((req, res, next) => {
+  upload(req, res, (err) => {
+    if (err) {
+      log.debug('Upload file failed. Error: ', err);
+
+      return res.sendError(err);
+    }
+    next();
+  });
 });
 
 app.use(BASE_URL + '/demo', demoRouter);

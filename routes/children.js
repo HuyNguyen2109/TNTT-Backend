@@ -10,4 +10,6 @@ router.get('/count', childrenController.countDocument);
 
 router.get('/export', childrenController.exportData);
 
+router.post('/restore', childrenController.restoreData);
+
 module.exports = router;

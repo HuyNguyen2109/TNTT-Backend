@@ -1,3 +1,7 @@
+const fs = require('fs');
+const csv = require('csv-parser');
+const log = require('log4js').getLogger();
+
 const resultDto = require('../common/dto/result');
 const messageCodes = require('../common/message-codes');
 const Children = require('../models/children');
@@ -104,9 +108,8 @@ const exportData = (req, res) => {
       });
       let csv = '';
       const headers = Object.keys(records[0]).join(';');
-      const values = records.map(o => {
-        Object.values(o).join(';');
-      }).join('\n');
+      // eslint-disable-next-line arrow-body-style
+      const values = records.map(o => Object.values(o).join(';')).join('\n');
       csv += headers + '\n' + values;
       res.setHeader('Content-Type', 'text/csv');
       res.sendSuccess(resultDto.success(messageCodes.I001, csv));
@@ -117,8 +120,39 @@ const exportData = (req, res) => {
     });
 };
 
+const restoreData = (req, res) => {
+  const restoredFile = req.files[0];
+  console.log(restoredFile);
+  const filePath = restoredFile.path;
+  let results = [];
+  fs.createReadStream(filePath)
+    .pipe(csv({ 'separator': ';' }))
+    // eslint-disable-next-line arrow-body-style
+    .on('data', (data) => results.push(data))
+    .on('end', () => {
+      Children
+        .deleteMany({})
+        .then(o => {
+          log.info(o);
+        })
+        .then(() => {
+          Children.
+            insertMany(results);
+        })
+        .then(result => {
+          log.info(result);
+          res.sendSuccess(resultDto.success(messageCodes.I001));
+        })
+        .catch(err => {
+          log.error(err);
+          res.sendError(err);
+        });
+    });
+};
+
 module.exports = {
   'WithPagination': WithPagination,
   'countDocument': countDocument,
-  'exportData': exportData
+  'exportData': exportData,
+  'restoreData': restoreData
 };
