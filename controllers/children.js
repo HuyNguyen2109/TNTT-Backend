@@ -122,7 +122,6 @@ const exportData = (req, res) => {
 
 const restoreData = (req, res) => {
   const restoredFile = req.files[0];
-  console.log(restoredFile);
   const filePath = restoredFile.path;
   let results = [];
   fs.createReadStream(filePath)
@@ -150,9 +149,25 @@ const restoreData = (req, res) => {
     });
 };
 
+const deleteByName = (req, res) => {
+  const childrenName = req.query.name;
+  console.log(childrenName);
+
+  return Children
+    .deleteOne({ 'name': childrenName })
+    .then(o => {
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
+
 module.exports = {
   'WithPagination': WithPagination,
   'countDocument': countDocument,
   'exportData': exportData,
-  'restoreData': restoreData
+  'restoreData': restoreData,
+  'deleteByName': deleteByName
 };
