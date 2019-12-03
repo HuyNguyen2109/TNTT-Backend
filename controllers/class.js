@@ -4,15 +4,15 @@ const Class = require('../models/classes');
 
 const getAllClasses = (req, res) => {
   return Class
-  .find({})
-  .lean()
-  .then(result => {
-    res.sendSuccess(resultDto.success(messageCodes.I001, result));
-  })
-  .catch(err => {
-    log.error(err);
-    res.sendError(err);
-  });
+    .find({})
+    .lean()
+    .then(result => {
+      res.sendSuccess(resultDto.success(messageCodes.I001, result));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
 };
 
 const getByPath = (req, res) => {
@@ -29,7 +29,23 @@ const getByPath = (req, res) => {
     });
 };
 
+const getByID = (req, res) => {
+  const classID = req.params.id;
+
+  return Class
+    .find({'ID': classID})
+    .then(result => {
+      console.log(result);
+      res.sendSuccess(resultDto.success(messageCodes.I001, result));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+}
+
 module.exports = {
   'getAllClasses': getAllClasses,
-  'getByPath': getByPath
+  'getByPath': getByPath,
+  'getByID': getByID
 };

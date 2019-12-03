@@ -8,4 +8,6 @@ router.get('/all', classController.getAllClasses);
 
 router.get('/by-path', classController.getByPath);
 
+router.get('/by-id/:id', classController.getByID);
+
 module.exports = router;

@@ -167,10 +167,25 @@ const deleteByNames = (req, res) => {
     });
 };
 
+const getByName = (req, res) => {
+  const childredNames = req.params.name;
+
+  return Children
+    .find({'name': childredNames})
+    .then(o => {
+      res.sendSuccess(resultDto.success(messageCodes.I001, o));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
+
 module.exports = {
   'WithPagination': WithPagination,
   'countDocument': countDocument,
   'exportData': exportData,
   'restoreData': restoreData,
-  'deleteByNames': deleteByNames
+  'deleteByNames': deleteByNames,
+  'getByName': getByName
 };
