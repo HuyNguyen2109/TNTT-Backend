@@ -152,26 +152,13 @@ const restoreData = (req, res) => {
     });
 };
 
-const deleteByName = (req, res) => {
-  const childrenName = req.query.name;
-
-  return Children
-    .deleteOne({ 'name': childrenName })
-    .then(o => {
-      res.sendSuccess(resultDto.success(messageCodes.I001));
-    })
-    .catch(err => {
-      log.error(err);
-      res.sendError(err);
-    });
-};
-
 const deleteByNames = (req, res) => {
   const childrenNames = req.query.names;
 
   return Children
     .deleteMany({ 'name': {'$in': childrenNames}})
     .then(o => {
+      log.info(o);
       res.sendSuccess(resultDto.success(messageCodes.I001));
     })
     .catch(err => {
@@ -185,6 +172,5 @@ module.exports = {
   'countDocument': countDocument,
   'exportData': exportData,
   'restoreData': restoreData,
-  'deleteByName': deleteByName,
   'deleteByNames': deleteByNames
 };

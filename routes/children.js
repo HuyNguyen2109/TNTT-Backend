@@ -12,8 +12,6 @@ router.get('/export', childrenController.exportData);
 
 router.post('/restore', childrenController.restoreData);
 
-router.delete('/delete/by-name', childrenController.deleteByName);
-
 router.delete('/delete/by-names', childrenController.deleteByNames);
 
 module.exports = router;
