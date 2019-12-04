@@ -31,7 +31,8 @@ const clientConnect = () => {
   const connnectionString = `${dbLocalConfig.protocol}://${dbLocalConfig.server}/${dbLocalConfig.dbName}`;
   mongoose.connect(connnectionString, {
     'useNewUrlParser': true,
-    'useUnifiedTopology': true
+    'useUnifiedTopology': true,
+    'useFindAndModify': false,
   })
     .then(client => {
       log.info(`Connection to database ${dbLocalConfig.dbName} has been established`);

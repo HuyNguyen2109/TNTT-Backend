@@ -49,17 +49,17 @@ const WithPagination = (req, res) => {
           }
         ]
       } : {
-        '$and': [
-          {
-            '$or': [
-              { 'name': { '$regex': searchQueryUpperCase } },
-              { 'name': { '$regex': searchQueryLowerCase } },
-              { 'name': { '$regex': searchQueryCapitalize } }
-            ]
-          },
-          { 'class': classes }
-        ]
-      })
+          '$and': [
+            {
+              '$or': [
+                { 'name': { '$regex': searchQueryUpperCase } },
+                { 'name': { '$regex': searchQueryLowerCase } },
+                { 'name': { '$regex': searchQueryCapitalize } }
+              ]
+            },
+            { 'class': classes }
+          ]
+        })
     .limit(itemPerPage)
     .skip(itemPerPage * (page))
     .lean()
@@ -143,7 +143,7 @@ const restoreData = (req, res) => {
           res.sendSuccess(resultDto.success(messageCodes.I001));
         })
         .then(() => {
-          fs.unlink(filePath);
+          fs.unlinkSync(filePath);
         })
         .catch(err => {
           log.error(err);
@@ -156,7 +156,7 @@ const deleteByNames = (req, res) => {
   const childrenNames = req.query.names;
 
   return Children
-    .deleteMany({ 'name': {'$in': childrenNames}})
+    .deleteMany({ 'name': { '$in': childrenNames } })
     .then(o => {
       log.info(o);
       res.sendSuccess(resultDto.success(messageCodes.I001));
@@ -171,9 +171,68 @@ const getByName = (req, res) => {
   const childredNames = req.params.name;
 
   return Children
-    .find({'name': childredNames})
+    .find({ 'name': childredNames })
     .then(o => {
       res.sendSuccess(resultDto.success(messageCodes.I001, o));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
+
+const updateByName = (req, res) => {
+  const childredNames = req.params.name;
+  const updatedData = {
+    'name': req.body.name,
+    'father_name': req.body.father_name,
+    'mother_name': req.body.mother_name,
+    'diocese': req.body.diocese,
+    'male': req.body.male,
+    'female': req.body.female,
+    'class': req.body.class,
+    'birthday': req.body.birthday,
+    'day_of_baptism': req.body.day_of_baptism,
+    'day_of_eucharist': req.body.day_of_eucharist,
+    'day_of_confirmation': req.body.day_of_confirmation,
+    'address': req.body.address,
+    'contact': req.body.contact
+  };
+
+  return Children
+    .findOneAndUpdate({ 'name': childredNames }, { '$set': updatedData })
+    .then(o => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
+
+const createNew = (req, res) => {
+  const newData = {
+    'name': req.body.name,
+    'father_name': req.body.father_name,
+    'mother_name': req.body.mother_name,
+    'diocese': req.body.diocese,
+    'male': req.body.male,
+    'female': req.body.female,
+    'class': req.body.class,
+    'birthday': req.body.birthday,
+    'day_of_baptism': req.body.day_of_baptism,
+    'day_of_eucharist': req.body.day_of_eucharist,
+    'day_of_confirmation': req.body.day_of_confirmation,
+    'address': req.body.address,
+    'contact': req.body.contact
+  };
+
+  return Children
+    .create(newData)
+    .then(o => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
     })
     .catch(err => {
       log.error(err);
@@ -187,5 +246,7 @@ module.exports = {
   'exportData': exportData,
   'restoreData': restoreData,
   'deleteByNames': deleteByNames,
-  'getByName': getByName
+  'getByName': getByName,
+  'updateByName': updateByName,
+  'createNew': createNew
 };

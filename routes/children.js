@@ -16,4 +16,8 @@ router.delete('/delete/by-names', childrenController.deleteByNames);
 
 router.get('/by-name/:name', childrenController.getByName);
 
+router.post('/update/by-name/:name', childrenController.updateByName);
+
+router.post('/create', childrenController.createNew);
+
 module.exports = router;
