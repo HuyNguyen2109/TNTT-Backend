@@ -240,6 +240,21 @@ const createNew = (req, res) => {
     });
 };
 
+const getGradeByName = (req, res) => {
+  const childredNames = req.params.name;
+
+  return Children
+    .find({ 'name': childredNames })
+    .then(o => {
+      const grades = o[0].grades;
+      res.sendSuccess(resultDto.success(messageCodes.I001, grades));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+}
+
 module.exports = {
   'WithPagination': WithPagination,
   'countDocument': countDocument,
@@ -248,5 +263,6 @@ module.exports = {
   'deleteByNames': deleteByNames,
   'getByName': getByName,
   'updateByName': updateByName,
-  'createNew': createNew
+  'createNew': createNew,
+  'getGradeByName': getGradeByName
 };

@@ -13,7 +13,10 @@
         "day_of_confirmation": "",
         "address": "72/3/2, D16, VT, LB, Q9",
         "contact": "0903220139-0988548240",
-        "name": "Maria Teresa Vũ Thụy Khả Anh"
+        "name": "Maria Teresa Vũ Thụy Khả Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "2",
@@ -29,7 +32,10 @@
         "day_of_confirmation": "",
         "address": "53/4, D16, VT, LB, Q9",
         "contact": "0908419608",
-        "name": "Giuse Nguyễn Đình Phúc Anh"
+        "name": "Giuse Nguyễn Đình Phúc Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "3",
@@ -45,7 +51,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Ngọc Khả Ái"
+        "name": "Maria Nguyễn Ngọc Khả Ái",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "4",
@@ -61,7 +70,10 @@
         "day_of_confirmation": "",
         "address": "34/31/3D16, VT, LB, Q9",
         "contact": "0903139785-0906350740",
-        "name": "Phero Nguyễn Gia Ân"
+        "name": "Phero Nguyễn Gia Ân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "5",
@@ -77,7 +89,10 @@
         "day_of_confirmation": "",
         "address": "88/7/16 D16, VT, LB, Q9",
         "contact": "0976409480",
-        "name": "Phero Kiều Đức Ân"
+        "name": "Phero Kiều Đức Ân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "6",
@@ -93,7 +108,10 @@
         "day_of_confirmation": "",
         "address": "88/15/30 D16 VT, LB, Q9",
         "contact": "0979696460",
-        "name": "Phero Nguyễn Thiện Bảo"
+        "name": "Phero Nguyễn Thiện Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "7",
@@ -109,7 +127,10 @@
         "day_of_confirmation": "",
         "address": "4/56, D14, VT, LB, Q9",
         "contact": "0913714469",
-        "name": "Maria Lưu Minh Châu"
+        "name": "Maria Lưu Minh Châu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "8",
@@ -125,7 +146,10 @@
         "day_of_confirmation": "",
         "address": "88/5/14 dg 16 VT, LB, Q9",
         "contact": "0384 775117",
-        "name": "Giuse Nguyễn Thành Đạt"
+        "name": "Giuse Nguyễn Thành Đạt",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "9",
@@ -141,7 +165,10 @@
         "day_of_confirmation": "",
         "address": "19A, D16, VT, LB, Q9",
         "contact": "0989902596",
-        "name": "Giuse Lê Minh Hiếu"
+        "name": "Giuse Lê Minh Hiếu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "10",
@@ -157,7 +184,10 @@
         "day_of_confirmation": "",
         "address": "41A, D15, VT, LB, Q9",
         "contact": "0978582459-0356871089",
-        "name": "Đaminh Đỗ Minh Huy"
+        "name": "Đaminh Đỗ Minh Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "11",
@@ -173,7 +203,10 @@
         "day_of_confirmation": "",
         "address": "88/42B, D16, VT, LB, Q9",
         "contact": "0983425495-0908187041",
-        "name": "Giuse Lương Minh Hải"
+        "name": "Giuse Lương Minh Hải",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "12",
@@ -189,7 +222,10 @@
         "day_of_confirmation": "",
         "address": "88/34A D16, VT, LB, Q9",
         "contact": "",
-        "name": "Phero Nguyễn Đức Hiền"
+        "name": "Phero Nguyễn Đức Hiền",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "13",
@@ -205,7 +241,10 @@
         "day_of_confirmation": "",
         "address": "88/25 D16, LB, Q9",
         "contact": "0937540225",
-        "name": "Vinh sơn Trần Hoàng Huân"
+        "name": "Vinh sơn Trần Hoàng Huân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "14",
@@ -221,7 +260,10 @@
         "day_of_confirmation": "",
         "address": "29a, D13 Giãn dân, Q9",
         "contact": "0909762652",
-        "name": "Giuse Nguyễn Quang Huy"
+        "name": "Giuse Nguyễn Quang Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "15",
@@ -237,7 +279,10 @@
         "day_of_confirmation": "",
         "address": "88/24 D16, VT, LB, Q9",
         "contact": "0977798616-0978401492",
-        "name": "Giuse Nguyễn Xuân Hùng"
+        "name": "Giuse Nguyễn Xuân Hùng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "16",
@@ -253,7 +298,10 @@
         "day_of_confirmation": "",
         "address": "88/48A D16, VT, LB, Q9",
         "contact": "0909840520-0907886335",
-        "name": "Đaminh Đỗ Tùng Lâm"
+        "name": "Đaminh Đỗ Tùng Lâm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "17",
@@ -269,7 +317,10 @@
         "day_of_confirmation": "",
         "address": "88/29A D16, VT, LB, Q9",
         "contact": "0908045250",
-        "name": "Maria Huỳnh Châu Cát Linh"
+        "name": "Maria Huỳnh Châu Cát Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "18",
@@ -285,7 +336,10 @@
         "day_of_confirmation": "",
         "address": "68 D16, VT, LB, Q9",
         "contact": "090861986",
-        "name": "Maria Teresa Nguyễn Trần Trúc Linh"
+        "name": "Maria Teresa Nguyễn Trần Trúc Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "19",
@@ -301,7 +355,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Rosa Mai Khả Ngân"
+        "name": "Rosa Mai Khả Ngân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "20",
@@ -317,7 +374,10 @@
         "day_of_confirmation": "",
         "address": "102 D16, VT, LB, Q9",
         "contact": "0842823325-0918151480",
-        "name": "Gioan Vũ Trọng Nhân"
+        "name": "Gioan Vũ Trọng Nhân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "21",
@@ -333,7 +393,10 @@
         "day_of_confirmation": "",
         "address": "34/31 D16, VT, LB, Q9",
         "contact": "0908661496-0932725885",
-        "name": "Maria Dương Khánh Ngọc"
+        "name": "Maria Dương Khánh Ngọc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "22",
@@ -349,7 +412,10 @@
         "day_of_confirmation": "",
         "address": "88/24 D16, VT, LB, Q9",
         "contact": "0902806867",
-        "name": "Maria Nguyễn Trần Phương Nghi"
+        "name": "Maria Nguyễn Trần Phương Nghi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "23",
@@ -365,7 +431,10 @@
         "day_of_confirmation": "",
         "address": "88/9 D16, VT, LB, Q9",
         "contact": "0903800548-0785096533",
-        "name": "Giuse Vũ Nhật Nam"
+        "name": "Giuse Vũ Nhật Nam",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "24",
@@ -381,7 +450,10 @@
         "day_of_confirmation": "",
         "address": "88/7/11 D16, VT, LB, Q9",
         "contact": "0393582396",
-        "name": "Giuse Nguyễn Đức Nguyện"
+        "name": "Giuse Nguyễn Đức Nguyện",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "25",
@@ -397,7 +469,10 @@
         "day_of_confirmation": "",
         "address": "88/41/4",
         "contact": "0902584232",
-        "name": "Maria Mai Kiều Oanh"
+        "name": "Maria Mai Kiều Oanh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "26",
@@ -413,7 +488,10 @@
         "day_of_confirmation": "",
         "address": "47 D15, LB, Q9",
         "contact": "0909048350",
-        "name": "Giuse Trần Đỗ Tấn Phát"
+        "name": "Giuse Trần Đỗ Tấn Phát",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "27",
@@ -429,7 +507,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "0784566019-0783542245",
-        "name": "Đaminh Đỗ Thiên Phúc"
+        "name": "Đaminh Đỗ Thiên Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "28",
@@ -445,7 +526,10 @@
         "day_of_confirmation": "",
         "address": "53/4 D16, VT, LB, Q9",
         "contact": "0938280468-0967505225",
-        "name": "Giuse Nguyễn Phạm Hoàng Phú"
+        "name": "Giuse Nguyễn Phạm Hoàng Phú",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "29",
@@ -461,7 +545,10 @@
         "day_of_confirmation": "",
         "address": "69/20 D15",
         "contact": "0393582396",
-        "name": "Gioan Baotixita Nguyễn Hồ Tấn Phát"
+        "name": "Gioan Baotixita Nguyễn Hồ Tấn Phát",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "30",
@@ -477,7 +564,10 @@
         "day_of_confirmation": "",
         "address": "53 D16, LB, Q9",
         "contact": "0332440335-0369168554",
-        "name": "Đaminh Vũ Hoàng Minh Quân"
+        "name": "Đaminh Vũ Hoàng Minh Quân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "31",
@@ -493,7 +583,10 @@
         "day_of_confirmation": "",
         "address": "33/4 D16, VT, LB, Q9",
         "contact": "0937483421-0788968343",
-        "name": "Martino Vũ Đình Hoàng Quân"
+        "name": "Martino Vũ Đình Hoàng Quân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "32",
@@ -509,7 +602,10 @@
         "day_of_confirmation": "",
         "address": "88/7/27 D16, VT, LB, Q9",
         "contact": "0765692409",
-        "name": "Maria Trần Thị Hồng Thắm"
+        "name": "Maria Trần Thị Hồng Thắm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "33",
@@ -525,7 +621,10 @@
         "day_of_confirmation": "",
         "address": "88/51 D16, VT, LB, Q9",
         "contact": "0903082791",
-        "name": "Giuse Vũ Trần Hưng Thịnh"
+        "name": "Giuse Vũ Trần Hưng Thịnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "34",
@@ -541,7 +640,10 @@
         "day_of_confirmation": "",
         "address": "88/7/19 D16, LB, Q9",
         "contact": "0326785515-0982427402",
-        "name": "Maria Nguyễn Hoàng Ái Vy"
+        "name": "Maria Nguyễn Hoàng Ái Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "35",
@@ -557,7 +659,10 @@
         "day_of_confirmation": "",
         "address": "88/7/14/9 LB, Q9",
         "contact": "0902742051-0797792915",
-        "name": "Maria Lê Trần Khánh Vân"
+        "name": "Maria Lê Trần Khánh Vân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "36",
@@ -573,7 +678,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Mai Vũ Thiên Phước"
+        "name": "Mai Vũ Thiên Phước",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "37",
@@ -589,7 +697,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Anh Thư"
+        "name": "Maria Nguyễn Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "38",
@@ -605,7 +716,10 @@
         "day_of_confirmation": "",
         "address": "88/18 VT, LB, Q9",
         "contact": "0976986330",
-        "name": "Maria Nguyễn Bảo Thuần An"
+        "name": "Maria Nguyễn Bảo Thuần An",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "39",
@@ -621,7 +735,10 @@
         "day_of_confirmation": "",
         "address": "Vĩnh Thuận, Long Bình, Q9",
         "contact": "",
-        "name": "Maria Nguyễn Quỳnh Anh"
+        "name": "Maria Nguyễn Quỳnh Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "40",
@@ -637,7 +754,10 @@
         "day_of_confirmation": "",
         "address": "72/2/4 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "01643148192",
-        "name": "Martino Bùi Phương Gia Bảo"
+        "name": "Martino Bùi Phương Gia Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "41",
@@ -653,7 +773,10 @@
         "day_of_confirmation": "",
         "address": "4/34B đường 14, VT, LB, Q9",
         "contact": "0976205697",
-        "name": "Maria Phạm Nguyễn Quỳnh Châu"
+        "name": "Maria Phạm Nguyễn Quỳnh Châu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "42",
@@ -669,7 +792,10 @@
         "day_of_confirmation": "",
         "address": "88/24 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0908935821 (Cô)",
-        "name": "Giuse Nguyễn Vũ Minh Đăng"
+        "name": "Giuse Nguyễn Vũ Minh Đăng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "43",
@@ -685,7 +811,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Hà Nguyễn Minh Hạnh"
+        "name": "Maria Hà Nguyễn Minh Hạnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "44",
@@ -701,7 +830,10 @@
         "day_of_confirmation": "",
         "address": "55/11b VT, LB, Q9",
         "contact": "01653865539",
-        "name": "Đaminh Kiều Gia Huy"
+        "name": "Đaminh Kiều Gia Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "45",
@@ -717,7 +849,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Vincente Vũ Hữu Khang"
+        "name": "Vincente Vũ Hữu Khang",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "46",
@@ -733,7 +868,10 @@
         "day_of_confirmation": "",
         "address": "88/24A đường 16, VT, LB, Q9",
         "contact": "0908935821",
-        "name": "Anna Nguyễn Ngọc Tuyết Khanh"
+        "name": "Anna Nguyễn Ngọc Tuyết Khanh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "47",
@@ -749,7 +887,10 @@
         "day_of_confirmation": "",
         "address": "72/3/10 đường 16, VT, LB, Q9",
         "contact": "",
-        "name": "Gioakim Nguyễn Hoàng Long"
+        "name": "Gioakim Nguyễn Hoàng Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "48",
@@ -765,7 +906,10 @@
         "day_of_confirmation": "",
         "address": "90 đường 16, KP. Vĩnh Thuận, P.Long Bình, Q.9",
         "contact": "090 9407 807",
-        "name": "Đaminh Nguyễn Long"
+        "name": "Đaminh Nguyễn Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "49",
@@ -781,7 +925,10 @@
         "day_of_confirmation": "",
         "address": "53/18 Đường 16, VT, LB, Q9",
         "contact": "01229085323",
-        "name": "Giuse Nguyễn Xuân Minh"
+        "name": "Giuse Nguyễn Xuân Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "50",
@@ -797,7 +944,10 @@
         "day_of_confirmation": "",
         "address": "88/17/4 đường 16, KP. Vĩnh Thuận, P.Long Bình, Q.9",
         "contact": "091 6567 621&#10;090 7625 339",
-        "name": "Giuse Nguyễn Hoàng Minh"
+        "name": "Giuse Nguyễn Hoàng Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "51",
@@ -813,7 +963,10 @@
         "day_of_confirmation": "",
         "address": "22/28/8A đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0919603230",
-        "name": "Maria Trần Hà Thiên Ngân"
+        "name": "Maria Trần Hà Thiên Ngân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "52",
@@ -829,7 +982,10 @@
         "day_of_confirmation": "",
         "address": "34/31/5 đường 16, Vĩnh Thuận, LB, Q9",
         "contact": "0907059171",
-        "name": "Anna Nguyễn Hoàng Yến Ngọc"
+        "name": "Anna Nguyễn Hoàng Yến Ngọc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "53",
@@ -845,7 +1001,10 @@
         "day_of_confirmation": "",
         "address": "88/26A VT, LB, Q9",
         "contact": "01225428760",
-        "name": "Giuse Nguyễn Lê Hoàng Nguyên"
+        "name": "Giuse Nguyễn Lê Hoàng Nguyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "54",
@@ -861,7 +1020,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đào Gia Phú"
+        "name": "Đào Gia Phú",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "55",
@@ -877,7 +1039,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Trần Lê Đan Thi"
+        "name": "Maria Trần Lê Đan Thi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "56",
@@ -893,7 +1058,10 @@
         "day_of_confirmation": "",
         "address": "88/7/8 đường 16, VT, LB, Q9",
         "contact": "0906187516",
-        "name": "Giuse Vũ Gia Thiện"
+        "name": "Giuse Vũ Gia Thiện",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "57",
@@ -909,7 +1077,10 @@
         "day_of_confirmation": "",
         "address": "53/18 đường 16, KP. Vĩnh Thuận, P.Long Bình, Q.9",
         "contact": "077 9085 323",
-        "name": "Maria Nguyễn Anh Thư"
+        "name": "Maria Nguyễn Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "58",
@@ -925,7 +1096,10 @@
         "day_of_confirmation": "",
         "address": "22/6 đường 16 VT, LB, Q9",
         "contact": "01634962352",
-        "name": "Phêrô Nguyễn Đình Tùng"
+        "name": "Phêrô Nguyễn Đình Tùng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "59",
@@ -941,7 +1115,10 @@
         "day_of_confirmation": "",
         "address": "117/4 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "01658033577",
-        "name": "Anna Nguyễn Ngọc Tuyết Tuyết"
+        "name": "Anna Nguyễn Ngọc Tuyết Tuyết",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "60",
@@ -957,7 +1134,10 @@
         "day_of_confirmation": "",
         "address": "88/7/7 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "01265624316",
-        "name": "Phero Cao Quý Phước"
+        "name": "Phero Cao Quý Phước",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "61",
@@ -973,7 +1153,10 @@
         "day_of_confirmation": "",
         "address": "63A đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "01682180917",
-        "name": "Giuse Bùi Nguyễn Thành Văn"
+        "name": "Giuse Bùi Nguyễn Thành Văn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "62",
@@ -989,7 +1172,10 @@
         "day_of_confirmation": "",
         "address": "22/16 đường 16 Vĩnh Thuận Long bình quận 9",
         "contact": "0933290400",
-        "name": "Maria Đỗ Hồng Ngọc"
+        "name": "Maria Đỗ Hồng Ngọc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "63",
@@ -1005,7 +1191,10 @@
         "day_of_confirmation": "",
         "address": "88/7/4, D16, VT, LB, Q9",
         "contact": "0984620880",
-        "name": "Teresa Lê Lâm Quỳnh Như"
+        "name": "Teresa Lê Lâm Quỳnh Như",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "64",
@@ -1021,7 +1210,10 @@
         "day_of_confirmation": "",
         "address": "441 Hoàng Hữu Nam",
         "contact": "09808669706",
-        "name": "Lucia Nguyễn Hoàng Kim Anh"
+        "name": "Lucia Nguyễn Hoàng Kim Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "65",
@@ -1037,7 +1229,10 @@
         "day_of_confirmation": "",
         "address": "90 D16, VT, LB, Q9",
         "contact": "0909407807",
-        "name": "Đaminh Nguyễn Long"
+        "name": "Đaminh Nguyễn Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "66",
@@ -1053,7 +1248,10 @@
         "day_of_confirmation": "",
         "address": "90/3 D16, VT, LB, Q9",
         "contact": "0906705706",
-        "name": "Vinh sơn Lê Vũ"
+        "name": "Vinh sơn Lê Vũ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "67",
@@ -1069,7 +1267,10 @@
         "day_of_confirmation": "",
         "address": "88/1 D16, VT, LB, Q9",
         "contact": "0938570740",
-        "name": "Đaminh Trần Vũ Minh Hy"
+        "name": "Đaminh Trần Vũ Minh Hy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "68",
@@ -1085,7 +1286,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phạm Trúc Uyên Phương"
+        "name": "Phạm Trúc Uyên Phương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "69",
@@ -1101,7 +1305,10 @@
         "day_of_confirmation": "",
         "address": "34/28 VT, LB, Q9",
         "contact": "01284753223",
-        "name": "Maria Nguyễn Ngọc Minh Anh"
+        "name": "Maria Nguyễn Ngọc Minh Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "70",
@@ -1117,7 +1324,10 @@
         "day_of_confirmation": "",
         "address": "441 đường Hoàng Hữu Nam, KP. Vĩnh Thuận, P.Long Bình, Q.9",
         "contact": "090 8669 706",
-        "name": "Lucia Nguyễn Hoàng Kim Anh"
+        "name": "Lucia Nguyễn Hoàng Kim Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "71",
@@ -1133,7 +1343,10 @@
         "day_of_confirmation": "",
         "address": "546 đường Hoàng Hữu Nam, KP. Vĩnh Thuận, P.Long Bình, Q.9",
         "contact": "090 8168 621",
-        "name": "Phêrô Nguyễn Gia Bảo"
+        "name": "Phêrô Nguyễn Gia Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "72",
@@ -1149,7 +1362,10 @@
         "day_of_confirmation": "",
         "address": "65 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0902873337&#10;0933325425",
-        "name": "Vincente Vũ Phi Đằng"
+        "name": "Vincente Vũ Phi Đằng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "73",
@@ -1165,7 +1381,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đào Gia Hân"
+        "name": "Đào Gia Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "74",
@@ -1181,7 +1400,10 @@
         "day_of_confirmation": "",
         "address": "53/28 đường 16, VT, LB, Q9",
         "contact": "0932188983",
-        "name": "Maria Huỳnh Minh Hiền"
+        "name": "Maria Huỳnh Minh Hiền",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "75",
@@ -1197,7 +1419,10 @@
         "day_of_confirmation": "",
         "address": "88/1 đường 16, KP. Vĩnh Thuận, P.Long Bình, Q.9",
         "contact": "093 8570 740 - 090 3494 853",
-        "name": "Đaminh Trần Vũ Minh Hy"
+        "name": "Đaminh Trần Vũ Minh Hy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "76",
@@ -1213,7 +1438,10 @@
         "day_of_confirmation": "",
         "address": "71 Đường 16, VT, LB, Q9",
         "contact": "0983312410",
-        "name": "Gioan Phaolo II Phạm Nguyễn Minh Khôi"
+        "name": "Gioan Phaolo II Phạm Nguyễn Minh Khôi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "77",
@@ -1229,7 +1457,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Trần Ngọc Thảo Lam"
+        "name": "Trần Ngọc Thảo Lam",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "78",
@@ -1245,7 +1476,10 @@
         "day_of_confirmation": "",
         "address": "88/23 đường 16, KP. Vĩnh Thuận, P.Long Bình, Q.9",
         "contact": "032 7346 963",
-        "name": "Giuse Nguyễn Huỳnh Thiên Long"
+        "name": "Giuse Nguyễn Huỳnh Thiên Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "79",
@@ -1261,7 +1495,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Lê Bảo Minh"
+        "name": "Lê Bảo Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "80",
@@ -1277,7 +1514,10 @@
         "day_of_confirmation": "",
         "address": "53/18 Đường 16, VT, LB, Q9",
         "contact": "01229085323",
-        "name": "Maria Nguyễn Ái My"
+        "name": "Maria Nguyễn Ái My",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "81",
@@ -1293,7 +1533,10 @@
         "day_of_confirmation": "",
         "address": "88/51 đường 16 VT, LB, Q9",
         "contact": "0907145226",
-        "name": "Giuse Trần Vĩnh Nghi"
+        "name": "Giuse Trần Vĩnh Nghi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "82",
@@ -1309,7 +1552,10 @@
         "day_of_confirmation": "",
         "address": "88/7/4 đường 16, KP. Vĩnh Thuận, P.Long Bình, Q.9",
         "contact": "098 4620 880",
-        "name": "Têrêsa Lê Lâm Quỳnh Như"
+        "name": "Têrêsa Lê Lâm Quỳnh Như",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "83",
@@ -1325,7 +1571,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Đỗ Gia Phát"
+        "name": "Giuse Nguyễn Đỗ Gia Phát",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "84",
@@ -1341,7 +1590,10 @@
         "day_of_confirmation": "",
         "address": "4/42 đường 14, VT, LB, Q9",
         "contact": "0984771776",
-        "name": "Gioakim Vũ Hoàng Phúc"
+        "name": "Gioakim Vũ Hoàng Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "85",
@@ -1357,7 +1609,10 @@
         "day_of_confirmation": "",
         "address": "34/28 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0902676290",
-        "name": "Maria Nguyễn Ngọc Minh Thư"
+        "name": "Maria Nguyễn Ngọc Minh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "86",
@@ -1373,7 +1628,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đào Lan Thương"
+        "name": "Maria Đào Lan Thương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "87",
@@ -1389,7 +1647,10 @@
         "day_of_confirmation": "",
         "address": "34/8 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "02837250108",
-        "name": "Giuse Phạm Minh Trí"
+        "name": "Giuse Phạm Minh Trí",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "88",
@@ -1405,7 +1666,10 @@
         "day_of_confirmation": "",
         "address": "49 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "",
-        "name": "Giuse Lê Vũ Anh Tuấn"
+        "name": "Giuse Lê Vũ Anh Tuấn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "89",
@@ -1421,7 +1685,10 @@
         "day_of_confirmation": "",
         "address": "84, Đường 16, VT, LB, Q9",
         "contact": "0937476444",
-        "name": "Maria Lương Nhã Uyên"
+        "name": "Maria Lương Nhã Uyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "90",
@@ -1437,7 +1704,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Thiên Vũ"
+        "name": "Thiên Vũ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "91",
@@ -1453,7 +1723,10 @@
         "day_of_confirmation": "",
         "address": "90/3 đường 16, KP. Vĩnh Thuận, P.Long Bình, Q.9",
         "contact": "090 6705 706",
-        "name": "Vinhsơn Lê Vũ"
+        "name": "Vinhsơn Lê Vũ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "92",
@@ -1469,7 +1742,10 @@
         "day_of_confirmation": "",
         "address": "53/20 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0901859265",
-        "name": "Gioakim Nguyễn Vũ Gia Long"
+        "name": "Gioakim Nguyễn Vũ Gia Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "93",
@@ -1485,7 +1761,10 @@
         "day_of_confirmation": "",
         "address": "88/7/14/42 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "01698876634",
-        "name": "Teresa Phạm Như Quỳnh"
+        "name": "Teresa Phạm Như Quỳnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "94",
@@ -1501,7 +1780,10 @@
         "day_of_confirmation": "",
         "address": "174/4 đường 18, VT, LB, Q9",
         "contact": "0975931119",
-        "name": "Phêrô Đặng Nguyễn Tuấn Tú"
+        "name": "Phêrô Đặng Nguyễn Tuấn Tú",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "95",
@@ -1517,7 +1799,10 @@
         "day_of_confirmation": "",
         "address": "88/17/4, D16",
         "contact": "0916567621 - 0907625339",
-        "name": "Giuse Nguyễn Hoàng Minh"
+        "name": "Giuse Nguyễn Hoàng Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "96",
@@ -1533,7 +1818,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Hà Nguyễn Minh Hạnh"
+        "name": "Maria Hà Nguyễn Minh Hạnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "97",
@@ -1549,7 +1837,10 @@
         "day_of_confirmation": "",
         "address": "53/18 D16, VT, LB, Q9",
         "contact": "0779085323",
-        "name": "Maria Nguyễn Anh Thư"
+        "name": "Maria Nguyễn Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "98",
@@ -1565,7 +1856,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Nguyễn Ngọc Ái Lâm"
+        "name": "Nguyễn Ngọc Ái Lâm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "99",
@@ -1581,7 +1875,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Nguyễn Khang Minh"
+        "name": "Nguyễn Khang Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "100",
@@ -1597,7 +1894,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Ngọc Nhã Uyên"
+        "name": "Maria Nguyễn Ngọc Nhã Uyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "101",
@@ -1613,7 +1913,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Minh Bảo"
+        "name": "Minh Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "102",
@@ -1629,7 +1932,10 @@
         "day_of_confirmation": "",
         "address": "121 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0974.758.489",
-        "name": "Teresa Nguyễn Ngọc Khánh An"
+        "name": "Teresa Nguyễn Ngọc Khánh An",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "103",
@@ -1645,7 +1951,10 @@
         "day_of_confirmation": "",
         "address": "4/42 đường 14, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0984.771.776",
-        "name": "Gioakim Vũ Hoàng Ân"
+        "name": "Gioakim Vũ Hoàng Ân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "104",
@@ -1661,7 +1970,10 @@
         "day_of_confirmation": "",
         "address": "88/2 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0163.305.8120",
-        "name": "Madalena Lương Khánh Băng"
+        "name": "Madalena Lương Khánh Băng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "105",
@@ -1677,7 +1989,10 @@
         "day_of_confirmation": "",
         "address": "88/28 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0120.356.7133",
-        "name": "Giuse Phạm Ngọc Gia Bảo"
+        "name": "Giuse Phạm Ngọc Gia Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "106",
@@ -1693,7 +2008,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Teresa Nguyễn Quỳnh Minh Châu"
+        "name": "Teresa Nguyễn Quỳnh Minh Châu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "107",
@@ -1709,7 +2027,10 @@
         "day_of_confirmation": "",
         "address": "22/20 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0989.691.202",
-        "name": "Đaminh Nguyễn Thành Đạt"
+        "name": "Đaminh Nguyễn Thành Đạt",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "108",
@@ -1725,7 +2046,10 @@
         "day_of_confirmation": "",
         "address": "53/8/2 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0167.313.8610",
-        "name": "Giuse Vũ Ngọc Thanh Điền"
+        "name": "Giuse Vũ Ngọc Thanh Điền",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "109",
@@ -1741,7 +2065,10 @@
         "day_of_confirmation": "",
         "address": "34/23 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0933.035.305",
-        "name": "Anna Nguyễn Gia Hân"
+        "name": "Anna Nguyễn Gia Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "110",
@@ -1757,7 +2084,10 @@
         "day_of_confirmation": "",
         "address": "22/28/8 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0961.870.317",
-        "name": "Maria Trần Ngọc Hân"
+        "name": "Maria Trần Ngọc Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "111",
@@ -1773,7 +2103,10 @@
         "day_of_confirmation": "",
         "address": "62 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0981.778.388",
-        "name": "Augustino Nguyễn Huy Hoàng"
+        "name": "Augustino Nguyễn Huy Hoàng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "112",
@@ -1789,7 +2122,10 @@
         "day_of_confirmation": "",
         "address": "72/3/12 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0120.303.8642",
-        "name": "Phero Đào Nguyễn Duy Khang"
+        "name": "Phero Đào Nguyễn Duy Khang",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "113",
@@ -1805,7 +2141,10 @@
         "day_of_confirmation": "",
         "address": "34/4 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0128.896.8343",
-        "name": "Martino Vũ Đình Duy Lâm"
+        "name": "Martino Vũ Đình Duy Lâm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "114",
@@ -1821,7 +2160,10 @@
         "day_of_confirmation": "",
         "address": "41/16 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0168.395.8712",
-        "name": "Maria Bùi Ngọc Yến Linh"
+        "name": "Maria Bùi Ngọc Yến Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "115",
@@ -1837,7 +2179,10 @@
         "day_of_confirmation": "",
         "address": "36, đường số 2, Khu tái định cư Long Sơn, Q9",
         "contact": "0916.005.648",
-        "name": "Giuse Nguyễn Minh"
+        "name": "Giuse Nguyễn Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "116",
@@ -1853,7 +2198,10 @@
         "day_of_confirmation": "",
         "address": "55/38 đường 15, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0167.947.8423",
-        "name": "Giuse Nguyễn Trọng Nghĩa"
+        "name": "Giuse Nguyễn Trọng Nghĩa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "117",
@@ -1869,7 +2217,10 @@
         "day_of_confirmation": "",
         "address": "53/3 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0902.917.190",
-        "name": "Maria Lê Nguyễn Thu Nguyệt"
+        "name": "Maria Lê Nguyễn Thu Nguyệt",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "118",
@@ -1885,7 +2236,10 @@
         "day_of_confirmation": "",
         "address": "62 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0905.638.393",
-        "name": "Faustina Nguyễn Hạnh Nhi"
+        "name": "Faustina Nguyễn Hạnh Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "119",
@@ -1901,7 +2255,10 @@
         "day_of_confirmation": "",
         "address": "99 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0918.977.375",
-        "name": "Phero Nguyễn Trần Thiện Phúc"
+        "name": "Phero Nguyễn Trần Thiện Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "120",
@@ -1917,7 +2274,10 @@
         "day_of_confirmation": "",
         "address": "67 đường 15, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0908.184.667",
-        "name": "Phero Nguyễn Nhật Thành"
+        "name": "Phero Nguyễn Nhật Thành",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "121",
@@ -1933,7 +2293,10 @@
         "day_of_confirmation": "",
         "address": "88/25 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0977.972.614",
-        "name": "Vinhson Phan Hữu Thiện"
+        "name": "Vinhson Phan Hữu Thiện",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "122",
@@ -1949,7 +2312,10 @@
         "day_of_confirmation": "",
         "address": "55/10 đường 15, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0166.573.7569",
-        "name": "Maria Đỗ Phạm Anh Thư"
+        "name": "Maria Đỗ Phạm Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "123",
@@ -1965,7 +2331,10 @@
         "day_of_confirmation": "",
         "address": "88/32 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0164.674.5849",
-        "name": "Maria Phạm Thanh Trúc"
+        "name": "Maria Phạm Thanh Trúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "124",
@@ -1981,7 +2350,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lưu Thanh Vân"
+        "name": "Maria Lưu Thanh Vân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "125",
@@ -1997,7 +2369,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "0123.727.6330",
-        "name": "Maria Kiều Nguyễn Trúc Vy"
+        "name": "Maria Kiều Nguyễn Trúc Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "126",
@@ -2013,7 +2388,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Giuse Nguyễn Đức Lộc Xuân"
+        "name": "Maria Giuse Nguyễn Đức Lộc Xuân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "127",
@@ -2029,7 +2407,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Bùi Quốc Phong"
+        "name": "Giuse Bùi Quốc Phong",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "128",
@@ -2045,7 +2426,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Phạm Ngọc Long"
+        "name": "Giuse Phạm Ngọc Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "129",
@@ -2061,7 +2445,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Nguyễn Lâm Bảo Ngọc"
+        "name": "Nguyễn Lâm Bảo Ngọc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "130",
@@ -2077,7 +2464,10 @@
         "day_of_confirmation": "",
         "address": "88/36 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0168.762.7119",
-        "name": "Anna Đoàn Ngọc Thiên An"
+        "name": "Anna Đoàn Ngọc Thiên An",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "131",
@@ -2093,7 +2483,10 @@
         "day_of_confirmation": "",
         "address": "55/11 đường 15, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0974.761.241",
-        "name": "Gioakim Nguyễn Bảo Anh"
+        "name": "Gioakim Nguyễn Bảo Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "132",
@@ -2109,7 +2502,10 @@
         "day_of_confirmation": "",
         "address": "55/11 đường 15, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0974.761.241",
-        "name": "Gioakim Nguyễn Hoàng Anh"
+        "name": "Gioakim Nguyễn Hoàng Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "133",
@@ -2125,7 +2521,10 @@
         "day_of_confirmation": "",
         "address": "86 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0129.977.6776",
-        "name": "Giuse Nguyễn Trần Thiên Bảo"
+        "name": "Giuse Nguyễn Trần Thiên Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "134",
@@ -2141,7 +2540,10 @@
         "day_of_confirmation": "",
         "address": "88/51 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0977.322.218",
-        "name": "Teresa Phạm Trần Khả Bình"
+        "name": "Teresa Phạm Trần Khả Bình",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "135",
@@ -2157,7 +2559,10 @@
         "day_of_confirmation": "",
         "address": "72/5/8 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0121.752.7133",
-        "name": "Giuse Lê Anh Duy"
+        "name": "Giuse Lê Anh Duy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "136",
@@ -2173,7 +2578,10 @@
         "day_of_confirmation": "",
         "address": "88/7/14/3 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0975.830.624",
-        "name": "Vinhson Hoàng Nguyễn Minh Đạt"
+        "name": "Vinhson Hoàng Nguyễn Minh Đạt",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "137",
@@ -2189,7 +2597,10 @@
         "day_of_confirmation": "",
         "address": "88/7/14/48 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0908.771.421",
-        "name": "Maria Nguyễn Ngọc Gia Hân"
+        "name": "Maria Nguyễn Ngọc Gia Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "138",
@@ -2205,7 +2616,10 @@
         "day_of_confirmation": "",
         "address": "72/2/1 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0123.415.2077-0937.843.068",
-        "name": "Maria Phạm Thị Diệu Hoàng"
+        "name": "Maria Phạm Thị Diệu Hoàng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "139",
@@ -2221,7 +2635,10 @@
         "day_of_confirmation": "",
         "address": "34/11 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0909.154.133",
-        "name": "Phero Nguyễn Duy Khang"
+        "name": "Phero Nguyễn Duy Khang",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "140",
@@ -2237,7 +2654,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "0932.198.064",
-        "name": "Maria Nguyễn Thiên Kim"
+        "name": "Maria Nguyễn Thiên Kim",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "141",
@@ -2253,7 +2673,10 @@
         "day_of_confirmation": "",
         "address": "34/31 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0932.725.885",
-        "name": "Maria Dương Khánh Linh"
+        "name": "Maria Dương Khánh Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "142",
@@ -2269,7 +2692,10 @@
         "day_of_confirmation": "",
         "address": "53/8/3 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0126.895.1092",
-        "name": "Phaolo Vũ Bảo Long"
+        "name": "Phaolo Vũ Bảo Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "143",
@@ -2285,7 +2711,10 @@
         "day_of_confirmation": "",
         "address": "88/29 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0974.900.111",
-        "name": "Martino Nguyễn Việt Nguyễn"
+        "name": "Martino Nguyễn Việt Nguyễn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "144",
@@ -2301,7 +2730,10 @@
         "day_of_confirmation": "",
         "address": "91 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0937.000.850",
-        "name": "Giuse Nguyễn Huỳnh Gia Phát"
+        "name": "Giuse Nguyễn Huỳnh Gia Phát",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "145",
@@ -2317,7 +2749,10 @@
         "day_of_confirmation": "",
         "address": "175/4 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "",
-        "name": "Giuse Nguyễn Minh Phú"
+        "name": "Giuse Nguyễn Minh Phú",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "146",
@@ -2333,7 +2768,10 @@
         "day_of_confirmation": "",
         "address": "90 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0121.383.0060",
-        "name": "Maria Nguyễn Ngọc Phụng"
+        "name": "Maria Nguyễn Ngọc Phụng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "147",
@@ -2349,7 +2787,10 @@
         "day_of_confirmation": "",
         "address": "88/5/11 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0916.567.470",
-        "name": "Teresa Nguyễn Thái Kỳ Phương"
+        "name": "Teresa Nguyễn Thái Kỳ Phương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "148",
@@ -2365,7 +2806,10 @@
         "day_of_confirmation": "",
         "address": "69/20 đường 15, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0976.520.417",
-        "name": "Anton Nguyễn Hồ Thanh Tấn"
+        "name": "Anton Nguyễn Hồ Thanh Tấn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "149",
@@ -2381,7 +2825,10 @@
         "day_of_confirmation": "",
         "address": "22/15 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0982.279.954",
-        "name": "Giuse Vũ Minh Thiên"
+        "name": "Giuse Vũ Minh Thiên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "150",
@@ -2397,7 +2844,10 @@
         "day_of_confirmation": "",
         "address": "54A đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0945.884.025",
-        "name": "Giuse Kiều Tiến Thượng"
+        "name": "Giuse Kiều Tiến Thượng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "151",
@@ -2413,7 +2863,10 @@
         "day_of_confirmation": "",
         "address": "34/36 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0907.970.307",
-        "name": "Maria Teresa Đỗ Ngọc Đông Trà"
+        "name": "Maria Teresa Đỗ Ngọc Đông Trà",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "152",
@@ -2429,7 +2882,10 @@
         "day_of_confirmation": "",
         "address": "88/7/8 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0908.424.044",
-        "name": "Giuse Vũ Hải Triều"
+        "name": "Giuse Vũ Hải Triều",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "153",
@@ -2445,7 +2901,10 @@
         "day_of_confirmation": "",
         "address": "17A đường 13, Giãn Dân, Long Bình, Q9",
         "contact": "0937.457.594",
-        "name": "Maria Nguyễn Mai Thiên Tuệ"
+        "name": "Maria Nguyễn Mai Thiên Tuệ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "154",
@@ -2461,7 +2920,10 @@
         "day_of_confirmation": "",
         "address": "88/9 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0903.800.548",
-        "name": "Têrêsa Vũ Nhật Vy"
+        "name": "Têrêsa Vũ Nhật Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "155",
@@ -2477,7 +2939,10 @@
         "day_of_confirmation": "",
         "address": "88/15/8 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0989.218.745",
-        "name": "Maria Nguyễn Tường Vy"
+        "name": "Maria Nguyễn Tường Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "156",
@@ -2493,7 +2958,10 @@
         "day_of_confirmation": "",
         "address": "88/7/11 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0169.358.2396",
-        "name": "Maria Nguyễn Thị Như Ý"
+        "name": "Maria Nguyễn Thị Như Ý",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "157",
@@ -2509,7 +2977,10 @@
         "day_of_confirmation": "",
         "address": "88/7/4/46 đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0907.403.914",
-        "name": "Phero Nguyễn Huỳnh Hồng Sơn"
+        "name": "Phero Nguyễn Huỳnh Hồng Sơn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "158",
@@ -2525,7 +2996,10 @@
         "day_of_confirmation": "",
         "address": "22/6A đường 16, Vĩnh Thuận, Long Bình, Q9",
         "contact": "0938.511.799",
-        "name": "Maria Nguyễn Kiều Trúc Hy"
+        "name": "Maria Nguyễn Kiều Trúc Hy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "159",
@@ -2541,7 +3015,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Ana Vũ Lê Hông Phúc"
+        "name": "Ana Vũ Lê Hông Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "160",
@@ -2557,7 +3034,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lưu Thanh Vân"
+        "name": "Maria Lưu Thanh Vân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "161",
@@ -2573,7 +3053,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Batôlômêô Nguyễn Quốc Ân"
+        "name": "Batôlômêô Nguyễn Quốc Ân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "162",
@@ -2589,7 +3072,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lưu Bảo Châu"
+        "name": "Maria Lưu Bảo Châu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "163",
@@ -2605,7 +3091,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Kiều Minh Đăng"
+        "name": "Đaminh Kiều Minh Đăng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "164",
@@ -2621,7 +3110,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Têrêsa Lý Gia Hân"
+        "name": "Têrêsa Lý Gia Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "165",
@@ -2637,7 +3129,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đỗ Huỳnh Khánh Linh"
+        "name": "Maria Đỗ Huỳnh Khánh Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "166",
@@ -2653,7 +3148,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Phương Linh"
+        "name": "Maria Nguyễn Phương Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "167",
@@ -2669,7 +3167,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Hoàng Thu Minh"
+        "name": "Maria Nguyễn Hoàng Thu Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "168",
@@ -2685,7 +3186,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Catarina Nguyễn Nữ Linh Nghi"
+        "name": "Catarina Nguyễn Nữ Linh Nghi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "169",
@@ -2701,7 +3205,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Hoàng Gia Nghĩa"
+        "name": "Đaminh Nguyễn Hoàng Gia Nghĩa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "170",
@@ -2717,7 +3224,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Thái Bảo Ngọc"
+        "name": "Maria Vũ Thái Bảo Ngọc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "171",
@@ -2733,7 +3243,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thụy Thảo Nhi"
+        "name": "Maria Nguyễn Thụy Thảo Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "172",
@@ -2749,7 +3262,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đào Thị Phương Nhung"
+        "name": "Maria Đào Thị Phương Nhung",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "173",
@@ -2765,7 +3281,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Thành Phú"
+        "name": "Đaminh Nguyễn Thành Phú",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "174",
@@ -2781,7 +3300,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Đào Thiên Quý"
+        "name": "Phêrô Đào Thiên Quý",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "175",
@@ -2797,7 +3319,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Đào Tấn Tài"
+        "name": "Giuse Đào Tấn Tài",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "176",
@@ -2813,7 +3338,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Phạm Hoàng Hiền Thảo"
+        "name": "Maria Phạm Hoàng Hiền Thảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "177",
@@ -2829,7 +3357,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Kiều Gia Thế"
+        "name": "Phêrô Kiều Gia Thế",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "178",
@@ -2845,7 +3376,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phanxicô Trần Trung Thịnh"
+        "name": "Phanxicô Trần Trung Thịnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "179",
@@ -2861,7 +3395,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Cao Ngọc Bảo Trân"
+        "name": "Maria Cao Ngọc Bảo Trân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "180",
@@ -2877,7 +3414,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Cao Trí"
+        "name": "Phêrô Nguyễn Cao Trí",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "181",
@@ -2893,7 +3433,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Đỗ Phạm Minh Tú"
+        "name": "Giuse Đỗ Phạm Minh Tú",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "182",
@@ -2909,7 +3452,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Hoàng Minh Anh"
+        "name": "Giuse Nguyễn Hoàng Minh Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "183",
@@ -2925,7 +3471,10 @@
         "day_of_confirmation": "",
         "address": "88/7/40,Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "01287981693",
-        "name": "Maria Nguyễn Kiều Bảo Thy"
+        "name": "Maria Nguyễn Kiều Bảo Thy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "184",
@@ -2941,7 +3490,10 @@
         "day_of_confirmation": "",
         "address": "22/28, đường 16, kp. Vĩnh Thuận, LB, q.9",
         "contact": "0987685033",
-        "name": "Lê Trần Minh Châu"
+        "name": "Lê Trần Minh Châu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "185",
@@ -2957,7 +3509,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "0933183524",
-        "name": "Trần Diễm Phúc"
+        "name": "Trần Diễm Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "186",
@@ -2973,7 +3528,10 @@
         "day_of_confirmation": "",
         "address": "102, D16, VT, LB, Q9",
         "contact": "",
-        "name": "Matta Nguyễn Gia Hân"
+        "name": "Matta Nguyễn Gia Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "187",
@@ -2989,7 +3547,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Hồ Hoài Ân"
+        "name": "Giuse Hồ Hoài Ân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "188",
@@ -3005,7 +3566,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lưu Hoàng Quỳnh Anh"
+        "name": "Maria Lưu Hoàng Quỳnh Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "189",
@@ -3021,7 +3585,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Vũ Hoàng Thái Bảo"
+        "name": "Phêrô Vũ Hoàng Thái Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "190",
@@ -3037,7 +3604,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thị Thùy Dương"
+        "name": "Maria Nguyễn Thị Thùy Dương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "191",
@@ -3053,7 +3623,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Antôn Vũ Hoàng Khang Duy"
+        "name": "Antôn Vũ Hoàng Khang Duy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "192",
@@ -3069,7 +3642,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đào Khánh Đan"
+        "name": "Maria Đào Khánh Đan",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "193",
@@ -3085,7 +3661,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Quốc Đạt"
+        "name": "Phêrô Nguyễn Quốc Đạt",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "194",
@@ -3101,7 +3680,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Ngô Bảo Hân"
+        "name": "Maria Ngô Bảo Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "195",
@@ -3117,7 +3699,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Đỗ Minh Hiếu"
+        "name": "Đaminh Đỗ Minh Hiếu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "196",
@@ -3133,7 +3718,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phero Đào Vĩnh Hưng"
+        "name": "Phero Đào Vĩnh Hưng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "197",
@@ -3149,7 +3737,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Trần Ngọc Mai Hương"
+        "name": "Maria Trần Ngọc Mai Hương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "198",
@@ -3165,7 +3756,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Martin Nguyễn Minh Khôi"
+        "name": "Martin Nguyễn Minh Khôi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "199",
@@ -3181,7 +3775,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Lương Trần Thế Linh"
+        "name": "Giuse Lương Trần Thế Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "200",
@@ -3197,7 +3794,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Têrêsa Nguyễn Ngọc Uyển Linh"
+        "name": "Têrêsa Nguyễn Ngọc Uyển Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "201",
@@ -3213,7 +3813,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Hoàng Bảo Nam"
+        "name": "Giuse Nguyễn Hoàng Bảo Nam",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "202",
@@ -3229,7 +3832,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Nguyễn Song Nguyễn"
+        "name": "Anna Nguyễn Song Nguyễn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "203",
@@ -3245,7 +3851,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Vũ Trọng Nhân"
+        "name": "Phêrô Vũ Trọng Nhân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "204",
@@ -3261,7 +3870,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Trần Hoàng Phúc"
+        "name": "Giuse Trần Hoàng Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "205",
@@ -3277,7 +3889,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Vũ Tiêu Phương"
+        "name": "Maria Nguyễn Vũ Tiêu Phương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "206",
@@ -3293,7 +3908,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thái Nghi Quỳnh"
+        "name": "Maria Nguyễn Thái Nghi Quỳnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "207",
@@ -3309,7 +3927,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Nguyễn Ngọc Sang Sang"
+        "name": "Anna Nguyễn Ngọc Sang Sang",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "208",
@@ -3325,7 +3946,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thị Thanh Thảo"
+        "name": "Maria Nguyễn Thị Thanh Thảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "209",
@@ -3341,7 +3965,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn An Thơ"
+        "name": "Maria Nguyễn An Thơ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "210",
@@ -3357,7 +3984,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Quỳnh Trâm"
+        "name": "Maria Nguyễn Quỳnh Trâm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "211",
@@ -3373,7 +4003,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Đỗ Hoàng Gia Vĩnh"
+        "name": "Đaminh Đỗ Hoàng Gia Vĩnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "212",
@@ -3389,7 +4022,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Phạm Hải Yến"
+        "name": "Anna Phạm Hải Yến",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "213",
@@ -3405,7 +4041,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Linh Nga"
+        "name": "Maria Nguyễn Linh Nga",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "214",
@@ -3421,7 +4060,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đào Ngọc Quỳnh Vy"
+        "name": "Maria Đào Ngọc Quỳnh Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "215",
@@ -3437,7 +4079,10 @@
         "day_of_confirmation": "",
         "address": "53/16 Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Maria Nguyễn Ngọc Thiên Ân"
+        "name": "Maria Nguyễn Ngọc Thiên Ân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "216",
@@ -3453,7 +4098,10 @@
         "day_of_confirmation": "",
         "address": "34/3 Vĩnh Thuận, Long Bình, Q.9",
         "contact": "0906755423",
-        "name": "Gioan Phạm Minh Cát"
+        "name": "Gioan Phạm Minh Cát",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "217",
@@ -3469,7 +4117,10 @@
         "day_of_confirmation": "",
         "address": "103 Đ.16, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Lê Minh Đức"
+        "name": "Lê Minh Đức",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "218",
@@ -3485,7 +4136,10 @@
         "day_of_confirmation": "",
         "address": "88/20A Đ.16, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Têrêsa Nguyễn Hoàng Ngọc Hân"
+        "name": "Têrêsa Nguyễn Hoàng Ngọc Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "219",
@@ -3501,7 +4155,10 @@
         "day_of_confirmation": "",
         "address": "88/7/33 Đ.16, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Phêrô Kiều Công Hiếu"
+        "name": "Phêrô Kiều Công Hiếu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "220",
@@ -3517,7 +4174,10 @@
         "day_of_confirmation": "",
         "address": "54/4 Đ.16, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "0934276651",
-        "name": "Đaminh Đỗ Hoàng Gia Huy"
+        "name": "Đaminh Đỗ Hoàng Gia Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "221",
@@ -3533,7 +4193,10 @@
         "day_of_confirmation": "",
         "address": "69/20 Đ.15, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Phêrô Trần Tuấn Kiệt"
+        "name": "Phêrô Trần Tuấn Kiệt",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "222",
@@ -3549,7 +4212,10 @@
         "day_of_confirmation": "",
         "address": "54/4 Đường 16, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "0773604093",
-        "name": "Antôn Nguyễn Hoàng Phi Long"
+        "name": "Antôn Nguyễn Hoàng Phi Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "223",
@@ -3565,7 +4231,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "0918522643",
-        "name": "Giuse Nguyễn Võ Phi Long"
+        "name": "Giuse Nguyễn Võ Phi Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "224",
@@ -3581,7 +4250,10 @@
         "day_of_confirmation": "",
         "address": "22/24 Đường 16, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "0904281375",
-        "name": "Giuse Nguyễn Hoàng Minh"
+        "name": "Giuse Nguyễn Hoàng Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "225",
@@ -3597,7 +4269,10 @@
         "day_of_confirmation": "",
         "address": "88/7/14/5 Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Phêrô Nguyễn Vĩnh Nghĩa"
+        "name": "Phêrô Nguyễn Vĩnh Nghĩa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "226",
@@ -3613,7 +4288,10 @@
         "day_of_confirmation": "",
         "address": "22/10 Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Maria Bùi Nguyễn Minh Nguyệt"
+        "name": "Maria Bùi Nguyễn Minh Nguyệt",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "227",
@@ -3629,7 +4307,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Thiện Nhân"
+        "name": "Phêrô Nguyễn Thiện Nhân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "228",
@@ -3645,7 +4326,10 @@
         "day_of_confirmation": "",
         "address": "34/28 Đ.16, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Đaminh Nguyễn Hoàng Minh Nhật"
+        "name": "Đaminh Nguyễn Hoàng Minh Nhật",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "229",
@@ -3661,7 +4345,10 @@
         "day_of_confirmation": "",
         "address": "88/5/11 Đ.16, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Antôn Nguyễn Thành Phát"
+        "name": "Antôn Nguyễn Thành Phát",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "230",
@@ -3677,7 +4364,10 @@
         "day_of_confirmation": "",
         "address": "54/2 Đ.16, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Maria Vũ Minh Phương"
+        "name": "Maria Vũ Minh Phương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "231",
@@ -3693,7 +4383,10 @@
         "day_of_confirmation": "",
         "address": "34/12 Đ.16, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Giuse Nguyễn Hoàng Quốc"
+        "name": "Giuse Nguyễn Hoàng Quốc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "232",
@@ -3709,7 +4402,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Huỳnh Ngọc Tấn"
+        "name": "Giuse Huỳnh Ngọc Tấn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "233",
@@ -3725,7 +4421,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Hồ Trọng Tấn"
+        "name": "Giuse Hồ Trọng Tấn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "234",
@@ -3741,7 +4440,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Ngô Phan Mai Thi"
+        "name": "Anna Ngô Phan Mai Thi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "235",
@@ -3757,7 +4459,10 @@
         "day_of_confirmation": "",
         "address": "Số 6, Đ.13, Giãn Dân, Long Bình, Q.9",
         "contact": "",
-        "name": "Anna Nguyễn Ngọc Phương Trinh"
+        "name": "Anna Nguyễn Ngọc Phương Trinh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "236",
@@ -3773,7 +4478,10 @@
         "day_of_confirmation": "",
         "address": "22/25 Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Gioakim Nguyễn Phú Trọng"
+        "name": "Gioakim Nguyễn Phú Trọng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "237",
@@ -3789,7 +4497,10 @@
         "day_of_confirmation": "",
         "address": "72/6/12 Vĩnh Thuận, P.Long Bình, Q.9",
         "contact": "",
-        "name": "Giuse Vũ Anh Tuấn"
+        "name": "Giuse Vũ Anh Tuấn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "238",
@@ -3805,7 +4516,10 @@
         "day_of_confirmation": "",
         "address": "103 Đ.16, Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Lê Anh Tuấn"
+        "name": "Lê Anh Tuấn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "239",
@@ -3821,7 +4535,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Phạm Ngọc Bảo Uyên"
+        "name": "Anna Phạm Ngọc Bảo Uyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "240",
@@ -3837,7 +4554,10 @@
         "day_of_confirmation": "",
         "address": "159/4 Vĩnh Thuận, Long Bình, Q.9",
         "contact": "",
-        "name": "Phêrô Kiều Mai Triều Vỹ"
+        "name": "Phêrô Kiều Mai Triều Vỹ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "241",
@@ -3853,7 +4573,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Hoàng Ngọc Bảo"
+        "name": "Phêrô Nguyễn Hoàng Ngọc Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "242",
@@ -3869,7 +4592,10 @@
         "day_of_confirmation": "2018-06-23",
         "address": "42/D, kp.Thái Bình 1, LB, q.9",
         "contact": "0933798013",
-        "name": "Giuse Lê Hoàng Đức"
+        "name": "Giuse Lê Hoàng Đức",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "243",
@@ -3885,7 +4611,10 @@
         "day_of_confirmation": "",
         "address": "55/11/11, Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0854481706",
-        "name": "Đaminh Nguyễn Minh Hòa"
+        "name": "Đaminh Nguyễn Minh Hòa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "244",
@@ -3901,7 +4630,10 @@
         "day_of_confirmation": "",
         "address": "22/12/5, Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0903868878",
-        "name": "Giuse Nguyễn Phúc Hoàng"
+        "name": "Giuse Nguyễn Phúc Hoàng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "245",
@@ -3917,7 +4649,10 @@
         "day_of_confirmation": "",
         "address": "93 Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0918427714",
-        "name": "Giuse Nguyễn Khánh Huy"
+        "name": "Giuse Nguyễn Khánh Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "246",
@@ -3933,7 +4668,10 @@
         "day_of_confirmation": "",
         "address": "88/13, Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0767657942",
-        "name": "Phêrô Bùi Nguyễn Phi Long"
+        "name": "Phêrô Bùi Nguyễn Phi Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "247",
@@ -3949,7 +4687,10 @@
         "day_of_confirmation": "",
         "address": "34/18, Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0939700523",
-        "name": "Phêrô Nguyễn Dương Minh"
+        "name": "Phêrô Nguyễn Dương Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "248",
@@ -3965,7 +4706,10 @@
         "day_of_confirmation": "",
         "address": "88/7/8, Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0908424044",
-        "name": "Giuse Vũ Nhật Minh"
+        "name": "Giuse Vũ Nhật Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "249",
@@ -3981,7 +4725,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Hồ Ngọc Trà My"
+        "name": "Maria Hồ Ngọc Trà My",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "250",
@@ -3997,7 +4744,10 @@
         "day_of_confirmation": "",
         "address": "34/28b, Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0937292620",
-        "name": "Phêrô Nguyễn Lê Bảo Nguyên"
+        "name": "Phêrô Nguyễn Lê Bảo Nguyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "251",
@@ -4013,7 +4763,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Trần Bảo Phúc"
+        "name": "Giuse Trần Bảo Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "252",
@@ -4029,7 +4782,10 @@
         "day_of_confirmation": "",
         "address": "73/3/12 Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0793038642",
-        "name": "Phêrô Đào Nguyễn Duy Phúc"
+        "name": "Phêrô Đào Nguyễn Duy Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "253",
@@ -4045,7 +4801,10 @@
         "day_of_confirmation": "",
         "address": "55/11A Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0933307633",
-        "name": "Gioankim Nguyễn Minh Tấn"
+        "name": "Gioankim Nguyễn Minh Tấn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "254",
@@ -4061,7 +4820,10 @@
         "day_of_confirmation": "",
         "address": "88/15/30, Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0938248628",
-        "name": "Phaolo Nguyễn Nhật Thành"
+        "name": "Phaolo Nguyễn Nhật Thành",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "255",
@@ -4077,7 +4839,10 @@
         "day_of_confirmation": "",
         "address": "84 Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0937476444",
-        "name": "Phaolô Lương Phúc Thịnh"
+        "name": "Phaolô Lương Phúc Thịnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "256",
@@ -4093,7 +4858,10 @@
         "day_of_confirmation": "",
         "address": "88/7/29, Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0335604636",
-        "name": "Maria Đào Thị Kim Thoa"
+        "name": "Maria Đào Thị Kim Thoa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "257",
@@ -4109,7 +4877,10 @@
         "day_of_confirmation": "",
         "address": "64/1, đường 16, KP Vĩnh Thuận, LB, Q9",
         "contact": "",
-        "name": "Maria Vũ Huỳnh Đan Thư"
+        "name": "Maria Vũ Huỳnh Đan Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "258",
@@ -4125,7 +4896,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "0903494853",
-        "name": "Maria Trần Vũ Minh Thư"
+        "name": "Maria Trần Vũ Minh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "259",
@@ -4141,7 +4915,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thị Kim Thương"
+        "name": "Maria Nguyễn Thị Kim Thương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "260",
@@ -4157,7 +4934,10 @@
         "day_of_confirmation": "",
         "address": "34/31, Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0973336171",
-        "name": "Phêrô Nguyễn Quốc Trọng"
+        "name": "Phêrô Nguyễn Quốc Trọng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "261",
@@ -4173,7 +4953,10 @@
         "day_of_confirmation": "",
         "address": "88/7/6A,Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0907539669",
-        "name": "Maria Đào Thanh Trúc"
+        "name": "Maria Đào Thanh Trúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "262",
@@ -4189,7 +4972,10 @@
         "day_of_confirmation": "",
         "address": "88/5/3, Đường 16, kp.Vĩnh Thuận, LB, q.9",
         "contact": "0798598023",
-        "name": "Maria Đào Ngọc Phương Uyên"
+        "name": "Maria Đào Ngọc Phương Uyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "263",
@@ -4205,7 +4991,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioankim Nguyễn Khánh An"
+        "name": "Gioankim Nguyễn Khánh An",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "264",
@@ -4221,7 +5010,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioakim Đỗ Trần Gia Bảo"
+        "name": "Gioakim Đỗ Trần Gia Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "265",
@@ -4237,7 +5029,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lương Khả Ân"
+        "name": "Maria Lương Khả Ân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "266",
@@ -4253,7 +5048,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Thái Như Anh"
+        "name": "Maria Vũ Thái Như Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "267",
@@ -4269,7 +5067,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Trần Tiểu Châu"
+        "name": "Maria Trần Tiểu Châu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "268",
@@ -4285,7 +5086,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Ngọc Linh Đan"
+        "name": "Maria Nguyễn Ngọc Linh Đan",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "269",
@@ -4301,7 +5105,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Kiều Công Danh"
+        "name": "Phêrô Kiều Công Danh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "270",
@@ -4317,7 +5124,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Đạt"
+        "name": "Đaminh Nguyễn Đạt",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "271",
@@ -4333,7 +5143,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Phạm Bảo Ngọc Diệp"
+        "name": "Anna Phạm Bảo Ngọc Diệp",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "272",
@@ -4349,7 +5162,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Đăng Dương"
+        "name": "Giuse Nguyễn Đăng Dương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "273",
@@ -4365,7 +5181,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Phạm Nhật Hạ"
+        "name": "Maria Nguyễn Phạm Nhật Hạ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "274",
@@ -4381,7 +5200,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Đỗ Nguyễn Ngọc Hân"
+        "name": "Anna Đỗ Nguyễn Ngọc Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "275",
@@ -4397,7 +5219,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Têrêsa Nguyễn Lâm Bảo Hân"
+        "name": "Têrêsa Nguyễn Lâm Bảo Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "276",
@@ -4413,7 +5238,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Phan Gia Hiếu"
+        "name": "Đaminh Nguyễn Phan Gia Hiếu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "277",
@@ -4429,7 +5257,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Vũ Nguyễn Minh Hiếu"
+        "name": "Giuse Vũ Nguyễn Minh Hiếu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "278",
@@ -4445,7 +5276,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phaolo Trần Trung Hiếu"
+        "name": "Phaolo Trần Trung Hiếu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "279",
@@ -4461,7 +5295,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Trịnh Hoàng Kim Hương"
+        "name": "Maria Trịnh Hoàng Kim Hương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "280",
@@ -4477,7 +5314,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Vinhsơn Phạm Nhất Huy"
+        "name": "Vinhsơn Phạm Nhất Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "281",
@@ -4493,7 +5333,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioan Nguyễn An Khang"
+        "name": "Gioan Nguyễn An Khang",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "282",
@@ -4509,7 +5352,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Hoàng Trọng Bảo Khang"
+        "name": "Giuse Hoàng Trọng Bảo Khang",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "283",
@@ -4525,7 +5371,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Hoàng Gia Khang"
+        "name": "Giuse Nguyễn Hoàng Gia Khang",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "284",
@@ -4541,7 +5390,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioan TĐ Nguyễn Ngọc Khoa"
+        "name": "Gioan TĐ Nguyễn Ngọc Khoa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "285",
@@ -4557,7 +5409,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Anh Khoa"
+        "name": "Phêrô Nguyễn Anh Khoa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "286",
@@ -4573,7 +5428,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Trần Thiên Kim"
+        "name": "Maria Nguyễn Trần Thiên Kim",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "287",
@@ -4589,7 +5447,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Võ Uyên Lê"
+        "name": "Maria Nguyễn Võ Uyên Lê",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "288",
@@ -4605,7 +5466,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Phú Ngọc Linh"
+        "name": "Giuse Nguyễn Phú Ngọc Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "289",
@@ -4621,7 +5485,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Hà Nhật Long"
+        "name": "Giuse Nguyễn Hà Nhật Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "290",
@@ -4637,7 +5504,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phaolo Nguyễn Ngọc Bảo Long"
+        "name": "Phaolo Nguyễn Ngọc Bảo Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "291",
@@ -4653,7 +5523,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Vũ Hoàng Minh"
+        "name": "Giuse Vũ Hoàng Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "292",
@@ -4669,7 +5542,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Hoàng Vũ Trà My"
+        "name": "Maria Hoàng Vũ Trà My",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "293",
@@ -4685,7 +5561,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Hồ Hoài Nam"
+        "name": "Giuse Hồ Hoài Nam",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "294",
@@ -4701,7 +5580,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Đào Khánh Ngọc"
+        "name": "Anna Đào Khánh Ngọc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "295",
@@ -4717,7 +5599,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phaolo Nguyễn Phạm Hoàng Nhân"
+        "name": "Phaolo Nguyễn Phạm Hoàng Nhân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "296",
@@ -4733,7 +5618,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Kiều Thị Hoài Như"
+        "name": "Maria Kiều Thị Hoài Như",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "297",
@@ -4749,7 +5637,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đa-minh Lê Hoàng Minh Phúc"
+        "name": "Đa-minh Lê Hoàng Minh Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "298",
@@ -4765,7 +5656,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Thành Tài"
+        "name": "Giuse Nguyễn Thành Tài",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "299",
@@ -4781,7 +5675,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Trần Hoàng Thanh Tâm"
+        "name": "Giuse Trần Hoàng Thanh Tâm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "300",
@@ -4797,7 +5694,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioakim Nguyễn Trác Thiên"
+        "name": "Gioakim Nguyễn Trác Thiên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "301",
@@ -4813,7 +5713,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đào Ngọc Thanh Trúc"
+        "name": "Maria Đào Ngọc Thanh Trúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "302",
@@ -4829,7 +5732,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Kiều Phan Yến Vân"
+        "name": "Maria Kiều Phan Yến Vân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "303",
@@ -4845,7 +5751,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Phạm Ngọc Thảo Vy"
+        "name": "Maria Phạm Ngọc Thảo Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "304",
@@ -4861,7 +5770,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Anh Thy"
+        "name": "Maria Vũ Anh Thy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "305",
@@ -4877,7 +5789,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phê-rô Nguyễn Cao Hoàng Minh "
+        "name": "Phê-rô Nguyễn Cao Hoàng Minh ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "306",
@@ -4893,7 +5808,10 @@
         "day_of_confirmation": "",
         "address": "28, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0908032014",
-        "name": "Giuse Huỳnh Khánh An"
+        "name": "Giuse Huỳnh Khánh An",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "307",
@@ -4909,7 +5827,10 @@
         "day_of_confirmation": "",
         "address": "84, đường16, Vĩnh Thuận, LB, Q9 Tp.HCM",
         "contact": "0937476444",
-        "name": "Giuse Lương Duy Ân"
+        "name": "Giuse Lương Duy Ân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "308",
@@ -4925,7 +5846,10 @@
         "day_of_confirmation": "",
         "address": "88/5, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0798461868",
-        "name": "Giuse Nguyễn Tuấn Anh"
+        "name": "Giuse Nguyễn Tuấn Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "309",
@@ -4941,7 +5865,10 @@
         "day_of_confirmation": "",
         "address": "88/41/15, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0909243310",
-        "name": "Giuse Trần Quốc Bảo"
+        "name": "Giuse Trần Quốc Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "310",
@@ -4957,7 +5884,10 @@
         "day_of_confirmation": "",
         "address": "22 Đường 13, Giãn Dân, LB, Q9, Tp.HCM",
         "contact": "0909902996",
-        "name": "Martino Lý Gia Bảo"
+        "name": "Martino Lý Gia Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "311",
@@ -4973,7 +5903,10 @@
         "day_of_confirmation": "",
         "address": "11A, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0976826632",
-        "name": "phêrô Lê Gia Bảo"
+        "name": "phêrô Lê Gia Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "312",
@@ -4989,7 +5922,10 @@
         "day_of_confirmation": "",
         "address": "69/3/16, đường 15, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0903944139",
-        "name": "Maria Nguyễn Ngọc Minh Châu"
+        "name": "Maria Nguyễn Ngọc Minh Châu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "313",
@@ -5005,7 +5941,10 @@
         "day_of_confirmation": "",
         "address": "88/7/14/42, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0902735604",
-        "name": "Đaminh Nguyễn Hoàng Minh Đăng"
+        "name": "Đaminh Nguyễn Hoàng Minh Đăng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "314",
@@ -5021,7 +5960,10 @@
         "day_of_confirmation": "",
         "address": "88/7/14, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "",
-        "name": "Maria Phùng Thị Quỳnh Giao"
+        "name": "Maria Phùng Thị Quỳnh Giao",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "315",
@@ -5037,7 +5979,10 @@
         "day_of_confirmation": "",
         "address": "34/12, p.Long Bình, q.9, Tp.HCM",
         "contact": "0939736794",
-        "name": "Maria Nguyễn Hoàng Bảo Hân"
+        "name": "Maria Nguyễn Hoàng Bảo Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "316",
@@ -5053,7 +5998,10 @@
         "day_of_confirmation": "",
         "address": "102, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0918151480",
-        "name": "Mattha Nguyễn Gia Hân"
+        "name": "Mattha Nguyễn Gia Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "317",
@@ -5069,7 +6017,10 @@
         "day_of_confirmation": "",
         "address": "88/7/20, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0902175239",
-        "name": "Maria Phạm Cao Minh Hằng"
+        "name": "Maria Phạm Cao Minh Hằng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "318",
@@ -5085,7 +6036,10 @@
         "day_of_confirmation": "",
         "address": "34/35, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "",
-        "name": "Giuse Trần Minh Hoàng"
+        "name": "Giuse Trần Minh Hoàng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "319",
@@ -5101,7 +6055,10 @@
         "day_of_confirmation": "",
         "address": "88/25, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0907540225",
-        "name": "Vinh Sơn Trần Huy Hoàng"
+        "name": "Vinh Sơn Trần Huy Hoàng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "320",
@@ -5117,7 +6074,10 @@
         "day_of_confirmation": "",
         "address": "32/11, kp. Giãn Dân , LB, Q9, Tp.HCM",
         "contact": "",
-        "name": "Giuse Nguyễn Thế Khải"
+        "name": "Giuse Nguyễn Thế Khải",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "321",
@@ -5133,7 +6093,10 @@
         "day_of_confirmation": "",
         "address": "28, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "",
-        "name": "Giuse Đào Nguyễn Anh Khoa"
+        "name": "Giuse Đào Nguyễn Anh Khoa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "322",
@@ -5149,7 +6112,10 @@
         "day_of_confirmation": "",
         "address": "88/1, đường 15, tổ 7, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0369129884",
-        "name": "Đaminh Nguyễn Thiên Long"
+        "name": "Đaminh Nguyễn Thiên Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "323",
@@ -5165,7 +6131,10 @@
         "day_of_confirmation": "",
         "address": "72/5/6A, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0907695181",
-        "name": "Giuse Nguyễn Anh Minh"
+        "name": "Giuse Nguyễn Anh Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "324",
@@ -5181,7 +6150,10 @@
         "day_of_confirmation": "",
         "address": "88/6, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0938081076",
-        "name": "Đaminh Tăng Đại Nam"
+        "name": "Đaminh Tăng Đại Nam",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "325",
@@ -5197,7 +6169,10 @@
         "day_of_confirmation": "",
         "address": "88/26A, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0792800425",
-        "name": "Giuse Nguyễn Lê hoàng Nam"
+        "name": "Giuse Nguyễn Lê hoàng Nam",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "326",
@@ -5213,7 +6188,10 @@
         "day_of_confirmation": "",
         "address": "53/4B, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0973144261",
-        "name": "Anna Nguyễn Hoàng Thiên Ngân"
+        "name": "Anna Nguyễn Hoàng Thiên Ngân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "327",
@@ -5229,7 +6207,10 @@
         "day_of_confirmation": "",
         "address": "88/15,Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0898441382",
-        "name": "Maria Gorreti Nguyễn Ngọc Gia Nghi"
+        "name": "Maria Gorreti Nguyễn Ngọc Gia Nghi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "328",
@@ -5245,7 +6226,10 @@
         "day_of_confirmation": "",
         "address": "40, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0908198854",
-        "name": "Maria Vũ Trần Minh Ngọc"
+        "name": "Maria Vũ Trần Minh Ngọc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "329",
@@ -5261,7 +6245,10 @@
         "day_of_confirmation": "",
         "address": "88/49, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0372704578",
-        "name": "Têrêsa Trần Nguyễn Minh Ngọc"
+        "name": "Têrêsa Trần Nguyễn Minh Ngọc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "330",
@@ -5277,7 +6264,10 @@
         "day_of_confirmation": "",
         "address": "72/2/4, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0907579744",
-        "name": "Matinô Nguyễn Minh Nhật"
+        "name": "Matinô Nguyễn Minh Nhật",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "331",
@@ -5293,7 +6283,10 @@
         "day_of_confirmation": "",
         "address": "62, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0938716368",
-        "name": "Phanxicô Nguyễn Huy Nhật"
+        "name": "Phanxicô Nguyễn Huy Nhật",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "332",
@@ -5309,7 +6302,10 @@
         "day_of_confirmation": "",
         "address": "34/35, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0932198064",
-        "name": "Lucia Nguyễn Phương Nhi"
+        "name": "Lucia Nguyễn Phương Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "333",
@@ -5325,7 +6321,10 @@
         "day_of_confirmation": "",
         "address": "88/7/40, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0382375005",
-        "name": "Maria Kiều Hoàng Hoài Nhi"
+        "name": "Maria Kiều Hoàng Hoài Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "334",
@@ -5341,7 +6340,10 @@
         "day_of_confirmation": "",
         "address": "88/49, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0773586472",
-        "name": "Têrêsa Trần Quỳnh Ý Nhi"
+        "name": "Têrêsa Trần Quỳnh Ý Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "335",
@@ -5357,7 +6359,10 @@
         "day_of_confirmation": "",
         "address": "28, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "",
-        "name": "Têrêsa Đào Ngọc Tuyết Nhi"
+        "name": "Têrêsa Đào Ngọc Tuyết Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "336",
@@ -5373,7 +6378,10 @@
         "day_of_confirmation": "",
         "address": "88/4B, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0908844575",
-        "name": "Giuse Đào Tấn Phát"
+        "name": "Giuse Đào Tấn Phát",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "337",
@@ -5389,7 +6397,10 @@
         "day_of_confirmation": "",
         "address": "53/8/2, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0369812900",
-        "name": "Giuse Vũ Ngọc Trường Phi"
+        "name": "Giuse Vũ Ngọc Trường Phi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "338",
@@ -5405,7 +6416,10 @@
         "day_of_confirmation": "",
         "address": "88/19, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0938098880",
-        "name": "Gioakim Đỗ Huỳnh Tuấn Phú"
+        "name": "Gioakim Đỗ Huỳnh Tuấn Phú",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "339",
@@ -5421,7 +6435,10 @@
         "day_of_confirmation": "",
         "address": "36/16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "01882804268",
-        "name": "Maria Nguyễn Thanh Thảo"
+        "name": "Maria Nguyễn Thanh Thảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "340",
@@ -5437,7 +6454,10 @@
         "day_of_confirmation": "",
         "address": "88/7/8,p.Long Bình, q.9, Tp.HCM",
         "contact": "",
-        "name": "Anna Nguyễn Vũ Anh Thư"
+        "name": "Anna Nguyễn Vũ Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "341",
@@ -5453,7 +6473,10 @@
         "day_of_confirmation": "",
         "address": "43/20, đường, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0972145499",
-        "name": "Maria Nguyễn Anh Thư"
+        "name": "Maria Nguyễn Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "342",
@@ -5469,7 +6492,10 @@
         "day_of_confirmation": "",
         "address": "22/25, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0984274441",
-        "name": "Gioakim Nguyễn Minh Thuận"
+        "name": "Gioakim Nguyễn Minh Thuận",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "343",
@@ -5485,7 +6511,10 @@
         "day_of_confirmation": "",
         "address": "34/7, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0369876650",
-        "name": "Anna Nguyễn Ngọc Bảo Thy"
+        "name": "Anna Nguyễn Ngọc Bảo Thy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "344",
@@ -5501,7 +6530,10 @@
         "day_of_confirmation": "",
         "address": "88/23B, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0908617301",
-        "name": "Maria Nguyễn Hoàng Bảo Trân"
+        "name": "Maria Nguyễn Hoàng Bảo Trân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "345",
@@ -5517,7 +6549,10 @@
         "day_of_confirmation": "",
         "address": "32, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0909937627",
-        "name": "Gioakim Phạm Gia Bảo Trấn"
+        "name": "Gioakim Phạm Gia Bảo Trấn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "346",
@@ -5533,7 +6568,10 @@
         "day_of_confirmation": "",
         "address": "34/24, đường16, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0938785031",
-        "name": "Maria Vũ Thị Bích Vân"
+        "name": "Maria Vũ Thị Bích Vân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "347",
@@ -5549,7 +6587,10 @@
         "day_of_confirmation": "",
         "address": "55/11B, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0353865539",
-        "name": "Đaminh Kiều Gia Vỹ"
+        "name": "Đaminh Kiều Gia Vỹ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "348",
@@ -5565,7 +6606,10 @@
         "day_of_confirmation": "",
         "address": "54/10, Vĩnh Thuận, LB, Q9, Tp.HCM",
         "contact": "0937042214",
-        "name": "Micae Nguyễn Hoàng Bảo Thiên"
+        "name": "Micae Nguyễn Hoàng Bảo Thiên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "349",
@@ -5581,7 +6625,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Lương Thế Anh"
+        "name": "Đaminh Lương Thế Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "350",
@@ -5597,7 +6644,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Đào Sĩ Đan"
+        "name": "Phêrô Đào Sĩ Đan",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "351",
@@ -5613,7 +6663,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Trần Thị Kim Hiền"
+        "name": "Trần Thị Kim Hiền",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "352",
@@ -5629,7 +6682,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Mai Hoàng Khang"
+        "name": "Phêrô Nguyễn Mai Hoàng Khang",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "353",
@@ -5645,7 +6701,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Huỳnh Phi Long"
+        "name": "Đaminh Huỳnh Phi Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "354",
@@ -5661,7 +6720,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Phạm Đình Lượng"
+        "name": "Giuse Phạm Đình Lượng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "355",
@@ -5677,7 +6739,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Đào Khoa Nguyên"
+        "name": "Phêrô Đào Khoa Nguyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "356",
@@ -5693,7 +6758,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioan Hoàng Văn Nhất"
+        "name": "Gioan Hoàng Văn Nhất",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "357",
@@ -5709,7 +6777,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Hoàng Nguyễn Minh Tâm"
+        "name": "Maria Hoàng Nguyễn Minh Tâm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "358",
@@ -5725,7 +6796,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Nguyễn Ngọc Bảo Thi"
+        "name": "Anna Nguyễn Ngọc Bảo Thi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "359",
@@ -5741,7 +6815,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Thái Bảo Trân"
+        "name": "Maria Vũ Thái Bảo Trân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "360",
@@ -5757,7 +6834,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioan Baotixita Đào Ngọc Tuấn"
+        "name": "Gioan Baotixita Đào Ngọc Tuấn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "361",
@@ -5773,7 +6853,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lê Nguyễn Thảo Vy"
+        "name": "Maria Lê Nguyễn Thảo Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "362",
@@ -5789,7 +6872,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioakim Martino Đoàn Gia Vỹ"
+        "name": "Gioakim Martino Đoàn Gia Vỹ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "363",
@@ -5805,7 +6891,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đỗ Phạm Thiên Ân"
+        "name": "Maria Đỗ Phạm Thiên Ân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "364",
@@ -5821,7 +6910,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Têrêsa Kiều Thùy Dung"
+        "name": "Têrêsa Kiều Thùy Dung",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "365",
@@ -5837,7 +6929,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Trần Trọng Hiếu"
+        "name": "Giuse Nguyễn Trần Trọng Hiếu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "366",
@@ -5853,7 +6948,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Vũ Anh Khoa"
+        "name": "Phêrô Nguyễn Vũ Anh Khoa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "367",
@@ -5869,7 +6967,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "ĐaMinh Hoàng Quốc Kì"
+        "name": "ĐaMinh Hoàng Quốc Kì",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "368",
@@ -5885,7 +6986,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lê Thùy Linh"
+        "name": "Maria Lê Thùy Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "369",
@@ -5901,7 +7005,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Phạm Hữu Lộc"
+        "name": "Phêrô Phạm Hữu Lộc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "370",
@@ -5917,7 +7024,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Võ Minh Long"
+        "name": "Giuse Nguyễn Võ Minh Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "371",
@@ -5933,7 +7043,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đào Ngọc Kim Ngân"
+        "name": "Maria Đào Ngọc Kim Ngân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "372",
@@ -5949,7 +7062,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Trần Hà Bảo Nguyên"
+        "name": "Giuse Trần Hà Bảo Nguyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "373",
@@ -5965,7 +7081,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Trần Phương Nhi"
+        "name": "Maria Nguyễn Trần Phương Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "374",
@@ -5981,7 +7100,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Ngọc Kim Như"
+        "name": "Maria Nguyễn Ngọc Kim Như",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "375",
@@ -5997,7 +7119,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Bùi Thụy Thanh Thảo"
+        "name": "Maria Bùi Thụy Thanh Thảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "376",
@@ -6013,7 +7138,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Ngọc Thảo"
+        "name": "Maria Nguyễn Ngọc Thảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "377",
@@ -6029,7 +7157,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Nguyễn Minh Thư"
+        "name": "Anna Nguyễn Minh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "378",
@@ -6045,7 +7176,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Cao Đức Tiến"
+        "name": "Phêrô Nguyễn Cao Đức Tiến",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "379",
@@ -6061,7 +7195,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thị Huyền Trân"
+        "name": "Maria Nguyễn Thị Huyền Trân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "380",
@@ -6077,7 +7214,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Phạm Bảo Trúc"
+        "name": "Anna Phạm Bảo Trúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "381",
@@ -6093,7 +7233,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Vinh Sơn Vũ Trần Gia Tuấn"
+        "name": "Vinh Sơn Vũ Trần Gia Tuấn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "382",
@@ -6109,7 +7252,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Bùi Nguyễn Nguyệt Vương"
+        "name": "Maria Bùi Nguyễn Nguyệt Vương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "383",
@@ -6125,7 +7271,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lê Vũ Phương Anh"
+        "name": "Maria Lê Vũ Phương Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "384",
@@ -6141,7 +7290,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Vũ Hoàng Minh Bảo"
+        "name": "Đaminh Vũ Hoàng Minh Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "385",
@@ -6157,7 +7309,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Trần Thị Thúy Vy"
+        "name": "Maria Trần Thị Thúy Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "386",
@@ -6173,7 +7328,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Kiều Minh Khoa"
+        "name": "Giuse Kiều Minh Khoa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "387",
@@ -6189,7 +7347,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Thiên Ân"
+        "name": "Đaminh Nguyễn Thiên Ân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "388",
@@ -6205,7 +7366,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Quốc Anh"
+        "name": "Giuse Nguyễn Quốc Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "389",
@@ -6221,7 +7385,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Ngọc Trâm Anh"
+        "name": "Maria Nguyễn Ngọc Trâm Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "390",
@@ -6237,7 +7404,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Trần Gia Bảo"
+        "name": "Giuse Trần Gia Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "391",
@@ -6253,7 +7423,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Trần Hương Giang"
+        "name": "Anna Trần Hương Giang",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "392",
@@ -6269,7 +7442,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Phan Bảo Huy"
+        "name": "Giuse Phan Bảo Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "393",
@@ -6285,7 +7461,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Đào Gia Huy"
+        "name": "Phêrô Đào Gia Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "394",
@@ -6301,7 +7480,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Thành Long"
+        "name": "Giuse Nguyễn Thành Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "395",
@@ -6317,7 +7499,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Khánh Ngân"
+        "name": "Maria Nguyễn Khánh Ngân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "396",
@@ -6333,7 +7518,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Cexilia Trần Hoàng Phương Nguyên"
+        "name": "Cexilia Trần Hoàng Phương Nguyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "397",
@@ -6349,7 +7537,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thảo Nhi"
+        "name": "Maria Nguyễn Thảo Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "398",
@@ -6365,7 +7556,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đào Kim Oanh"
+        "name": "Maria Đào Kim Oanh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "399",
@@ -6381,7 +7575,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Kiều Tuyết Thư"
+        "name": "Maria Nguyễn Kiều Tuyết Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "400",
@@ -6397,7 +7594,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Lê Anh Thư"
+        "name": "Maria Nguyễn Lê Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "401",
@@ -6413,7 +7613,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Thị Anh Thư"
+        "name": "Maria Vũ Thị Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "402",
@@ -6429,7 +7632,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đỗ Minh Thương"
+        "name": "Maria Đỗ Minh Thương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "403",
@@ -6445,7 +7651,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Thái Anh Thương"
+        "name": "Maria Vũ Thái Anh Thương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "404",
@@ -6461,7 +7670,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Đức Tiến"
+        "name": "Giuse Nguyễn Đức Tiến",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "405",
@@ -6477,7 +7689,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Trần Thụy Tuyết Trinh"
+        "name": "Anna Trần Thụy Tuyết Trinh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "406",
@@ -6493,7 +7708,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Trần Ngọc Yến Vy"
+        "name": "Anna Trần Ngọc Yến Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "407",
@@ -6509,7 +7727,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phanxicô Nguyễn Hải Đăng"
+        "name": "Phanxicô Nguyễn Hải Đăng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "408",
@@ -6525,7 +7746,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Catarina Nguyễn Hoàng Ngọc Diễm"
+        "name": "Catarina Nguyễn Hoàng Ngọc Diễm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "409",
@@ -6541,7 +7765,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Kiều Nguyễn Thúy Diễm"
+        "name": "Maria Kiều Nguyễn Thúy Diễm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "410",
@@ -6557,7 +7784,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Phan Lưu Khả Diệu"
+        "name": "Maria Phan Lưu Khả Diệu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "411",
@@ -6573,7 +7803,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Lucia Vũ Hoàng Vy Du"
+        "name": "Lucia Vũ Hoàng Vy Du",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "412",
@@ -6589,7 +7822,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Dương"
+        "name": "Giuse Nguyễn Dương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "413",
@@ -6605,7 +7841,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Huỳnh Mỹ Duyên"
+        "name": "Maria Nguyễn Huỳnh Mỹ Duyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "414",
@@ -6621,7 +7860,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Augustinô Vương Hoàng Giang"
+        "name": "Augustinô Vương Hoàng Giang",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "415",
@@ -6637,7 +7879,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Kiều Công Hiếu"
+        "name": "Giuse Kiều Công Hiếu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "416",
@@ -6653,7 +7898,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Phạm Nguyễn Anh Khoa"
+        "name": "Đaminh Phạm Nguyễn Anh Khoa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "417",
@@ -6669,7 +7917,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Martinô Nguyễn Anh Khôi"
+        "name": "Martinô Nguyễn Anh Khôi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "418",
@@ -6685,7 +7936,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Micae Giuse Đinh Ngô Thái Khôi"
+        "name": "Micae Giuse Đinh Ngô Thái Khôi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "419",
@@ -6701,7 +7955,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lý Thị Ngọc Linh"
+        "name": "Maria Lý Thị Ngọc Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "420",
@@ -6717,7 +7974,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Trần Nhật Bảo Minh"
+        "name": "Đaminh Trần Nhật Bảo Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "421",
@@ -6733,7 +7993,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Nguyễn Thu Ngân"
+        "name": "Anna Nguyễn Thu Ngân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "422",
@@ -6749,7 +8012,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Minh Nguyên"
+        "name": "Đaminh Nguyễn Minh Nguyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "423",
@@ -6765,7 +8031,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phaolô Nguyễn Trọng Nhân"
+        "name": "Phaolô Nguyễn Trọng Nhân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "424",
@@ -6781,7 +8050,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thị Yến Nhi"
+        "name": "Maria Nguyễn Thị Yến Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "425",
@@ -6797,7 +8069,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Bùi Đào Tấn Phúc"
+        "name": "Giuse Bùi Đào Tấn Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "426",
@@ -6813,7 +8088,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Võ Nguyễn Minh Quân"
+        "name": "Giuse Võ Nguyễn Minh Quân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "427",
@@ -6829,7 +8107,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Dương Ngọc Như Quỳnh"
+        "name": "Anna Dương Ngọc Như Quỳnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "428",
@@ -6845,7 +8126,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Phạm Tấn Tài"
+        "name": "Giuse Phạm Tấn Tài",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "429",
@@ -6861,7 +8145,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Phạm Băng Tâm"
+        "name": "Maria Phạm Băng Tâm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "430",
@@ -6877,7 +8164,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Quốc Thịnh"
+        "name": "Đaminh Nguyễn Quốc Thịnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "431",
@@ -6893,7 +8183,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Bùi Diễm Thư"
+        "name": "Maria Nguyễn Bùi Diễm Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "432",
@@ -6909,7 +8202,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Anh Thư"
+        "name": "Maria Vũ Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "433",
@@ -6925,7 +8221,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Vũ Oanh Trúc"
+        "name": "Maria Nguyễn Vũ Oanh Trúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "434",
@@ -6941,7 +8240,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đào Trần Vi"
+        "name": "Maria Đào Trần Vi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "435",
@@ -6957,7 +8259,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Ngọc Thảo Vi"
+        "name": "Maria Vũ Ngọc Thảo Vi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "436",
@@ -6973,7 +8278,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Hoàng Thanh Xuân"
+        "name": "Giuse Nguyễn Hoàng Thanh Xuân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "437",
@@ -6989,7 +8297,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Teresa Nguyễn Thảo Chi"
+        "name": "Teresa Nguyễn Thảo Chi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "438",
@@ -7005,7 +8316,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Phúc Duy"
+        "name": "Giuse Nguyễn Phúc Duy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "439",
@@ -7021,7 +8335,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Võ Nguyễn Khang Duy"
+        "name": "Giuse Võ Nguyễn Khang Duy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "440",
@@ -7037,7 +8354,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Kiều Nguyễn Công Duy"
+        "name": "Giuse Kiều Nguyễn Công Duy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "441",
@@ -7053,7 +8373,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Hoàng Nguyễn Thu Hằng"
+        "name": "Maria Hoàng Nguyễn Thu Hằng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "442",
@@ -7069,7 +8392,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioakim Phạm Trần Gia Hòa"
+        "name": "Gioakim Phạm Trần Gia Hòa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "443",
@@ -7085,7 +8411,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Vũ Nguyễn Tuấn Huy"
+        "name": "Phêrô Vũ Nguyễn Tuấn Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "444",
@@ -7101,7 +8430,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Phan Gia Huy"
+        "name": "Đaminh Nguyễn Phan Gia Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "445",
@@ -7117,7 +8449,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Xuân Hương"
+        "name": "Maria Nguyễn Xuân Hương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "446",
@@ -7133,7 +8468,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Ngọc Quỳnh Hương"
+        "name": "Maria Nguyễn Ngọc Quỳnh Hương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "447",
@@ -7149,7 +8487,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đoàn Gia Hy"
+        "name": "Maria Đoàn Gia Hy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "448",
@@ -7165,7 +8506,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Đông Linh"
+        "name": "Maria Nguyễn Đông Linh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "449",
@@ -7181,7 +8525,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Đặng Nguyễn Hoàng Long"
+        "name": "Giuse Đặng Nguyễn Hoàng Long",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "450",
@@ -7197,7 +8544,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Vũ Anh Minh"
+        "name": "Giuse Vũ Anh Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "451",
@@ -7213,7 +8563,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Trịnh Kiều Diễm My"
+        "name": "Maria Trịnh Kiều Diễm My",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "452",
@@ -7229,7 +8582,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Teresa Nguyễn Lê Bảo Ngân"
+        "name": "Teresa Nguyễn Lê Bảo Ngân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "453",
@@ -7245,7 +8601,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phê-rô Huỳnh Minh Nhật"
+        "name": "Phê-rô Huỳnh Minh Nhật",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "454",
@@ -7261,7 +8620,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thị Yến Nhi"
+        "name": "Maria Nguyễn Thị Yến Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "455",
@@ -7277,7 +8639,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Vinhsơn Lưu Kiều Thiên Phú"
+        "name": "Vinhsơn Lưu Kiều Thiên Phú",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "456",
@@ -7293,7 +8658,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phê-rô Dương Hồng Phúc"
+        "name": "Phê-rô Dương Hồng Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "457",
@@ -7309,7 +8677,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Vincente Lưu Gia Phúc"
+        "name": "Vincente Lưu Gia Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "458",
@@ -7325,7 +8696,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thùy Phương"
+        "name": "Maria Nguyễn Thùy Phương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "459",
@@ -7341,7 +8715,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Hoàng Quân"
+        "name": "Giuse Nguyễn Hoàng Quân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "460",
@@ -7357,7 +8734,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Vinh-sơn Nguyễn Anh Quân"
+        "name": "Vinh-sơn Nguyễn Anh Quân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "461",
@@ -7373,7 +8753,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Đình Quân"
+        "name": "Giuse Nguyễn Đình Quân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "462",
@@ -7389,7 +8772,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Đặng Anh Quân"
+        "name": "Giuse Đặng Anh Quân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "463",
@@ -7405,7 +8791,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Lưu Kỳ Thư"
+        "name": "Maria Vũ Lưu Kỳ Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "464",
@@ -7421,7 +8810,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Trần Ngọc Vân Thư"
+        "name": "Maria Trần Ngọc Vân Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "465",
@@ -7437,7 +8829,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Huỳnh Anh Thư"
+        "name": "Maria Vũ Huỳnh Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "466",
@@ -7453,7 +8848,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Đào Hoàng Trân Trân"
+        "name": "Maria Nguyễn Đào Hoàng Trân Trân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "467",
@@ -7469,7 +8867,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Vũ Anh Vũ"
+        "name": "Giuse Vũ Anh Vũ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "468",
@@ -7485,7 +8886,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Kiều Tường Vy"
+        "name": "Maria Kiều Tường Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "469",
@@ -7501,7 +8905,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Trần Thị Như Ý"
+        "name": "Maria Trần Thị Như Ý",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "470",
@@ -7517,7 +8924,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Phạm Hoàng Duy Anh"
+        "name": "Giuse Phạm Hoàng Duy Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "471",
@@ -7533,7 +8943,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Martino Mai Trần Minh Anh"
+        "name": "Martino Mai Trần Minh Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "472",
@@ -7549,7 +8962,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Vũ Hoàng Anh"
+        "name": "Phêrô Nguyễn Vũ Hoàng Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "473",
@@ -7565,7 +8981,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Cao Lương Ngọc Châu"
+        "name": "Maria Cao Lương Ngọc Châu",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "474",
@@ -7581,7 +9000,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phaolô Đào Duy Cường"
+        "name": "Phaolô Đào Duy Cường",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "475",
@@ -7597,7 +9019,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Thành Danh"
+        "name": "Đaminh Nguyễn Thành Danh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "476",
@@ -7613,7 +9038,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioan Đào Duy Hải"
+        "name": "Gioan Đào Duy Hải",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "477",
@@ -7629,7 +9057,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Goretty Nguyễn Phạm Bảo Hân"
+        "name": "Maria Goretty Nguyễn Phạm Bảo Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "478",
@@ -7645,7 +9076,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Phạm Thị Thúy Hằng"
+        "name": "Maria Phạm Thị Thúy Hằng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "479",
@@ -7661,7 +9095,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Phi Hoàng"
+        "name": "Giuse Nguyễn Phi Hoàng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "480",
@@ -7677,7 +9114,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioakim Phạm Trần Gia Huy"
+        "name": "Gioakim Phạm Trần Gia Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "481",
@@ -7693,7 +9133,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Vũ Trần Minh Huy"
+        "name": "Giuse Vũ Trần Minh Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "482",
@@ -7709,7 +9152,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Micae Vũ Quang Huy"
+        "name": "Micae Vũ Quang Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "483",
@@ -7725,7 +9171,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phaolô Trần Nhật Huy"
+        "name": "Phaolô Trần Nhật Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "484",
@@ -7741,7 +9190,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Anh Khoa"
+        "name": "Đaminh Nguyễn Anh Khoa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "485",
@@ -7757,7 +9209,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn An Khương"
+        "name": "Phêrô Nguyễn An Khương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "486",
@@ -7773,7 +9228,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Vũ Gia Kiệt"
+        "name": "Giuse Vũ Gia Kiệt",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "487",
@@ -7789,7 +9247,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Hoàng Vĩnh Kỳ"
+        "name": "Đaminh Hoàng Vĩnh Kỳ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "488",
@@ -7805,7 +9266,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Kiều Thị Trúc Lan"
+        "name": "Maria Kiều Thị Trúc Lan",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "489",
@@ -7821,7 +9285,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioakim Nguyễn Thái Minh"
+        "name": "Gioakim Nguyễn Thái Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "490",
@@ -7837,7 +9304,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Ngọc Diễm My"
+        "name": "Maria Nguyễn Ngọc Diễm My",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "491",
@@ -7853,7 +9323,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Đinh Thúy Nga"
+        "name": "Maria Vũ Đinh Thúy Nga",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "492",
@@ -7869,7 +9342,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Phương Ngân"
+        "name": "Maria Nguyễn Phương Ngân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "493",
@@ -7885,7 +9361,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Vũ Thành Nhân"
+        "name": "Phêrô Nguyễn Vũ Thành Nhân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "494",
@@ -7901,7 +9380,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đỗ Nguyễn Ngọc Nhi"
+        "name": "Maria Đỗ Nguyễn Ngọc Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "495",
@@ -7917,7 +9399,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Phạm Băng Nhi"
+        "name": "Maria Phạm Băng Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "496",
@@ -7933,7 +9418,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thị Quỳnh Như"
+        "name": "Maria Nguyễn Thị Quỳnh Như",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "497",
@@ -7949,7 +9437,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Kiều Phương Thảo"
+        "name": "Maria Kiều Phương Thảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "498",
@@ -7965,7 +9456,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Hoàng Thiện"
+        "name": "Đaminh Nguyễn Hoàng Thiện",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "499",
@@ -7981,7 +9475,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Lạc Trường Thịnh"
+        "name": "Phêrô Nguyễn Lạc Trường Thịnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "500",
@@ -7997,7 +9494,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Nguyễn Hoàng Triều"
+        "name": "Đaminh Nguyễn Hoàng Triều",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "501",
@@ -8013,7 +9513,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Quang Trung"
+        "name": "Giuse Nguyễn Quang Trung",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "502",
@@ -8029,7 +9532,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Trần Xuân Trường"
+        "name": "Giuse Trần Xuân Trường",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "503",
@@ -8045,7 +9551,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đỗ Hoàng Duy Uyên"
+        "name": "Maria Đỗ Hoàng Duy Uyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "504",
@@ -8061,7 +9570,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Cao Nguyễn Anh Vũ"
+        "name": "Phêrô Cao Nguyễn Anh Vũ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "505",
@@ -8077,7 +9589,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Bùi Nguyễn Hạ Vy"
+        "name": "Maria Bùi Nguyễn Hạ Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "506",
@@ -8093,7 +9608,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Triệu Vỹ"
+        "name": "Giuse Triệu Vỹ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "507",
@@ -8109,7 +9627,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Vinhsơn Vũ Hoàng Triệu Vỹ"
+        "name": "Vinhsơn Vũ Hoàng Triệu Vỹ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "508",
@@ -8125,7 +9646,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Nguyễn Ngọc Hân"
+        "name": "Maria Vũ Nguyễn Ngọc Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "509",
@@ -8141,7 +9665,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Trần Gia Bảo"
+        "name": "Giuse Trần Gia Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "510",
@@ -8157,7 +9684,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Diệu Bách"
+        "name": "Maria Nguyễn Diệu Bách",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "511",
@@ -8173,7 +9703,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Bùi Nguyễn Tuấn Anh"
+        "name": "Giuse Bùi Nguyễn Tuấn Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "512",
@@ -8189,7 +9722,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Trương Hồng Hạnh"
+        "name": "Maria Nguyễn Trương Hồng Hạnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "513",
@@ -8205,7 +9741,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Phạm Minh Khuê"
+        "name": "Maria Phạm Minh Khuê",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "514",
@@ -8221,7 +9760,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Lê Anh Kiệt"
+        "name": "Phêrô Lê Anh Kiệt",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "515",
@@ -8237,7 +9779,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Lưu Nguyễn Thảo Nguyên"
+        "name": "Anna Lưu Nguyễn Thảo Nguyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "516",
@@ -8253,7 +9798,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Diễm Quỳnh"
+        "name": "Maria Vũ Diễm Quỳnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "517",
@@ -8269,7 +9817,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Têrêsa Phạm Nguyễn Hải Quỳnh"
+        "name": "Têrêsa Phạm Nguyễn Hải Quỳnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "518",
@@ -8285,7 +9836,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Hoàng Anh Thư"
+        "name": "Maria Hoàng Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "519",
@@ -8301,7 +9855,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Têrêsa Vũ Thị Mai Thương"
+        "name": "Têrêsa Vũ Thị Mai Thương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "520",
@@ -8317,7 +9874,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Đào Ngọc Thương"
+        "name": "Maria Nguyễn Đào Ngọc Thương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "521",
@@ -8333,7 +9893,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Phạm Bảo Thy"
+        "name": "Maria Nguyễn Phạm Bảo Thy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "522",
@@ -8349,7 +9912,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thị Ngọc Trâm"
+        "name": "Maria Nguyễn Thị Ngọc Trâm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "523",
@@ -8365,7 +9931,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Nguyễn Ngọc Bảo Trân"
+        "name": "Anna Nguyễn Ngọc Bảo Trân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "524",
@@ -8381,7 +9950,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioakim Nguyễn Minh Triều"
+        "name": "Gioakim Nguyễn Minh Triều",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "525",
@@ -8397,7 +9969,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Lê Hoàng Phúc"
+        "name": "Giuse Lê Hoàng Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "526",
@@ -8413,7 +9988,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Rosalima Vũ Trần Hoài An"
+        "name": "Rosalima Vũ Trần Hoài An",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "527",
@@ -8429,7 +10007,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Đình Anh"
+        "name": "Giuse Nguyễn Đình Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "528",
@@ -8445,7 +10026,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Ngọc Vân Anh"
+        "name": "Maria Nguyễn Ngọc Vân Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "529",
@@ -8461,7 +10045,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Đỗ Hoàng Gia Bảo"
+        "name": "Đaminh Đỗ Hoàng Gia Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "530",
@@ -8477,7 +10064,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioankim Nguyễn Thái Bình"
+        "name": "Gioankim Nguyễn Thái Bình",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "531",
@@ -8493,7 +10083,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Hồng Chương"
+        "name": "Giuse Nguyễn Hồng Chương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "532",
@@ -8509,7 +10102,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Ngô Bích Hương"
+        "name": "Maria Ngô Bích Hương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "533",
@@ -8525,7 +10121,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioakim Đỗ Minh Khương"
+        "name": "Gioakim Đỗ Minh Khương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "534",
@@ -8541,7 +10140,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đỗ Vũ Khánh Ly"
+        "name": "Maria Đỗ Vũ Khánh Ly",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "535",
@@ -8557,7 +10159,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Tăng Thành Nam"
+        "name": "Đaminh Tăng Thành Nam",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "536",
@@ -8573,7 +10178,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Đại Kim Ngân"
+        "name": "Maria Nguyễn Đại Kim Ngân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "537",
@@ -8589,7 +10197,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Nguyễn Phú Nghĩa"
+        "name": "Phêrô Nguyễn Phú Nghĩa",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "538",
@@ -8605,7 +10216,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Vũ Hoàng Minh Nhật"
+        "name": "Đaminh Vũ Hoàng Minh Nhật",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "539",
@@ -8621,7 +10235,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Dương Ngọc Quỳnh Như"
+        "name": "Maria Dương Ngọc Quỳnh Như",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "540",
@@ -8637,7 +10254,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Hoàng Trọng Bảo Phúc"
+        "name": "Giuse Hoàng Trọng Bảo Phúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "541",
@@ -8653,7 +10273,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lưu Vũ Quyên"
+        "name": "Maria Lưu Vũ Quyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "542",
@@ -8669,7 +10292,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Tống Dương Quỳnh"
+        "name": "Maria Tống Dương Quỳnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "543",
@@ -8685,7 +10311,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Têrêsa Lê Thị Như Quỳnh"
+        "name": "Têrêsa Lê Thị Như Quỳnh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "544",
@@ -8701,7 +10330,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Ngọc Thái"
+        "name": "Giuse Nguyễn Ngọc Thái",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "545",
@@ -8717,7 +10349,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Vũ Thái Anh Thư"
+        "name": "Maria Vũ Thái Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "546",
@@ -8733,7 +10368,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Têrêsa Kiều Hoàng Hoài Thương"
+        "name": "Têrêsa Kiều Hoàng Hoài Thương",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "547",
@@ -8749,7 +10387,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Trần Quốc Toản"
+        "name": "Giuse Trần Quốc Toản",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "548",
@@ -8765,7 +10406,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Hà Bích Trâm"
+        "name": "Maria Nguyễn Hà Bích Trâm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "549",
@@ -8781,7 +10425,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đào Thị Xuân Trúc"
+        "name": "Maria Đào Thị Xuân Trúc",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "550",
@@ -8797,7 +10444,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Lê Minh Tuấn"
+        "name": "Phêrô Lê Minh Tuấn",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "551",
@@ -8813,7 +10463,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đào Ngọc Phương Uyên"
+        "name": "Maria Đào Ngọc Phương Uyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "552",
@@ -8829,7 +10482,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Kiều Phan Yến Vi"
+        "name": "Maria Kiều Phan Yến Vi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "553",
@@ -8845,7 +10501,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Trịnh Xuân Thoại Vỹ"
+        "name": "Maria Trịnh Xuân Thoại Vỹ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "554",
@@ -8861,7 +10520,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lê Hoàng Yến"
+        "name": "Maria Lê Hoàng Yến",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "555",
@@ -8877,7 +10539,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Lê Thiên Ân"
+        "name": "Maria Lê Thiên Ân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "556",
@@ -8893,7 +10558,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Đào Ngọc Hoàng Anh"
+        "name": "Maria Đào Ngọc Hoàng Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "557",
@@ -8909,7 +10577,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Phạm Hoàng Mai Anh"
+        "name": "Maria Phạm Hoàng Mai Anh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "558",
@@ -8925,7 +10596,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Huỳnh Gia Bảo"
+        "name": "Đaminh Huỳnh Gia Bảo",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "559",
@@ -8941,7 +10615,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Hà Ngọc Diễm"
+        "name": "Maria Hà Ngọc Diễm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "560",
@@ -8957,7 +10634,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Micae Vũ Trường Giang"
+        "name": "Micae Vũ Trường Giang",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "561",
@@ -8973,7 +10653,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Têrêsa Đào Ngọc Hân"
+        "name": "Têrêsa Đào Ngọc Hân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "562",
@@ -8989,7 +10672,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thu Hằng"
+        "name": "Maria Nguyễn Thu Hằng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "563",
@@ -9005,7 +10691,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Hoàng Hải"
+        "name": "Giuse Nguyễn Hoàng Hải",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "564",
@@ -9021,7 +10710,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Đào Trần Huy"
+        "name": "Phêrô Đào Trần Huy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "565",
@@ -9037,7 +10729,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Đào Duy Hưng"
+        "name": "Phêrô Đào Duy Hưng",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "566",
@@ -9053,7 +10748,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Hoàng Nhật Bảo Minh"
+        "name": "Phêrô Hoàng Nhật Bảo Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "567",
@@ -9069,7 +10767,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Martino Nguyễn Đức Minh"
+        "name": "Maria Martino Nguyễn Đức Minh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "568",
@@ -9085,7 +10786,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Huỳnh Vĩnh Nghi"
+        "name": "Anna Huỳnh Vĩnh Nghi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "569",
@@ -9101,7 +10805,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Nguyễn Đình Nguyên"
+        "name": "Giuse Nguyễn Đình Nguyên",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "570",
@@ -9117,7 +10824,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Hoàng Ái Nhi"
+        "name": "Maria Hoàng Ái Nhi",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "571",
@@ -9133,7 +10843,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Gioakim Đỗ Minh Phát"
+        "name": "Gioakim Đỗ Minh Phát",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "572",
@@ -9149,7 +10862,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Phêrô Đào Duy Quân"
+        "name": "Phêrô Đào Duy Quân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "573",
@@ -9165,7 +10881,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Đaminh Đỗ Minh Quân"
+        "name": "Đaminh Đỗ Minh Quân",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "574",
@@ -9181,7 +10900,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Lương Thế Tâm"
+        "name": "Giuse Lương Thế Tâm",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "575",
@@ -9197,7 +10919,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Têrêsa Kiều Mai Thanh"
+        "name": "Têrêsa Kiều Mai Thanh",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "576",
@@ -9213,7 +10938,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Bùi Nguyễn Minh Thư"
+        "name": "Anna Bùi Nguyễn Minh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "577",
@@ -9229,7 +10957,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Kiều Anh Thư"
+        "name": "Anna Kiều Anh Thư",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "578",
@@ -9245,7 +10976,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Giuse Bùi Phương Vũ"
+        "name": "Giuse Bùi Phương Vũ",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "579",
@@ -9261,7 +10995,10 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Anna Nguyễn Huỳnh Thảo Vy"
+        "name": "Anna Nguyễn Huỳnh Thảo Vy",
+        "grades": [
+            {}
+        ]
     },
     {
         "ID": "580",
@@ -9277,6 +11014,9 @@
         "day_of_confirmation": "",
         "address": "",
         "contact": "",
-        "name": "Maria Nguyễn Thị Kim Yến"
+        "name": "Maria Nguyễn Thị Kim Yến",
+        "grades": [
+            {}
+        ]
     }
 ]

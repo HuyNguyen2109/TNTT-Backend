@@ -44,6 +44,7 @@ records.forEach(row => {
   row.day_of_baptism = formatDate(row.day_of_baptism);
   row.day_of_eucharist = formatDate(row.day_of_eucharist);
   row.day_of_confirmation = formatDate(row.day_of_confirmation);
+  row.grades = [{}];
 });
 
 let json = JSON.stringify(records);
