@@ -49,17 +49,17 @@ const WithPagination = (req, res) => {
           }
         ]
       } : {
-          '$and': [
-            {
-              '$or': [
-                { 'name': { '$regex': searchQueryUpperCase } },
-                { 'name': { '$regex': searchQueryLowerCase } },
-                { 'name': { '$regex': searchQueryCapitalize } }
-              ]
-            },
-            { 'class': classes }
-          ]
-        })
+        '$and': [
+          {
+            '$or': [
+              { 'name': { '$regex': searchQueryUpperCase } },
+              { 'name': { '$regex': searchQueryLowerCase } },
+              { 'name': { '$regex': searchQueryCapitalize } }
+            ]
+          },
+          { 'class': classes }
+        ]
+      })
     .limit(itemPerPage)
     .skip(itemPerPage * (page))
     .lean()
@@ -253,6 +253,30 @@ const getGradeByName = (req, res) => {
       log.error(err);
       res.sendError(err);
     });
+};
+
+const addGradeByName = (req, res) => {
+  const childredNames = req.params.name;
+  const gradeData = {
+    'key': req.body.key,
+    'title': req.body.title,
+    'point': req.body.point
+  };
+
+  return Children
+    .updateOne({ 'name': childredNames }, {
+      '$push': {
+        'grades': gradeData
+      }
+    })
+    .then((o) => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
 }
 
 module.exports = {
@@ -264,5 +288,6 @@ module.exports = {
   'getByName': getByName,
   'updateByName': updateByName,
   'createNew': createNew,
-  'getGradeByName': getGradeByName
+  'getGradeByName': getGradeByName,
+  'addGradeByName': addGradeByName
 };

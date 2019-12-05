@@ -22,4 +22,6 @@ router.post('/create', childrenController.createNew);
 
 router.get('/grade/by-name/:name', childrenController.getGradeByName);
 
+router.post('/grade/new/by-name/:name', childrenController.addGradeByName);
+
 module.exports = router;
