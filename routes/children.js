@@ -24,4 +24,8 @@ router.get('/grade/by-name/:name', childrenController.getGradeByName);
 
 router.post('/grade/new/by-name/:name', childrenController.addGradeByName);
 
+router.post('/grade/update/by-name/:name', childrenController.updateGradeByName);
+
+router.post('/grade/delete/by-name/:name', childrenController.deleteGradeByName);
+
 module.exports = router;

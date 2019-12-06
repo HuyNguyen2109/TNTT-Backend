@@ -260,7 +260,8 @@ const addGradeByName = (req, res) => {
   const gradeData = {
     'key': req.body.key,
     'title': req.body.title,
-    'point': req.body.point
+    'point': req.body.point,
+    'type': req.body.type
   };
 
   return Children
@@ -277,7 +278,56 @@ const addGradeByName = (req, res) => {
       log.error(err);
       res.sendError(err);
     });
-}
+};
+
+const updateGradeByName = (req, res) => {
+  const childredNames = req.params.name;
+  const gradeData = {
+    'key': req.body.key,
+    'title': req.body.title,
+    'point': req.body.point,
+    'type': req.body.type
+  };
+
+  return Children
+    .updateOne({ 'name': childredNames, 'grades.key': gradeData.key }, {
+      '$set': { 'grades.$' : gradeData }
+    })
+    .then((o) => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
+
+const deleteGradeByName = (req, res) => {
+  const childredNames = req.params.name;
+  const gradeData = {
+    'key': req.body.key,
+    'title': req.body.title,
+    'point': req.body.point,
+    'type': req.body.type
+  };
+  console.log(gradeData);
+
+  return Children
+    .updateOne({ 'name': childredNames}, {
+      '$pull': {
+        'grades': gradeData
+      }
+    })
+    .then((o) => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
 
 module.exports = {
   'WithPagination': WithPagination,
@@ -289,5 +339,7 @@ module.exports = {
   'updateByName': updateByName,
   'createNew': createNew,
   'getGradeByName': getGradeByName,
-  'addGradeByName': addGradeByName
+  'addGradeByName': addGradeByName,
+  'updateGradeByName': updateGradeByName,
+  'deleteGradeByName': deleteGradeByName
 };

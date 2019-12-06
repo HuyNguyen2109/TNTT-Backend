@@ -17,31 +17,37 @@
         "grades": [
             {
                 "key": "e0f8e560-23e6-4b60-ae14-a500da88ac0d",
+                "type": "Điểm thường",
                 "title": "Điểm tháng 1",
                 "point": 9
             },
             {
                 "key": "762edd39-f8d3-4fcd-8b7b-3fe23f5ca429",
+                "type": "Điểm thường",
                 "title": "Điểm tháng 2",
                 "point": 9.5
             },
             {
                 "key": "481db179-697d-499d-9b42-cc25b488fbba",
+                "type": "Điểm thường",
                 "title": "Điểm tháng 3",
                 "point": 8
             },
             {
                 "key": "fc6b0410-e8ff-44b7-8ff3-6ea588f48231",
+                "type": "Điểm thường",
                 "title": "Điểm tháng 4",
                 "point": 7
             },
             {
                 "key": "689ec223-7366-4cb4-8931-1de6f805f554",
+                "type": "Điểm thường",
                 "title": "Điểm tháng 5",
                 "point": 5
             },
             {
                 "key": "d434bddd-4d87-4b88-9747-0a8374ae5ea2",
+                "type": "Điểm thường",
                 "title": "Điểm test",
                 "point": 10
             }

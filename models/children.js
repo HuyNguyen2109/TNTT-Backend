@@ -19,9 +19,7 @@ const childrenScema = new Schema({
   'address': String,
   'contact': String,
   'grades': [{
-    'key': String,
-    'title': String,
-    'point': Number
+
   }]
 });
 
