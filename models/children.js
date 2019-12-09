@@ -18,9 +18,8 @@ const childrenScema = new Schema({
   'day_of_confirmation': String,
   'address': String,
   'contact': String,
-  'grades': [{
-
-  }]
+  'grades': [],
+  'absents': []
 });
 
 const Children = mongoose.model('children', childrenScema, 'children');

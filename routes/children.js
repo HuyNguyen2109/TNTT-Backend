@@ -28,4 +28,12 @@ router.post('/grade/update/by-name/:name', childrenController.updateGradeByName)
 
 router.post('/grade/delete/by-name/:name', childrenController.deleteGradeByName);
 
+router.get('/absent/by-name/:name', childrenController.getAbsentByName);
+
+router.post('/absent/new/by-name/:name', childrenController.addAbsentByName);
+
+router.post('/absent/update/by-name/:name', childrenController.updateAbsentByName);
+
+router.post('/absent/delete/by-name/:name', childrenController.deleteAbsentByName);
+
 module.exports = router;

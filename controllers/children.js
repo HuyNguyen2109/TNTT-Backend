@@ -225,7 +225,9 @@ const createNew = (req, res) => {
     'day_of_eucharist': req.body.day_of_eucharist,
     'day_of_confirmation': req.body.day_of_confirmation,
     'address': req.body.address,
-    'contact': req.body.contact
+    'contact': req.body.contact,
+    'grades': req.body.grades,
+    'absents': req.body.absent
   };
 
   return Children
@@ -311,12 +313,100 @@ const deleteGradeByName = (req, res) => {
     'point': req.body.point,
     'type': req.body.type
   };
-  console.log(gradeData);
 
   return Children
     .updateOne({ 'name': childredNames}, {
       '$pull': {
         'grades': gradeData
+      }
+    })
+    .then((o) => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
+
+const getAbsentByName = (req, res) => {
+  const childredNames = req.params.name;
+
+  return Children
+    .find({ 'name': childredNames })
+    .then(o => {
+      const grades = o[0].absents;
+      res.sendSuccess(resultDto.success(messageCodes.I001, grades));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
+
+const addAbsentByName = (req, res) => {
+  const childredNames = req.params.name;
+  const absentData = {
+    'key': req.body.key,
+    'title': req.body.title,
+    'day': req.body.day,
+    'type': req.body.type
+  };
+
+  return Children
+    .updateOne({ 'name': childredNames }, {
+      '$push': {
+        'absents': absentData
+      }
+    })
+    .then((o) => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
+
+const updateAbsentByName = (req, res) => {
+  const childredNames = req.params.name;
+  const absentData = {
+    'key': req.body.key,
+    'title': req.body.title,
+    'day': req.body.day,
+    'type': req.body.type
+  };
+
+  return Children
+    .updateOne({ 'name': childredNames, 'absents.key': absentData.key }, {
+      '$set': { 'absents.$' : absentData }
+    })
+    .then((o) => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
+
+const deleteAbsentByName = (req, res) => {
+  const childredNames = req.params.name;
+  const absentData = {
+    'key': req.body.key,
+    'title': req.body.title,
+    'day': req.body.day,
+    'type': req.body.type
+  };
+  log.info(absentData);
+
+  return Children
+    .updateOne({ 'name': childredNames}, {
+      '$pull': {
+        'absents': absentData
       }
     })
     .then((o) => {
@@ -341,5 +431,9 @@ module.exports = {
   'getGradeByName': getGradeByName,
   'addGradeByName': addGradeByName,
   'updateGradeByName': updateGradeByName,
-  'deleteGradeByName': deleteGradeByName
+  'deleteGradeByName': deleteGradeByName,
+  'getAbsentByName': getAbsentByName,
+  'addAbsentByName': addAbsentByName,
+  'updateAbsentByName': updateAbsentByName,
+  'deleteAbsentByName': deleteAbsentByName
 };

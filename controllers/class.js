@@ -35,14 +35,13 @@ const getByID = (req, res) => {
   return Class
     .find({'ID': classID})
     .then(result => {
-      console.log(result);
       res.sendSuccess(resultDto.success(messageCodes.I001, result));
     })
     .catch(err => {
       log.error(err);
       res.sendError(err);
     });
-}
+};
 
 module.exports = {
   'getAllClasses': getAllClasses,
