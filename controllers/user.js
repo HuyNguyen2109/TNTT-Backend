@@ -12,7 +12,7 @@ const Token = require('../models/token');
 const registerUser = (req, res) => {
   const newUser = {
     'username': req.body.username,
-    'password': req.body.password,
+    'password': '1',
     'email': req.body.email,
     'holyname': req.body.holyname,
     'fullname': req.body.fullname,
@@ -116,10 +116,41 @@ const getUser = (req, res) => {
     });
 };
 
+const getAllUsers = (req, res) => {
+  return User
+    .find({ 'username': {'$ne': 'root'} })
+    .lean()
+    .then(result => {
+      delete result.password;
+      res.sendSuccess(resultDto.success(messageCodes.I001, result));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    })
+}
+
+const deleteMultipleUsernames = (req, res) => {
+  const usernames = req.query.usernames;
+
+  return User
+    .deleteMany({ 'username': {'$in': usernames} })
+    .then(o => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+}
+
 module.exports = {
   'registerUser': registerUser,
   'login': login,
   'updateUser': updateUser,
   'getUser': getUser,
-  'generateToken': generateToken
+  'generateToken': generateToken,
+  'getAllUsers': getAllUsers,
+  'deleteMultipleUsernames': deleteMultipleUsernames
 };

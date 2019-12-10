@@ -14,4 +14,8 @@ router.get('/get-user/:username', userController.getUser);
 
 router.post('/token', userController.generateToken);
 
+router.get('/all', userController.getAllUsers);
+
+router.delete('/delete/by-usernames', userController.deleteMultipleUsernames)
+
 module.exports = router;
