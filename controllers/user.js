@@ -16,9 +16,9 @@ const registerUser = (req, res) => {
     'email': req.body.email,
     'holyname': req.body.holyname,
     'fullname': req.body.fullname,
-    'phone_number': req.body.phoneNumber,
+    'phone_number': req.body.phone_number,
     'birthday': req.body.birthday,
-    'holy_birthday': req.body.holyBirthday,
+    'holy_birthday': req.body.holy_birthday,
     'type': req.body.type,
     'class': req.body.class
   };
