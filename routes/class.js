@@ -12,4 +12,6 @@ router.get('/by-id/:id', classController.getByID);
 
 router.post('/add', classController.addNew);
 
+router.delete('/delete/by-id/:id', classController.deleteClassByID);
+
 module.exports = router;

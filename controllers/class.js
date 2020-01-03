@@ -1,6 +1,7 @@
 const resultDto = require('../common/dto/result');
 const messageCodes = require('../common/message-codes');
 const Class = require('../models/classes');
+const log = require('log4js').getLogger();
 
 const getAllClasses = (req, res) => {
   return Class
@@ -53,14 +54,38 @@ const addNew = (req, res) => {
   return Class
     .find({'ID': newClass.ID})
     .then(classRes => {
-      if (classRes !== null) {
+      console.log(classRes)
+      if (classRes.length !== 0) {
         throw resultDto.conflict(messageCodes.E003);
       }
       else {
         return Class.create(newClass)
       }
     })
-    .then(res => {
+    .then(o => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+}
+
+const deleteClassByID = (req, res) => {
+  const classID = req.params.id;
+
+  return Class
+    .find({'ID': classID})
+    .then(classRes => {
+      if(classRes.length === 0) {
+        throw resultDto.notFound(messageCodes.E004)
+      }
+      else {
+        return Class.findOneAndDelete({'ID': classID})
+      }
+    })
+    .then(o => {
       log.info(o);
       res.sendSuccess(resultDto.success(messageCodes.I001));
     })
@@ -74,5 +99,6 @@ module.exports = {
   'getAllClasses': getAllClasses,
   'getByPath': getByPath,
   'getByID': getByID,
-  'addNew': addNew
+  'addNew': addNew,
+  'deleteClassByID': deleteClassByID
 };
