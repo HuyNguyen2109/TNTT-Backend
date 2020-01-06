@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const childrenFundScema = new Schema({
-  'month': String,
+  'date': String,
   'title': String,
   'price': Number
 });

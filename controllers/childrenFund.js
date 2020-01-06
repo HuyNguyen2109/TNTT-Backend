@@ -15,6 +15,26 @@ const getAllFunds = (req, res) => {
     })
 }
 
+const addFund = (req, res) => {
+  const newFund = {
+    'date': req.body.date,
+    'title': req.body.title,
+    'price': req.body.price
+  }
+
+  return ChildrenFund
+    .create(newFund)
+    .then(o => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+}
+
 module.exports = {
-  'getAllFund': getAllFunds
+  'getAllFunds': getAllFunds,
+  'addFund': addFund
 };
