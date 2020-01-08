@@ -19,6 +19,7 @@ const userRouter = require('./routes/user');
 const childrenRouter = require('./routes/children');
 const classRouter = require('./routes/class');
 const childrenFundRouter = require('./routes/childrenFund');
+const eventRouter = require('./routes/event');
 
 const config = require('config');
 const app = express();
@@ -110,6 +111,7 @@ app.use(BASE_URL + '/user', userRouter);
 app.use(BASE_URL + '/children', childrenRouter);
 app.use(BASE_URL + '/class', classRouter);
 app.use(BASE_URL + '/children-fund', childrenFundRouter);
+app.use(BASE_URL + '/event', eventRouter);
 
 // Catch 404 error
 app.use((req, res, next) => {
