@@ -1,6 +1,7 @@
 {
   "applicationPort": "6000",
   "baseURL": "/backend",
+  "googleAPIKey": "AIzaSyBtEpi04KWxen4zHSPFys-zOXo_8TaxnkU",
   "emailConfig": {
     "username": "JohnasHuy21091996@gmail.com",
     "password": "Master2109"
