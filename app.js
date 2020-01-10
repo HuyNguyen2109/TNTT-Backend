@@ -29,7 +29,7 @@ mongoDB.clientConnect();
 
 const storage = multer.diskStorage({
   'destination': (req, file, cb) => {
-    cb(null, 'public/restored');
+    cb(null, 'datacenter');
   }
 });
 

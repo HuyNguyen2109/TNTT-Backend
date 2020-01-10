@@ -1,6 +1,7 @@
 const fs = require('fs');
 const csv = require('csv-parser');
 const log = require('log4js').getLogger();
+const { google } = require('googleapis');
 
 const resultDto = require('../common/dto/result');
 const messageCodes = require('../common/message-codes');
@@ -15,7 +16,7 @@ const createDocument = (req, res) => {
 		'date': createDate,
 		'filename': documentFile.originalname,
 		'username': username,
-		'url': ''
+		'url': documentFile.path
 	}
 
 	return Document.create(documentDetail)
@@ -61,5 +62,6 @@ const deleteDocumentById = (req, res) => {
 module.exports = {
 	'createDocument': createDocument,
 	'getAllDocuments': getAllDocuments,
-	'deleteDocumentById': deleteDocumentById
+	'deleteDocumentById': deleteDocumentById,
+  'listFiles': listFiles
 }
