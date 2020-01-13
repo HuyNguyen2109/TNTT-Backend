@@ -7,7 +7,7 @@ const documentSchema = new Schema({
   'date': String,
   'filename': String,
   'username': String,
-  'url': String,
+  'key': String,
 });
 
 const Document = mongoose.model('document', documentSchema, 'document');
