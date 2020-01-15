@@ -48,8 +48,8 @@
     }
   },
   "AWSConfig": {
-    "accessKeyID": "AKIAI6AKGW3XR2JC6R6A",
-    "secretKeyID": "bge48w91zaaD1hhJklXEO0IDU5ZQyC7MgLedQ6Nf",
+    "accessKeyID": " AKIAVIAASMYU65IIPCOY",
+    "secretKeyID": "HdwPt6ApAgtBABO7WZDeQ66je7rA8UxNpRX8+6sz",
     "S3BucketName": "tntt-web-app-admin"
   }
 }

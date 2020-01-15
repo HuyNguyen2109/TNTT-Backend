@@ -11,9 +11,12 @@ const Document = require('../models/document');
 const awsConfig = config.get('AWSConfig');
 AWS.config.update({
   accessKeyId: awsConfig.accessKeyID,
-  secretAccessKey: awsConfig.secretKeyID
+  secretAccessKey: awsConfig.secretKeyID,
+  region: 'ap-northeast-1',
+  signatureVersion: 'v4'
 })
 const s3 = new AWS.S3();
+
 
 const createDocument = (req, res) => {
 	const documentFile = req.files[0];
@@ -33,22 +36,21 @@ const createDocument = (req, res) => {
 		'key': `${documentFile.originalname}`
 	}
 
-	return Document.findOne({ 'filename': documentFile.originalname })
-		.then(docs => {
-      if(docs.length !== 0) {
+  return s3.upload(bucketParam).promise()
+    .then(o => {
+      log.info(o);
+
+      return Document.findOne({ 'filename': documentFile.originalname })
+    })
+    .then(doc => {
+      if(doc !== null) {
         return Document.findOneAndUpdate({ 'filename': documentFile.originalname }, { '$set': { 'date': createDate } } )
       }
       else {
         return Document.create(documentDetail)
       }
     })
-    .then(o => {
-      log.info(o)
-
-      return s3.upload(bucketParam).promise();
-    })
-    .then((o) => {
-      log.info(o)
+    .then(() =>{
       fs.unlink(documentFile.path, (err) => {})
       res.sendSuccess(resultDto.success(messageCodes.I001));
     })
@@ -105,7 +107,7 @@ const downloadById = (req, res) => {
       if(doc === null || doc === undefined) {
         throw resultDto.notFound(messageCodes.E004);
       }
-      console.log(doc)
+      
       const bucketParam = {
         Bucket: awsConfig.S3BucketName,
         Key: doc.key,

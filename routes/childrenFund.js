@@ -8,4 +8,6 @@ router.get('/all', childrenFundController.getAllFunds);
 
 router.post('/new-fund', childrenFundController.addFund);
 
+router.post('/merge-fund', childrenFundController.mergeAllFunds);
+
 module.exports = router;

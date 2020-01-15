@@ -1,0 +1,43 @@
+const fs = require('fs')
+const lineReader = require('line-reader');
+
+const resultDto = require('../common/dto/result');
+const messageCodes = require('../common/message-codes');
+const log = require('log4js').getLogger();
+
+const getAll = (req, res) => {
+	const type = `[${req.params.type}]`;
+	const itemPerPage = req.query.itemPerPage;
+	const page = req.query.page;
+	const logPath = './log/file.log';
+	let remaining = '';
+	let filter = [];
+
+	let text = fs.readFileSync(logPath).toString().split('\n')
+	filter = text.filter(line => line.includes(type));
+	let logs = []
+	let msg = {}
+	filter.forEach(log => {
+		msg.content = log;
+		logs.push(msg);
+	})
+	res.sendSuccess(resultDto.success(messageCodes.I001, {
+		logs: logs,
+		legnth: logs.length
+	}))
+}
+
+const clearAll = (req, res) => {
+	const logPath = './log/file.log';
+	fs.writeFile(logPath, '', (err, data) => {
+		if(err) return res.sendError(err)
+		else return res.sendSuccess(resultDto.success(messageCodes.I001))
+	})
+
+	
+}
+
+module.exports = {
+	'getAll': getAll,
+	'clearAll': clearAll
+}
