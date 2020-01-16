@@ -46,10 +46,5 @@
         "level": "ALL"
       }
     }
-  },
-  "AWSConfig": {
-    "accessKeyID": " AKIAVIAASMYU65IIPCOY",
-    "secretKeyID": "HdwPt6ApAgtBABO7WZDeQ66je7rA8UxNpRX8+6sz",
-    "S3BucketName": "tntt-web-app-admin"
   }
 }

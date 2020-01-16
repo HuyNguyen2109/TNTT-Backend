@@ -35,7 +35,7 @@ const storage = multer.diskStorage({
   }
 });
 
-const upload = multer({'storage': storage}).any();
+const upload = multer({'storage': storage, limits: { fileSize: 10*1024*1024 }}).any();
 
 app.use(cors());
 app.use(bodyParser());

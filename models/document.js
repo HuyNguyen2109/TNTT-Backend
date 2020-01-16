@@ -8,6 +8,7 @@ const documentSchema = new Schema({
   'filename': String,
   'username': String,
   'key': String,
+  'type': String,
 });
 
 const Document = mongoose.model('document', documentSchema, 'document');
