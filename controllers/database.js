@@ -1,14 +1,47 @@
-const mongoose = require('mongoose');
-const config = require('config');
-
 const resultDto = require('../common/dto/result');
 const messageCodes = require('../common/message-codes');
 const log = require('log4js').getLogger();
+const path = require('path')
+const config = require('config')
+const fs = require('fs')
+const exec = require('child_process').exec;
 
-const backup = (req, res) => {
-  return res.sendSuccess(resultDto.success(messageCodes.I001))
+const automaticallyBackupPath = path.join(__dirname, '../backup/automatically')
+const manuallybackupPath = path.join(__dirname, '../backup/manually')
+const backupEngine = require('../models/backup');
+const dbConfig = config.get('dbConfigLocal');
+
+const checkBackupExist = (req, res) => {
+  if(fs.existsSync(path.join(manuallybackupPath, dbConfig.dbName)) || fs.existsSync(path.join(automaticallyBackupPath, dbConfig.dbName))) {
+    res.sendSuccess(resultDto.success(messageCodes.I001, true))
+  }
+  else {
+    throw resultDto.notFound(messageCodes.E004);
+  }
+} 
+
+const manuallyBackup = (req, res) => {
+  let result = backupEngine.backup(manuallybackupPath)
+  if(result !== false) {
+    res.sendSuccess(resultDto.success(messageCodes.I001, true));
+  }
+  else {
+    res.sendError(result);
+  }
+}
+
+const deleteManuallyBackup = (req, res) => {
+  if(fs.existsSync(path.join(manuallybackupPath, dbConfig.dbName))) {
+    exec('rm -rf ' + path.join(manuallybackupPath, dbConfig.dbName), err => {});
+    return res.sendSuccess(resultDto.success(messageCodes.I001));
+  }
+  else{
+    throw resultDto.notFound(messageCodes.E004);
+  }
 }
 
 module.exports = {
-  'backup': backup
+  'checkBackupExist': checkBackupExist,
+  'manuallyBackup': manuallyBackup,
+  'deleteManuallyBackup': deleteManuallyBackup,
 }

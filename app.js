@@ -23,11 +23,13 @@ const eventRouter = require('./routes/event');
 const documentRouter = require('./routes/document');
 const logRouter = require('./routes/logger');
 const databaseRouter = require('./routes/database');
+const backupEngine = require('./models/backup');
 
 const config = require('config');
 const app = express();
 
 mongoDB.clientConnect();
+backupEngine.autoBackup();
 
 const storage = multer.diskStorage({
   'destination': (req, file, cb) => {
