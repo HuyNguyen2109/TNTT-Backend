@@ -10,4 +10,6 @@ router.get('/backup', databaseController.manuallyBackup);
 
 router.delete('/backup/delete-manually', databaseController.deleteManuallyBackup);
 
+router.get('/tumblr/posts', databaseController.getTumblrImage);
+
 module.exports = router;

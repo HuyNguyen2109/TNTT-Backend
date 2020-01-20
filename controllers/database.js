@@ -5,6 +5,17 @@ const path = require('path')
 const config = require('config')
 const fs = require('fs')
 const exec = require('child_process').exec;
+const util = require('util');
+
+//for Tummblr configuration
+var tumblrConfig = config.get('tumblrConfig');
+var tumblr = require('tumblr.js');
+var tumblrClient = tumblr.createClient({
+  consumer_key: tumblrConfig.consumerKey,
+  consumer_secret: tumblrConfig.consumerSecret,
+  token: tumblrConfig.token,
+  token_secret: tumblrConfig.tokenSecret
+}); 
 
 const automaticallyBackupPath = path.join(__dirname, '../backup/automatically')
 const manuallybackupPath = path.join(__dirname, '../backup/manually')
@@ -40,8 +51,26 @@ const deleteManuallyBackup = (req, res) => {
   }
 }
 
+const getTumblrImage = (req, res) => {
+  const tumblrCustomPromise = util.promisify(tumblrClient.blogPosts)
+  let detail = {};
+  return tumblrCustomPromise(tumblrConfig.blogNameForImage)
+    .then(data => {
+      detail.img = data.posts[0].photos[0].original_size.url;
+      return tumblrCustomPromise(tumblrConfig.blogNameForGospel)
+    })
+    .then(data => {
+      detail.content = data.posts[0].caption
+      res.sendSuccess(resultDto.success(messageCodes.I001, detail))
+    })
+    .catch(err => {
+      return res.sendError(err)
+    })
+}
+
 module.exports = {
   'checkBackupExist': checkBackupExist,
   'manuallyBackup': manuallyBackup,
   'deleteManuallyBackup': deleteManuallyBackup,
+  'getTumblrImage': getTumblrImage
 }

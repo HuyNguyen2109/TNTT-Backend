@@ -46,5 +46,13 @@
         "level": "ALL"
       }
     }
+  },
+  "tumblrConfig": {
+    "consumerKey": "caI4kJzKHNMPcwbEyh8Z2AGzLnV8OGwC5Xbje6Z9w7oCKspcZF",
+    "consumerSecret": "J892pDzVMVjaZ10fi4RelpGnihVlPI0g4MoRkyBz534zjQvw3f",
+    "token": "PIpy5BPPWRSsV8Zh9ZnTTqQLoJKkS65DO7XWXJK9NbNHKPwrxD",
+    "tokenSecret": "AbC9eTLy3dOLD9aHt4pZQQbQnymXcAxxRrAsD0JRuncwpVJUAW",
+    "blogNameForImage": "coverscatholic.tumblr.com",
+    "blogNameForGospel": "roman-catholic-mass-readings.tumblr.com"
   }
 }
