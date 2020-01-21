@@ -60,7 +60,7 @@ const getTumblrImage = (req, res) => {
       return tumblrCustomPromise(tumblrConfig.blogNameForGospel)
     })
     .then(data => {
-      detail.content = data.posts[0].caption
+      detail.content = data.posts[0].caption.substring(0, data.posts[0].caption.indexOf('Gospel (USA)'))
       res.sendSuccess(resultDto.success(messageCodes.I001, detail))
     })
     .catch(err => {

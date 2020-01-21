@@ -65,7 +65,7 @@ const clientConnect = () => {
       // This below block-code is temporary for development purpose
       const adminUser = {
         "birthday" : "1996-09-21",
-        "class" : "Bao Đồng 1A",
+        "class" : "BD1A",
         "fullname" : "Nguyễn Nhựt Huy",
         "holy_birthday" : "1996-06-29",
         "holyname" : "Phêrô",

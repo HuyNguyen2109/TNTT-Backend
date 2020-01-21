@@ -116,6 +116,22 @@ const getUser = (req, res) => {
     });
 };
 
+const getUserByClassID = (req, res) => {
+  const classID = req.params.classID;
+
+  return User
+    .find({'class': classID})
+    .lean()
+    .then(result => {
+      delete result.password;
+      res.sendSuccess(resultDto.success(messageCodes.I001, result));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+};
+
 const getAllUsers = (req, res) => {
   return User
     .find({ 'username': {'$ne': 'root'} })
@@ -150,6 +166,7 @@ module.exports = {
   'login': login,
   'updateUser': updateUser,
   'getUser': getUser,
+  'getUserByClassID': getUserByClassID,
   'generateToken': generateToken,
   'getAllUsers': getAllUsers,
   'deleteMultipleUsernames': deleteMultipleUsernames

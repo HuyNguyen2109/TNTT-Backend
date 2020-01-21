@@ -12,6 +12,8 @@ router.post('/update', userController.updateUser);
 
 router.get('/get-user/:username', userController.getUser);
 
+router.get('/get-user-by-class/:classID', userController.getUserByClassID);
+
 router.post('/token', userController.generateToken);
 
 router.get('/all', userController.getAllUsers);
