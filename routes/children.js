@@ -36,4 +36,8 @@ router.post('/absent/update/by-name/:name', childrenController.updateAbsentByNam
 
 router.post('/absent/delete/by-name/:name', childrenController.deleteAbsentByName);
 
+router.post('/lock-scores', childrenController.lockScoreBySemester);
+
+router.delete('/reset-scores/:classID', childrenController.resetScores);
+
 module.exports = router;

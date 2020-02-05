@@ -19,7 +19,10 @@ const childrenScema = new Schema({
   'address': String,
   'contact': String,
   'grades': [],
-  'absents': []
+  'absents': [],
+  'scoreI': String,
+  'scoreII': String,
+  'finalScore': String
 });
 
 const Children = mongoose.model('children', childrenScema, 'children');

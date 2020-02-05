@@ -1,6 +1,7 @@
 const fs = require('fs');
 const csv = require('csv-parser');
 const log = require('log4js').getLogger();
+const _ = require('lodash');
 
 const resultDto = require('../common/dto/result');
 const messageCodes = require('../common/message-codes');
@@ -49,17 +50,17 @@ const WithPagination = (req, res) => {
           }
         ]
       } : {
-        '$and': [
-          {
-            '$or': [
-              { 'name': { '$regex': searchQueryUpperCase } },
-              { 'name': { '$regex': searchQueryLowerCase } },
-              { 'name': { '$regex': searchQueryCapitalize } }
-            ]
-          },
-          { 'class': classes }
-        ]
-      })
+          '$and': [
+            {
+              '$or': [
+                { 'name': { '$regex': searchQueryUpperCase } },
+                { 'name': { '$regex': searchQueryLowerCase } },
+                { 'name': { '$regex': searchQueryCapitalize } }
+              ]
+            },
+            { 'class': classes }
+          ]
+        })
     .limit(itemPerPage)
     .skip(itemPerPage * (page))
     .lean()
@@ -263,7 +264,8 @@ const addGradeByName = (req, res) => {
     'key': req.body.key,
     'title': req.body.title,
     'point': req.body.point,
-    'type': req.body.type
+    'type': req.body.type,
+    'semester': req.body.semester,
   };
 
   return Children
@@ -288,12 +290,13 @@ const updateGradeByName = (req, res) => {
     'key': req.body.key,
     'title': req.body.title,
     'point': req.body.point,
-    'type': req.body.type
+    'type': req.body.type,
+    'semester': req.body.semester,
   };
 
   return Children
     .updateOne({ 'name': childredNames, 'grades.key': gradeData.key }, {
-      '$set': { 'grades.$' : gradeData }
+      '$set': { 'grades.$': gradeData }
     })
     .then((o) => {
       log.info(o);
@@ -311,11 +314,12 @@ const deleteGradeByName = (req, res) => {
     'key': req.body.key,
     'title': req.body.title,
     'point': req.body.point,
-    'type': req.body.type
+    'type': req.body.type,
+    'semester': req.body.semester,
   };
 
   return Children
-    .updateOne({ 'name': childredNames}, {
+    .updateOne({ 'name': childredNames }, {
       '$pull': {
         'grades': gradeData
       }
@@ -381,7 +385,7 @@ const updateAbsentByName = (req, res) => {
 
   return Children
     .updateOne({ 'name': childredNames, 'absents.key': absentData.key }, {
-      '$set': { 'absents.$' : absentData }
+      '$set': { 'absents.$': absentData }
     })
     .then((o) => {
       log.info(o);
@@ -404,7 +408,7 @@ const deleteAbsentByName = (req, res) => {
   log.info(absentData);
 
   return Children
-    .updateOne({ 'name': childredNames}, {
+    .updateOne({ 'name': childredNames }, {
       '$pull': {
         'absents': absentData
       }
@@ -418,6 +422,107 @@ const deleteAbsentByName = (req, res) => {
       res.sendError(err);
     });
 };
+
+const lockScoreBySemester = (req, res) => {
+  const typeInfo = {
+    'type': req.body.type,
+    'class': req.body.class
+  };
+  return Children
+    .find({ class: typeInfo.class })
+    .lean()
+    .then(children => {
+      if (typeInfo.type !== 'Final') {
+        let promises = [];
+        children.forEach(child => {
+          let childScoresBySemester = _.filter(child.grades, el => el.semester === typeInfo.type);
+          if (childScoresBySemester.length !== 0) {
+            let count = 0;
+            let total = 0;
+            childScoresBySemester.forEach(score => {
+              switch (score.type) {
+                case 'Điểm thường':
+                  count += 1;
+                  total += parseFloat(score.point);
+                  break;
+                case 'Điểm kiểm tra':
+                  count += 2;
+                  total += (parseFloat(score.point) * 2);
+                  break;
+                case 'Điểm thi':
+                  count += 3;
+                  total += (parseFloat(score.point) * 3);
+                  break;
+              }
+            })
+            console.log(total + '/' + count)
+            let avgScore;
+            if (typeInfo.type === 'HKI') {
+              avgScore = {
+                'scoreI': (Number(parseFloat(total) / parseInt(count)).toFixed(2)).toString()
+              }
+            }
+            else {
+              avgScore = {
+                'scoreII': (Number(parseFloat(total) / parseInt(count)).toFixed(2)).toString()
+              }
+            }
+            promises.push(Children.updateOne({ name: child.name }, { $set: avgScore }))
+          }
+        })
+
+        return Promise.all(promises)
+      }
+      else {
+        let promises = [];
+        children.forEach(child => {
+          if (child.scoreI !== '' && child.scoreII !== '') {
+            console.log(child.scoreI + child.scoreII)
+            let finalScore = {
+              'finalScore': (Number((parseFloat(child.scoreI) + parseFloat(child.scoreII * 2))/3).toFixed(2)).toString()
+            }
+            promises.push(Children.updateOne({ name: child.name }, { $set: finalScore }))
+          }
+        })
+
+        return Promise.all(promises)
+      }
+    })
+    .then((o) => {
+      if(o) res.sendSuccess(resultDto.success(messageCodes.I001))
+    })
+    .catch(err => {
+      res.sendError(err)
+    })
+}
+
+const resetScores = (req, res) => {
+  const classID = req.params.classID;
+
+  return Children
+    .find({ 'class': classID })
+    .lean()
+    .then(children => {
+      let promises = []
+      children.forEach(child => {
+        let resetScore = {
+          'scoreI': '',
+          'scoreII': '',
+          'finalScore': '',
+        }
+        promises.push(Children.updateOne({ 'name': child.name }, { '$set': resetScore }))
+      })
+
+      return Promise.all(promises)
+    })
+    .then((o) => {
+      log.info(o)
+      res.sendSuccess(resultDto.success(messageCodes.I001))
+    })
+    .catch(err => {
+      res.sendError(err)
+    })
+}
 
 module.exports = {
   'WithPagination': WithPagination,
@@ -435,5 +540,7 @@ module.exports = {
   'getAbsentByName': getAbsentByName,
   'addAbsentByName': addAbsentByName,
   'updateAbsentByName': updateAbsentByName,
-  'deleteAbsentByName': deleteAbsentByName
+  'deleteAbsentByName': deleteAbsentByName,
+  'lockScoreBySemester': lockScoreBySemester,
+  'resetScores': resetScores
 };
