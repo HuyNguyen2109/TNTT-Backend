@@ -36,6 +36,19 @@ const addFund = (req, res) => {
     });
 }
 
+const deleteFund = (req, res) => {
+  const fundId = req.params.fundId;
+
+  return ChildrenFund.deleteOne({_id: fundId})
+    .then(o =>{
+      if(o) res.sendSuccess(resultDto.success(messageCodes.I001)); 
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    })
+}
+
 const mergeAllFunds = (req, res) => {
   let total = 0;
 
@@ -72,5 +85,6 @@ const mergeAllFunds = (req, res) => {
 module.exports = {
   'getAllFunds': getAllFunds,
   'addFund': addFund,
-  'mergeAllFunds': mergeAllFunds
+  'mergeAllFunds': mergeAllFunds,
+  'deleteFund': deleteFund
 };
