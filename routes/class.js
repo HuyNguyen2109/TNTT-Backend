@@ -14,4 +14,6 @@ router.post('/add', classController.addNew);
 
 router.delete('/delete/by-id/:id', classController.deleteClassByID);
 
+router.put('/update/:id', classController.updateById);
+
 module.exports = router;

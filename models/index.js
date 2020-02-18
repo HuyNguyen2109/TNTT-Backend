@@ -97,15 +97,17 @@ const clientConnect = () => {
         .create([{
           'ID': 'all',
           'Value': 'Chung',
-          'path': '/dashboard/all'
+          'path': '/dashboard/all',
         }, {
           'ID': 'CC',
           'Value': 'Chiên Con',
-          'path': '/dashboard/CC'
+          'path': '/dashboard/CC',
+          'group': 'Ấu'
         }, {
           'ID': 'BD1A',
           'Value': 'Bao Đồng 1A',
-          'path': '/dashboard/BD1A'
+          'path': '/dashboard/BD1A',
+          'group': 'Thiếu'
         }])
         .then(result => {
           log.info('Created/Re-created class!');

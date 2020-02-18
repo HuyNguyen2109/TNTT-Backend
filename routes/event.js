@@ -10,6 +10,8 @@ router.post('/new-event', eventController.addNewEvent);
 
 router.delete('/delete-checked', eventController.deleteCheckedEvents);
 
-router.post('/update-by-id/:id', eventController.updateEventById)
+router.post('/set-confirmed/:id', eventController.setConfirmedEvent);
+
+router.put('/update/:id', eventController.updateEvent);
 
 module.exports = router;

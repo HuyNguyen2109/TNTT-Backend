@@ -6,6 +6,7 @@ const Schema = mongoose.Schema;
 const classesSchema = new Schema({
   'ID': String,
   'Value': String,
+  'group': String,
   'path': String,
 });
 

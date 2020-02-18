@@ -48,10 +48,10 @@ const deleteCheckedEvents = (req, res) => {
     });
 }
 
-const updateEventById = (req, res) => {
+const setConfirmedEvent = (req, res) => {
 	const eventID = req.params.id;
 	return Event
-		.findOneAndUpdate({'_id': eventID}, {'$set':{'isChecked': true}})
+		.findOneAndUpdate({'_id': eventID}, {'$set':{'isChecked': req.body.isChecked}})
 		.then(o => {
       log.info(o);
       res.sendSuccess(resultDto.success(messageCodes.I001));
@@ -62,9 +62,32 @@ const updateEventById = (req, res) => {
     });
 }
 
+const updateEvent = (req, res) => {
+  const eventId = req.params.id;
+  const eventInformation = {
+    'date': req.body.date,
+		'content': req.body.content,
+		'isChecked': false
+  }
+
+  return Event.findOne({'_id': eventId})
+    .then(res => {
+      if(!res) return resultDto.notFound(messageCodes.E004)
+      else return Event.findOneAndUpdate({'_id': eventId}, {'$set': eventInformation})
+    })
+    .then(o => {
+      if (o) res.sendSuccess(resultDto.success(messageCodes.I001))
+    })
+    .catch(err => {
+      log.error(err)
+      res.sendError(err)
+    })
+}
+
 module.exports = {
 	'getAllEvents': getAllEvents,
 	'addNewEvent': addNewEvent,
 	'deleteCheckedEvents': deleteCheckedEvents,
-	'updateEventById': updateEventById
+  'setConfirmedEvent': setConfirmedEvent,
+  'updateEvent': updateEvent
 }

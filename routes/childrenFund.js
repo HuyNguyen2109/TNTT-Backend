@@ -12,4 +12,6 @@ router.post('/merge-fund', childrenFundController.mergeAllFunds);
 
 router.delete('/delete/:fundId', childrenFundController.deleteFund);
 
+router.put('/update/:fundId', childrenFundController.updateFund);
+
 module.exports = router;

@@ -48,6 +48,7 @@ const addNew = (req, res) => {
   const newClass = {
     'ID': req.body.ID,
     'Value': req.body.Value,
+    'group': req.body.group,
     'path': req.body.path
   }
 
@@ -95,10 +96,34 @@ const deleteClassByID = (req, res) => {
     });
 }
 
+const updateById = (req, res) => {
+  const classID = req.params.id;
+  const classInformation = {
+    'ID': req.body.ID,
+    'Value': req.body.Value,
+    'group': req.body.group,
+    'path': req.body.path
+  }
+
+  return Class.findOne({'_id': classID})
+    .then(res => {
+      if(!res) throw resultDto.notFound(messageCodes.E004);
+      else return Class.findOneAndUpdate({'_id': classID}, {'$set': classInformation})
+    })
+    .then(o => {
+      if(o) res.sendSuccess(resultDto.success(messageCodes.I001))
+    })
+    .catch(err => {
+      log.error(err)
+      res.sendError(err);
+    })
+}
+
 module.exports = {
   'getAllClasses': getAllClasses,
   'getByPath': getByPath,
   'getByID': getByID,
   'addNew': addNew,
-  'deleteClassByID': deleteClassByID
+  'deleteClassByID': deleteClassByID,
+  'updateById': updateById
 };

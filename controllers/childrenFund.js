@@ -82,9 +82,32 @@ const mergeAllFunds = (req, res) => {
     })
 }
 
+const updateFund = (req, res) => {
+  const fundId = req.params.fundId
+  const fundInformation = {
+    'date': req.body.date,
+    'title': req.body.title,
+    'price': req.body.price
+  }
+
+  return ChildrenFund.findOne({'_id': fundId})
+    .then(res => {
+      if(!res) throw resultDto.notFound(messageCodes.E004);
+      else return ChildrenFund.findOneAndUpdate({'_id': fundId}, {'$set': fundInformation})
+    })
+    .then(o => {
+      if(o) res.sendSuccess(resultDto.success(messageCodes.I001))
+    })
+    .catch(err => {
+      log.error(err)
+      res.sendError(err);
+    })
+}
+
 module.exports = {
   'getAllFunds': getAllFunds,
   'addFund': addFund,
   'mergeAllFunds': mergeAllFunds,
-  'deleteFund': deleteFund
+  'deleteFund': deleteFund,
+  'updateFund': updateFund
 };

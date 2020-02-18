@@ -10,4 +10,8 @@ router.post('/new-fund', internalFundController.addFund);
 
 router.post('/merge-fund', internalFundController.mergeAllFunds);
 
+router.put('/update/:fundId', internalFundController.updateFund);
+
+router.delete('/delete/:fundId', internalFundController.deleteFund);
+
 module.exports = router;
