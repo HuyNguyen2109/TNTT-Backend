@@ -11,14 +11,14 @@ const createDocument = (req, res) => {
 	const documentFile = req.files[0];
 	const username = req.body.username;
 	const createDate = req.body.date;
-
+  console.log(documentFile)
 	const documentDetail = {
     'date': createDate,
     'modifiedDate': createDate,
 		'filename': documentFile.originalname,
 		'username': username,
     'key': `${documentFile.path}`,
-    'type': documentFile.mimeType,
+    'type': documentFile.mimeType || documentFile.mimetype,
     'size': documentFile.size
   }
 
@@ -79,11 +79,9 @@ const downloadById = (req, res) => {
       if(doc === null || doc === undefined) {
         throw resultDto.notFound(messageCodes.E004);
       }
-      fs.createReadStream(doc.key).pipe(res);
-      res.sendSuccess(resultDto.success(messageCodes.I001, {
-        filename: doc.filename,
-        type: doc.type
-      }));
+      let file = fs.readFileSync(doc.key)
+      res.setHeader('Content-Type', `${doc.type}`);
+      res.sendSuccess(resultDto.success(messageCodes.I001, file));
     })
     .catch(err => {
       log.error(err);
