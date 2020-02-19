@@ -11,13 +11,15 @@ const createDocument = (req, res) => {
 	const documentFile = req.files[0];
 	const username = req.body.username;
 	const createDate = req.body.date;
-	
+
 	const documentDetail = {
-		'date': createDate,
+    'date': createDate,
+    'modifiedDate': createDate,
 		'filename': documentFile.originalname,
 		'username': username,
     'key': `${documentFile.path}`,
-    'type': documentFile.mimeType
+    'type': documentFile.mimeType,
+    'size': documentFile.size
   }
 
   return Document.findOne({ 'filename': documentDetail.filename })
@@ -89,9 +91,26 @@ const downloadById = (req, res) => {
     })
 }
 
+const getDocumentById = (req, res) => {
+  const docId = req.params.id;
+
+  return Document.find({'_id': docId})
+    .then(doc => {
+      if(doc === null || doc === undefined) {
+        throw resultDto.notFound(messageCodes.E004);
+      }
+      else res.sendSuccess(resultDto.success(messageCodes.I001, doc))
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    })
+}
+
 module.exports = {
 	'createDocument': createDocument,
 	'getAllDocuments': getAllDocuments,
 	'deleteDocumentById': deleteDocumentById,
-  'downloadById': downloadById
+  'downloadById': downloadById,
+  'getDocumentById': getDocumentById
 }

@@ -10,4 +10,6 @@ router.post('/create', documentController.createDocument);
 
 router.get('/download/by-id/:id', documentController.downloadById);
 
+router.get('/by-id/:id', documentController.getDocumentById);
+
 module.exports = router;
