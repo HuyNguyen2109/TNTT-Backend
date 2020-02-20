@@ -31,7 +31,6 @@ const app = express();
 
 mongoDB.clientConnect();
 backupEngine.autoBackup();
-backupEngine.addFundForNextMonth();
 
 const storage = multer.diskStorage({
   'destination': (req, file, cb) => {

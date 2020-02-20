@@ -79,9 +79,12 @@ const downloadById = (req, res) => {
       if(doc === null || doc === undefined) {
         throw resultDto.notFound(messageCodes.E004);
       }
-      let file = fs.readFileSync(doc.key)
-      res.setHeader('Content-Type', `${doc.type}`);
-      res.sendSuccess(resultDto.success(messageCodes.I001, file));
+      res.writeHead(200, {
+        'Content-Type': `${doc.type}`,
+        'Content-disposition': `attachment; filename=${doc.filename}`,
+      });
+      let readFile = fs.createReadStream(doc.key)
+      readFile.pipe(res)
     })
     .catch(err => {
       log.error(err);
@@ -105,10 +108,34 @@ const getDocumentById = (req, res) => {
     })
 }
 
+const renameDocumentById = (req, res) => {
+  const docId = req.params.id;
+  const renameDocument = {
+    'filename': req.body.filename,
+    'modifiedDate': req.body.modifiedDate
+  }
+
+  return Document.find({'_id': docId})
+    .then(doc => {
+      if(doc === null || doc === undefined) {
+        throw resultDto.notFound(messageCodes.E004);
+      }
+      else return Document.findByIdAndUpdate({'_id': docId}, {'$set': renameDocument})
+    })
+    .then(o => {
+      if(o) res.sendSuccess(resultDto.success(messageCodes.I001))
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    })
+}
+
 module.exports = {
 	'createDocument': createDocument,
 	'getAllDocuments': getAllDocuments,
 	'deleteDocumentById': deleteDocumentById,
   'downloadById': downloadById,
-  'getDocumentById': getDocumentById
+  'getDocumentById': getDocumentById,
+  'renameDocumentById': renameDocumentById
 }

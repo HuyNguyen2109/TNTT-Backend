@@ -34,66 +34,7 @@ const autoBackup = () => {
     'Asia/Ho_Chi_Minh')
 }
 
-const addFundForNextMonth = () => {
-  return new CronJob(
-    '59 23 * * *',
-    () => {
-      if (moment().format('DD/MM/YYYY') === moment().endOf('month').format('DD/MM/YYYY')) {
-        let total = 0;
-        ChildrenFund
-          .find({})
-          .lean()
-          .then(funds => {
-            funds.forEach(fund => {
-              total += Number(fund.price)
-            })
-
-            const fundforNewMonth = {
-              'date': moment().add(1, 'months').format('YYYY-MM-DD'),
-              'title': `Quỹ Thiếu nhi ${moment().add(1, 'months').format('YYYY-MM-DD')}`,
-              'price': total
-            }
-
-            return ChildrenFund.create(fundforNewMonth)
-          })
-          .then((o) => {
-            if(o) log.info('Fund Added!')
-          })
-          .catch(err => {
-            log.error(err)
-          });
-        
-          InternalFund
-          .find({})
-          .lean()
-          .then(funds => {
-            funds.forEach(fund => {
-              total += Number(fund.price)
-            })
-
-            const fundforNewMonth = {
-              'date': moment().add(1, 'months').format('YYYY-MM-DD'),
-              'title': `Quỹ Thiếu nhi ${moment().add(1, 'months').format('YYYY-MM-DD')}`,
-              'price': total
-            }
-
-            return InternalFund.create(fundforNewMonth)
-          })
-          .then((o) => {
-            if(o) log.info('Fund Added!')
-          })
-          .catch(err => {
-            log.error(err)
-          })
-      }
-    },
-    null,
-    true,
-    'Asia/Ho_Chi_Minh')
-}
-
 module.exports = {
   'backup': backup,
   'autoBackup': autoBackup,
-  'addFundForNextMonth': addFundForNextMonth
 }

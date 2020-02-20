@@ -12,4 +12,6 @@ router.get('/download/by-id/:id', documentController.downloadById);
 
 router.get('/by-id/:id', documentController.getDocumentById);
 
+router.put('/rename/:id', documentController.renameDocumentById);
+
 module.exports = router;
