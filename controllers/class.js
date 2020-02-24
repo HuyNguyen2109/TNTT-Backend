@@ -31,7 +31,8 @@ const getByPath = (req, res) => {
 };
 
 const getByID = (req, res) => {
-  const classID = req.params.id;
+  const classID = (req.params.id === "all")? "" : req.params.id;
+  console.log(classID)
 
   return Class
     .find({'ID': classID})

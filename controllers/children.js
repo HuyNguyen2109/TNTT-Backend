@@ -2,6 +2,7 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const log = require('log4js').getLogger();
 const _ = require('lodash');
+let nodeXlsx = require('node-xlsx');
 
 const resultDto = require('../common/dto/result');
 const messageCodes = require('../common/message-codes');
@@ -38,8 +39,8 @@ const WithPagination = (req, res) => {
 
   return Children
     .find((search === undefined) ?
-      ((classes === 'all') ? {} : { 'class': classes }) :
-      (classes === 'all') ? {
+      ((classes === "") ? {} : { 'class': classes }) :
+      (classes === "") ? {
         '$and': [
           {
             '$or': [
@@ -83,7 +84,7 @@ const countDocument = (req, res) => {
   const condition = req.query.condition;
 
   return Children
-    .countDocuments((condition === 'all') ? {} : { 'class': condition })
+    .countDocuments((condition === "") ? {} : { 'class': condition })
     .then(result => {
       res.sendSuccess(resultDto.success(messageCodes.I001, result));
     })
@@ -107,13 +108,15 @@ const exportData = (req, res) => {
         o.address = '"' + o.address + '"';
         o.contact = '"' + o.contact + '"';
       });
-      let csv = '';
-      const headers = Object.keys(records[0]).join(';');
+      let excelData = [], headers = [], body = [];
+      Object.keys(records[0]).forEach(key => { headers.push(key) });
       // eslint-disable-next-line arrow-body-style
-      const values = records.map(o => Object.values(o).join(';')).join('\n');
-      csv += headers + '\n' + values;
-      res.setHeader('Content-Type', 'text/csv');
-      res.sendSuccess(resultDto.success(messageCodes.I001, csv));
+      records.map(o => Object.keys(o).forEach(key => { body.push(o[key]) }));
+      excelData.push(headers);
+      excelData.push(body);
+      let buffer = nodeXlsx.build([{name: 'Danh sách Thiếu Nhi', data: excelData}])
+      res.attachment('data.xlsx');
+      res.sendSuccess(resultDto.success(messageCodes.I001, buffer));
     })
     .catch((err) => {
       res.sendError(err);

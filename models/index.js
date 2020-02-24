@@ -95,7 +95,7 @@ const clientConnect = () => {
         })
       Class
         .create([{
-          'ID': 'all',
+          'ID': "",
           'Value': 'Chung',
           'path': '/dashboard/all',
         }, {
