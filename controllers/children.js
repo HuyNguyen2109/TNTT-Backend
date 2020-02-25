@@ -2,7 +2,8 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const log = require('log4js').getLogger();
 const _ = require('lodash');
-let nodeXlsx = require('node-xlsx');
+const moment = require('moment');
+const Excel = require('exceljs');
 
 const resultDto = require('../common/dto/result');
 const messageCodes = require('../common/message-codes');
@@ -19,6 +20,122 @@ const capitalizeWord = (text) => {
   // Directly return the joined string
   return splitStr.join(' ');
 };
+
+const modifiyExcelHeader = (key) => {
+  switch(key) {
+    case 'ID':
+      return {
+        header: 'Mã số',
+        key: 'ID',
+        width: 5
+      }
+    case 'name':
+      return {
+        header: 'Tên',
+        key: 'name',
+        width: 30
+      }
+    case 'father_name':
+      return {
+        header: 'Họ tên Cha',
+        key: 'father_name',
+        width: 30
+      }
+    case 'mother_name':
+      return {
+        header: 'Họ tên Mẹ',
+        key: 'mother_name',
+        width: 30
+      }
+    case 'diocese':
+      return {
+        header: 'Giáo khu',
+        key: 'diocese',
+        width: 20
+      }
+    case 'male':
+      return {
+        header: 'Nữ',
+        key: 'male',
+        width: 5
+      }
+    case 'female':
+      return {
+        header: 'Nam',
+        key: 'female',
+        width: 5
+      }
+    case 'birthday':
+      return {
+        header: 'Sinh nhật',
+        key: 'birthday',
+        width: 15,
+        type: 'date'
+      }
+    case 'day_of_baptism':
+      return {
+        header: 'Ngày Rửa tội',
+        key: 'day_of_baptism',
+        width: 15,
+        type: 'date'
+      }
+    case 'day_of_eucharist':
+      return {
+        header: 'Ngày Rước lễ',
+        key: 'day_of_eucharist',
+        width: 15,
+        type: 'date'
+      }
+    case 'day_of_confirmation':
+      return {
+        header: 'Ngày Thêm sức',
+        key: 'day_of_confirmation',
+        width: 15
+      }
+    case 'class':
+      return {
+        header: 'Lớp',
+        key: 'class',
+        width: 8
+      }
+    case 'address':
+      return {
+        header: 'Địa chỉ',
+        key: 'address',
+        width: 40
+      }
+    case 'contact':
+      return {
+        header: 'Số điện thoại',
+        key: 'contact',
+        width: 25
+      }
+    case 'scoreI':
+      return {
+        header: 'Điểm HKI',
+        key: 'scoreI',
+        width: 15
+      }
+    case 'scoreII':
+      return {
+        header: 'Điểm HKII',
+        key: 'scoreII',
+        width: 15
+      }
+    case 'finalScore':
+      return {
+        header: 'Điểm cả năm',
+        key: 'finalScore',
+        width: 15
+      }
+    default: 
+      return {
+        header: key,
+        key: key,
+        width: 10
+      }
+  } 
+}
 
 const WithPagination = (req, res) => {
   const itemPerPage = parseInt(req.query.itemPerPage);
@@ -102,21 +219,38 @@ const exportData = (req, res) => {
       if (!records) {
         throw resultDto.notFound(messageCodes.E004);
       }
+      let workbook = new Excel.Workbook();
+      let currentDay = moment().format('DD/MM/YYYY');
+
+      workbook.creator = '';
+      workbook.views = [
+        {
+          x: 0, y: 0, width: records.length, height: records.length,
+          firstSheet: 0, activeTab: 1, visibility: 'visible' 
+        }
+      ]
+      let worksheet = workbook.addWorksheet(`Danh sách Thiếu Nhi ${moment().format('YYYY')}`)
+      // Modified records
       records.forEach(o => {
         delete o._id;
+        delete o.grades;
+        delete o.absents;
         o.contact = o.contact.replace('&#10;', '-');
-        o.address = '"' + o.address + '"';
-        o.contact = '"' + o.contact + '"';
       });
-      let excelData = [], headers = [], body = [];
-      Object.keys(records[0]).forEach(key => { headers.push(key) });
+      let headers = []
+      Object.keys(records[0]).forEach(key => { 
+        headers.push(modifiyExcelHeader(key))
+      });
+      worksheet.columns = headers
+      worksheet.getRow(1).font = {name: 'Arial', size: 14, bold: true}
       // eslint-disable-next-line arrow-body-style
-      records.map(o => Object.keys(o).forEach(key => { body.push(o[key]) }));
-      excelData.push(headers);
-      excelData.push(body);
-      let buffer = nodeXlsx.build([{name: 'Danh sách Thiếu Nhi', data: excelData}])
-      res.attachment('data.xlsx');
-      res.sendSuccess(resultDto.success(messageCodes.I001, buffer));
+      records.forEach(o => { worksheet.addRow(o) });
+      res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+      res.setHeader("Content-Disposition", `attachment; filename=Data.xlsx`)
+      return workbook.xlsx.write(res)
+    })
+    .then(data => {
+      if(data) res.end()
     })
     .catch((err) => {
       res.sendError(err);
