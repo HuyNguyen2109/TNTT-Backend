@@ -56,7 +56,8 @@ const getTumblrImage = (req, res) => {
   let detail = {};
   return tumblrCustomPromise(tumblrConfig.blogNameForImage)
     .then(data => {
-      detail.img = data.posts[0].photos[0].original_size.url;
+      let slideshowData = data.posts.filter(o => {return o.slug.indexOf('slideshow') > -1})
+      detail.img = slideshowData[0].photos[0].original_size.url;
       detail.url = config.get('tumblrConfig').blogNameForImage;
       return tumblrCustomPromise(tumblrConfig.blogNameForGospel)
     })
