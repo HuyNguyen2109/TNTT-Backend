@@ -18,6 +18,10 @@ router.post('/token', userController.generateToken);
 
 router.get('/all', userController.getAllUsers);
 
-router.delete('/delete/by-usernames', userController.deleteMultipleUsernames)
+router.delete('/delete/by-usernames', userController.deleteMultipleUsernames),
+
+router.post('/avatar/by-name/:username', userController.uploadAvatar);
+
+router.get('/avatar/by-name/:username', userController.getAvatar);
 
 module.exports = router;

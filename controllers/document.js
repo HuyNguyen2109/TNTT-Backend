@@ -11,7 +11,7 @@ const createDocument = (req, res) => {
 	const documentFile = req.files[0];
 	const username = req.body.username;
 	const createDate = req.body.date;
-  console.log(documentFile)
+
 	const documentDetail = {
     'date': createDate,
     'modifiedDate': createDate,

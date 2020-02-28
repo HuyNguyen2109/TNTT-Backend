@@ -13,7 +13,10 @@ const userSchema = new Schema({
   'birthday': String,
   'holy_birthday': String,
   'type': String,
-  'class': String
+  'class': String,
+  'avatar': String,
+  'avatarMimeType': String,
+  'avatarLocation': String,
 });
 
 const Users = mongoose.model('user', userSchema, 'users');

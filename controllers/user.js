@@ -2,6 +2,7 @@
 
 const log = require('log4js').getLogger();
 const cryptoJS = require('crypto-js');
+const fs = require('fs');
 
 const resultDto = require('../common/dto/result');
 const messageCodes = require('../common/message-codes');
@@ -62,7 +63,7 @@ const login = (req, res) => {
   const password = req.body.password;
 
   return User
-    .findOne({'username': username})
+    .findOne({ 'username': username })
     .lean()
     .then(result => {
       if (!result || result.password !== cryptoJS.AES.decrypt(password.toString(), username).toString(cryptoJS.enc.Utf8)) {
@@ -84,12 +85,12 @@ const updateUser = (req, res) => {
     'content': req.body.content
   };
   // eslint-disable-next-line no-prototype-builtins
-  if(updateUser.content.hasOwnProperty('password')) {
+  if (updateUser.content.hasOwnProperty('password')) {
     // eslint-disable-next-line max-len
     updateUser.content.password = cryptoJS.AES.decrypt(updateUser.content.password.toString(), updateUser.username).toString(cryptoJS.enc.Utf8);
   }
   User
-    .findOneAndUpdate({'username': username}, {'$set': updateUser.content})
+    .findOneAndUpdate({ 'username': username }, { '$set': updateUser.content })
     .then(() => {
       log.info('Received Data!!!');
       res.sendSuccess(resultDto.success(messageCodes.I001));
@@ -104,7 +105,7 @@ const getUser = (req, res) => {
   const username = req.params.username;
 
   return User
-    .findOne({'username': username})
+    .findOne({ 'username': username })
     .lean()
     .then(result => {
       delete result.password;
@@ -120,7 +121,7 @@ const getUserByClassID = (req, res) => {
   const classID = req.params.classID;
 
   return User
-    .find({'class': classID})
+    .find({ 'class': classID })
     .lean()
     .then(result => {
       delete result.password;
@@ -134,7 +135,7 @@ const getUserByClassID = (req, res) => {
 
 const getAllUsers = (req, res) => {
   return User
-    .find({ 'username': {'$ne': 'root'} })
+    .find({ 'username': { '$ne': 'root' } })
     .lean()
     .then(result => {
       delete result.password;
@@ -150,7 +151,7 @@ const deleteMultipleUsernames = (req, res) => {
   const usernames = req.query.usernames;
 
   return User
-    .deleteMany({ 'username': {'$in': usernames} })
+    .deleteMany({ 'username': { '$in': usernames } })
     .then(o => {
       log.info(o);
       res.sendSuccess(resultDto.success(messageCodes.I001));
@@ -161,6 +162,51 @@ const deleteMultipleUsernames = (req, res) => {
     });
 }
 
+const uploadAvatar = (req, res) => {
+  const imageFile = req.files[0];
+  const username = req.params.username;
+
+  const imageInformation = {
+    'avatar': imageFile.originalname,
+    'avatarMimeType': imageFile.mimeType || imageFile.mimetype,
+    'avatarLocation': `${imageFile.path}`,
+  }
+
+  return User
+    .findOne({'username' : username})
+    .then(o => {
+      if(o.avatarLocation) {
+        fs.unlinkSync(o.avatarLocation)
+      }
+      return User.findOneAndUpdate({'username' : username}, {'$set': imageInformation})
+    })
+    .then(o => {
+      if(o) res.sendSuccess(resultDto.success(messageCodes.I001))
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    })
+}
+
+const getAvatar = (req, res) => {
+  const username = req.params.username;
+
+  return User.findOne({'username': username})
+    .then(data => {
+      res.writeHead(200, {
+        'Content-Type': data.avatarMimeType,
+        'Content-disposition': `attachment; filename=${data.avatar}`,
+      })
+      let readFile = fs.createReadStream(data.avatarLocation)
+      readFile.pipe(res)
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    })
+}
+
 module.exports = {
   'registerUser': registerUser,
   'login': login,
@@ -169,5 +215,7 @@ module.exports = {
   'getUserByClassID': getUserByClassID,
   'generateToken': generateToken,
   'getAllUsers': getAllUsers,
-  'deleteMultipleUsernames': deleteMultipleUsernames
+  'deleteMultipleUsernames': deleteMultipleUsernames,
+  'uploadAvatar': uploadAvatar,
+  'getAvatar': getAvatar,
 };
