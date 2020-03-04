@@ -21,7 +21,10 @@ const registerUser = (req, res) => {
     'birthday': req.body.birthday,
     'holy_birthday': req.body.holy_birthday,
     'type': req.body.type,
-    'class': req.body.class
+    'class': req.body.class,
+    'avatar': '',
+    'avatarMimeType': '',
+    'avatarLocation': '',
   };
 
   return User
@@ -191,15 +194,51 @@ const uploadAvatar = (req, res) => {
 
 const getAvatar = (req, res) => {
   const username = req.params.username;
+  const defaultAvatarPath = 'datacenter/e33613d8fe367b4bb3e465dc166ebdde'
+  const defaultAvatarMimeType = 'image/png';
+  const defaultAvatarName = 'default-user.png';
 
   return User.findOne({'username': username})
     .then(data => {
-      res.writeHead(200, {
-        'Content-Type': data.avatarMimeType,
-        'Content-disposition': `attachment; filename=${data.avatar}`,
+      if(data.avatar !== null && data.avatarLocation !== '') {
+        res.writeHead(200, {
+          'Content-Type': data.avatarMimeType,
+          'Content-disposition': `attachment; filename=${data.avatar}`,
+        })
+        let readFile = fs.createReadStream(data.avatarLocation)
+        readFile.pipe(res)
+      }
+      else {
+        res.writeHead(200, {
+          'Content-Type': defaultAvatarMimeType,
+          'Content-disposition': `attachment; filename=${defaultAvatarName}`,
+        })
+        let readFile = fs.createReadStream(defaultAvatarPath)
+        readFile.pipe(res)
+      }
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    })
+}
+
+const deleteAvatar = (req, res) => {
+  const username = req.params.username;
+
+  return User.findOne({username: username})
+    .then(data => {
+      fs.unlinkSync(data.avatarLocation)
+      return User.findOneAndUpdate({username: username}, {
+        '$set': {
+          avatar: '',
+          avatarMimeType: '',
+          avatarLocation: ''
+        }
       })
-      let readFile = fs.createReadStream(data.avatarLocation)
-      readFile.pipe(res)
+    })
+    .then(o => {
+      if(o) res.sendSuccess(resultDto.success(messageCodes.I001))
     })
     .catch(err => {
       log.error(err);
@@ -218,4 +257,5 @@ module.exports = {
   'deleteMultipleUsernames': deleteMultipleUsernames,
   'uploadAvatar': uploadAvatar,
   'getAvatar': getAvatar,
+  'deleteAvatar':deleteAvatar,
 };

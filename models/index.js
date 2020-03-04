@@ -9,24 +9,6 @@ const User = require('./user');
 const Class = require('./classes');
 
 const clientConnect = () => {
-  /* Connection for Mongodb Atlas */
-  // const dbConfig = config.get('dbConfig');
-  // eslint-disable-next-line max-len
-  // const connectionString = `${dbConfig.protocol}://${dbConfig.username}:${dbConfig.password}@${dbConfig.host}/${dbConfig.dbType}?${dbConfig.option}`;
-  // mongoose.connect(connectionString, {
-  //   'useNewUrlParser': true,
-  //   'useUnifiedTopology': true,
-  //   'dbName': dbConfig.dbName
-  // })
-  //   .then(client => {
-  //     log.debug(client.connection);
-  //     log.info(`Connection to database ${dbConfig.dbName} has been established!`);
-  //   })
-  //   .catch(err => {
-  //     log.error(`Error when connecting to datase: ${err}`);
-  //   });
-
-  /* Connection for Mongodb Local Database */
   const dbLocalConfig = config.get('dbConfigLocal');
   const connnectionString = `${dbLocalConfig.protocol}://${dbLocalConfig.server}/${dbLocalConfig.dbName}`;
   mongoose.connect(connnectionString, {
@@ -47,7 +29,10 @@ const clientConnect = () => {
               'username': username,
               'password': password,
               'fullname': 'Root User',
-              'type': 'root'
+              'type': 'root',
+              'avatar': '',
+              'avatarLocation': '',
+              'avatarMimeType': '',
             };
             User
               .create(rootUser)
@@ -63,31 +48,31 @@ const clientConnect = () => {
           log.error(error);
         });
       // This below block-code is temporary for development purpose
-      const adminUser = {
-        "birthday" : "1996-09-21",
-        "class" : "BD1A",
-        "fullname" : "Nguyễn Nhựt Huy",
-        "holy_birthday" : "1996-06-29",
-        "holyname" : "Phêrô",
-        "password" : "111111",
-        "phone_number" : "0389423079",
-        "type" : "Admin",
-        "username" : "admin",
-        "email" : "JohnasHuy2109@outlook.com"
-      }
-      User
-        .findOneAndDelete({'username': 'admin'})
-        .then(result => {
-          log.info('Reset username: admin')
-        })
-      User
-        .create(adminUser)
-        .then(result => {
-          log.info('Created/Re-created admin user!');
-        })
-        .catch(err => {
-          log.error(err);
-        })
+      // const adminUser = {
+      //   "birthday" : "1996-09-21",
+      //   "class" : "BD1A",
+      //   "fullname" : "Nguyễn Nhựt Huy",
+      //   "holy_birthday" : "1996-06-29",
+      //   "holyname" : "Phêrô",
+      //   "password" : "111111",
+      //   "phone_number" : "0389423079",
+      //   "type" : "Admin",
+      //   "username" : "admin",
+      //   "email" : "JohnasHuy2109@outlook.com"
+      // }
+      // User
+      //   .findOneAndDelete({'username': 'admin'})
+      //   .then(result => {
+      //     log.info('Reset username: admin')
+      //   })
+      // User
+      //   .create(adminUser)
+      //   .then(result => {
+      //     log.info('Created/Re-created admin user!');
+      //   })
+      //   .catch(err => {
+      //     log.error(err);
+      //   })
       Class
         .deleteMany({})
         .then(result => {
@@ -119,5 +104,5 @@ const clientConnect = () => {
 };
 
 module.exports = {
-  'clientConnect': clientConnect
+  'clientConnect': clientConnect,
 };

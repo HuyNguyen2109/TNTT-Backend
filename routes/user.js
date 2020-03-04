@@ -24,4 +24,6 @@ router.post('/avatar/by-name/:username', userController.uploadAvatar);
 
 router.get('/avatar/by-name/:username', userController.getAvatar);
 
+router.delete('/avatar/by-name/:username', userController.deleteAvatar);
+
 module.exports = router;

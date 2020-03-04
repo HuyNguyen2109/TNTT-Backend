@@ -295,7 +295,7 @@ const deleteByNames = (req, res) => {
 
   return Children
     .deleteMany({ 'name': { '$in': childrenNames } })
-    .then(o => {
+    .then((o) => {
       log.info(o);
       res.sendSuccess(resultDto.success(messageCodes.I001));
     })
@@ -339,7 +339,7 @@ const updateByName = (req, res) => {
 
   return Children
     .findOneAndUpdate({ 'name': childredNames }, { '$set': updatedData })
-    .then(o => {
+    .then((o) => {
       log.info(o);
       res.sendSuccess(resultDto.success(messageCodes.I001));
     })
@@ -370,7 +370,7 @@ const createNew = (req, res) => {
 
   return Children
     .create(newData)
-    .then(o => {
+    .then((o) => {
       log.info(o);
       res.sendSuccess(resultDto.success(messageCodes.I001));
     })
@@ -592,7 +592,7 @@ const lockScoreBySemester = (req, res) => {
                   break;
               }
             })
-            console.log(total + '/' + count)
+
             let avgScore;
             if (typeInfo.type === 'HKI') {
               avgScore = {
@@ -625,8 +625,18 @@ const lockScoreBySemester = (req, res) => {
         return Promise.all(promises)
       }
     })
-    .then((o) => {
-      if(o) res.sendSuccess(resultDto.success(messageCodes.I001))
+    .then(o => {
+      log.info(o);
+      
+      return Notification.create({
+        'date': moment(),
+        'username': req.query.username,
+        'title': `${req.query.username} đã khóa điểm ${typeInfo.type} của lớp ${typeInfo.class}`,
+        'action': 'create'
+      })
+    })
+    .then((obj) => {
+      if(obj) res.sendSuccess(resultDto.success(messageCodes.I001));
     })
     .catch(err => {
       res.sendError(err)
@@ -652,9 +662,18 @@ const resetScores = (req, res) => {
 
       return Promise.all(promises)
     })
-    .then((o) => {
-      log.info(o)
-      res.sendSuccess(resultDto.success(messageCodes.I001))
+    .then(o => {
+      log.info(o);
+      
+      return Notification.create({
+        'date': moment(),
+        'username': req.query.username,
+        'title': `${req.query.username} đã khóa điểm ${typeInfo.type} của lớp ${typeInfo.class}`,
+        'action': 'delete'
+      })
+    })
+    .then((obj) => {
+      if(obj) res.sendSuccess(resultDto.success(messageCodes.I001));
     })
     .catch(err => {
       res.sendError(err)

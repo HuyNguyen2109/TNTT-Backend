@@ -21,7 +21,7 @@
     "username": "TNTT-Admin",
     "password": "Password",
     "dbName": "TNTT",
-    "defaultRootPassword": "111111"
+    "defaultRootPassword": "U2FsdGVkX1/Ecu7r0aEfrfH4V6v05xA+KpSRfxeIQMo="
   },
   "dbTargetConfig": {
     "dbName": "NodeJSWithMongo",
@@ -54,5 +54,8 @@
     "tokenSecret": "9D3xNCguHJJpsvDSlpCinHTZ9mc7hUBWesJeFiKRdSU93PIJ9b",
     "blogNameForImage": "coverscatholic.tumblr.com",
     "blogNameForGospel": "frmartinshomiliesandreflections.tumblr.com"
+  },
+  "firebaseConfig": {
+    "databaseURL": "https://tntt-notification.firebaseio.com"
   }
 }
