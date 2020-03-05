@@ -26,4 +26,10 @@ router.get('/avatar/by-name/:username', userController.getAvatar);
 
 router.delete('/avatar/by-name/:username', userController.deleteAvatar);
 
+router.post('/notification/by-user/:username', userController.pushNotificationByUsername);
+
+router.get('/notification/by-user/:username', userController.getNotificationByUsername);
+
+router.delete('/notification/by-user/:username', userController.clearAllNotificationByName);
+
 module.exports = router;

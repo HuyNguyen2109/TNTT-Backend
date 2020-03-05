@@ -176,15 +176,15 @@ const uploadAvatar = (req, res) => {
   }
 
   return User
-    .findOne({'username' : username})
+    .findOne({ 'username': username })
     .then(o => {
-      if(o.avatarLocation) {
+      if (o.avatarLocation) {
         fs.unlinkSync(o.avatarLocation)
       }
-      return User.findOneAndUpdate({'username' : username}, {'$set': imageInformation})
+      return User.findOneAndUpdate({ 'username': username }, { '$set': imageInformation })
     })
     .then(o => {
-      if(o) res.sendSuccess(resultDto.success(messageCodes.I001))
+      if (o) res.sendSuccess(resultDto.success(messageCodes.I001))
     })
     .catch(err => {
       log.error(err);
@@ -198,9 +198,9 @@ const getAvatar = (req, res) => {
   const defaultAvatarMimeType = 'image/png';
   const defaultAvatarName = 'default-user.png';
 
-  return User.findOne({'username': username})
+  return User.findOne({ 'username': username })
     .then(data => {
-      if(data.avatar !== null && data.avatarLocation !== '') {
+      if (data.avatar !== null && data.avatarLocation !== '') {
         res.writeHead(200, {
           'Content-Type': data.avatarMimeType,
           'Content-disposition': `attachment; filename=${data.avatar}`,
@@ -226,10 +226,10 @@ const getAvatar = (req, res) => {
 const deleteAvatar = (req, res) => {
   const username = req.params.username;
 
-  return User.findOne({username: username})
+  return User.findOne({ username: username })
     .then(data => {
       fs.unlinkSync(data.avatarLocation)
-      return User.findOneAndUpdate({username: username}, {
+      return User.findOneAndUpdate({ username: username }, {
         '$set': {
           avatar: '',
           avatarMimeType: '',
@@ -238,12 +238,61 @@ const deleteAvatar = (req, res) => {
       })
     })
     .then(o => {
-      if(o) res.sendSuccess(resultDto.success(messageCodes.I001))
+      if (o) res.sendSuccess(resultDto.success(messageCodes.I001))
     })
     .catch(err => {
       log.error(err);
       res.sendError(err);
     })
+}
+
+const pushNotificationByUsername = (req, res) => {
+  const username = req.params.username;
+  const notificationDetail = {
+    'data': req.body.data,
+    'timestamp': req.body.timestamp,
+  }
+
+  return User.findOneAndUpdate({ username: username }, {
+    '$push': {
+      notifications: notificationDetail
+    }
+  })
+    .then((o) => {
+      log.info(o);
+      res.sendSuccess(resultDto.success(messageCodes.I001));
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+}
+
+const getNotificationByUsername = (req, res) => {
+  const username = req.params.username;
+
+  return User.findOne({ username: username })
+    .then(data => {
+      const notificationsArr = data.notifications;
+      res.sendSuccess(resultDto.success(messageCodes.I001, notificationsArr))
+    })
+    .catch(err => {
+      log.error(err);
+      res.sendError(err);
+    });
+}
+
+const clearAllNotificationByName = (req, res) => {
+  const username = req.params.username;
+
+  return User.findOneAndUpdate({username: username}, { '$set': { notifications: []}})
+  .then((o) => {
+    if(o) res.sendSuccess(resultDto.success(messageCodes.I001));
+  })
+  .catch(err => {
+    log.error(err);
+    res.sendError(err);
+  });
 }
 
 module.exports = {
@@ -257,5 +306,8 @@ module.exports = {
   'deleteMultipleUsernames': deleteMultipleUsernames,
   'uploadAvatar': uploadAvatar,
   'getAvatar': getAvatar,
-  'deleteAvatar':deleteAvatar,
+  'deleteAvatar': deleteAvatar,
+  'pushNotificationByUsername': pushNotificationByUsername,
+  'getNotificationByUsername': getNotificationByUsername,
+  'clearAllNotificationByName': clearAllNotificationByName
 };

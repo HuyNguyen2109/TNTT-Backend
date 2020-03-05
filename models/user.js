@@ -17,6 +17,7 @@ const userSchema = new Schema({
   'avatar': String,
   'avatarMimeType': String,
   'avatarLocation': String,
+  'notifications': []
 });
 
 const Users = mongoose.model('user', userSchema, 'users');
