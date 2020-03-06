@@ -259,8 +259,7 @@ const pushNotificationByUsername = (req, res) => {
     }
   })
     .then((o) => {
-      log.info(o);
-      res.sendSuccess(resultDto.success(messageCodes.I001));
+      if(o) res.sendSuccess(resultDto.success(messageCodes.I001));
     })
     .catch(err => {
       log.error(err);
