@@ -212,8 +212,9 @@ const countDocument = (req, res) => {
 };
 
 const exportData = (req, res) => {
+  const classID = req.query.classID;
   return Children
-    .find({})
+    .find(classID === ''? {} : {class: classID})
     .lean()
     .then((records) => {
       if (!records) {
@@ -229,10 +230,11 @@ const exportData = (req, res) => {
           firstSheet: 0, activeTab: 1, visibility: 'visible' 
         }
       ]
-      let worksheet = workbook.addWorksheet(`Danh sách Thiếu Nhi ${moment().format('YYYY')}`)
+      let worksheet = workbook.addWorksheet(`Danh sách Thiếu Nhi ${moment().format('YYYY')} - ${classID}`)
       // Modified records
       records.forEach(o => {
         delete o._id;
+        delete o.ID;
         delete o.grades;
         delete o.absents;
         o.contact = o.contact.replace('&#10;', '-');
@@ -334,7 +336,8 @@ const updateByName = (req, res) => {
     'day_of_eucharist': req.body.day_of_eucharist,
     'day_of_confirmation': req.body.day_of_confirmation,
     'address': req.body.address,
-    'contact': req.body.contact
+    'contact': req.body.contact,
+    'note': req.body.note,
   };
 
   return Children
@@ -365,7 +368,8 @@ const createNew = (req, res) => {
     'address': req.body.address,
     'contact': req.body.contact,
     'grades': req.body.grades,
-    'absents': req.body.absent
+    'absents': req.body.absent,
+    'note': req.body.note,
   };
 
   return Children
@@ -614,7 +618,6 @@ const lockScoreBySemester = (req, res) => {
         let promises = [];
         children.forEach(child => {
           if (child.scoreI !== '' && child.scoreII !== '') {
-            console.log(child.scoreI + child.scoreII)
             let finalScore = {
               'finalScore': (Number((parseFloat(child.scoreI) + parseFloat(child.scoreII * 2))/3).toFixed(2)).toString()
             }
@@ -625,18 +628,8 @@ const lockScoreBySemester = (req, res) => {
         return Promise.all(promises)
       }
     })
-    .then(o => {
-      log.info(o);
-      
-      return Notification.create({
-        'date': moment(),
-        'username': req.query.username,
-        'title': `${req.query.username} đã khóa điểm ${typeInfo.type} của lớp ${typeInfo.class}`,
-        'action': 'create'
-      })
-    })
-    .then((obj) => {
-      if(obj) res.sendSuccess(resultDto.success(messageCodes.I001));
+    .then((o) => {
+      if(o) res.sendSuccess(resultDto.success(messageCodes.I001));
     })
     .catch(err => {
       res.sendError(err)
@@ -653,6 +646,7 @@ const resetScores = (req, res) => {
       let promises = []
       children.forEach(child => {
         let resetScore = {
+          'grades': [],
           'scoreI': '',
           'scoreII': '',
           'finalScore': '',
@@ -663,17 +657,7 @@ const resetScores = (req, res) => {
       return Promise.all(promises)
     })
     .then(o => {
-      log.info(o);
-      
-      return Notification.create({
-        'date': moment(),
-        'username': req.query.username,
-        'title': `${req.query.username} đã khóa điểm ${typeInfo.type} của lớp ${typeInfo.class}`,
-        'action': 'delete'
-      })
-    })
-    .then((obj) => {
-      if(obj) res.sendSuccess(resultDto.success(messageCodes.I001));
+      if(o) res.sendSuccess(resultDto.success(messageCodes.I001));
     })
     .catch(err => {
       res.sendError(err)

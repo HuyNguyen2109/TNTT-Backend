@@ -22,7 +22,8 @@ const childrenScema = new Schema({
   'absents': [],
   'scoreI': String,
   'scoreII': String,
-  'finalScore': String
+  'finalScore': String,
+  'note': String,
 });
 
 const Children = mongoose.model('children', childrenScema, 'children');
