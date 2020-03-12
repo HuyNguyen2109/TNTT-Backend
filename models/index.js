@@ -18,85 +18,49 @@ const clientConnect = () => {
   })
     .then(client => {
       log.info(`Connection to database ${dbLocalConfig.dbName} has been established`);
-      User
-        .find({'username': 'root'})
-        .then(username => {
-          if(username.length === 0) {
-            const username = 'root';
-            const password = dbLocalConfig.defaultRootPassword;
+      return User.find({ 'username': 'root' })
+    })
+    .then(username => {
+      if (username.length === 0) {
+        const username = 'root';
+        const password = dbLocalConfig.defaultRootPassword;
 
-            let rootUser = {
-              'username': username,
-              'password': password,
-              'fullname': 'Root User',
-              'type': 'root',
-              'avatar': '',
-              'avatarLocation': '',
-              'avatarMimeType': '',
-            };
-            User
-              .create(rootUser)
-              .then(result => {
-                log.info('Created/Re-created root user!');
-              })
-              .catch(err => {
-                log.error(err);
-              });
-          }
-        })
-        .catch(error => {
-          log.error(error);
-        });
-      // This below block-code is temporary for development purpose
-      // const adminUser = {
-      //   "birthday" : "1996-09-21",
-      //   "class" : "BD1A",
-      //   "fullname" : "Nguyễn Nhựt Huy",
-      //   "holy_birthday" : "1996-06-29",
-      //   "holyname" : "Phêrô",
-      //   "password" : "111111",
-      //   "phone_number" : "0389423079",
-      //   "type" : "Admin",
-      //   "username" : "admin",
-      //   "email" : "JohnasHuy2109@outlook.com"
-      // }
-      // User
-      //   .findOneAndDelete({'username': 'admin'})
-      //   .then(result => {
-      //     log.info('Reset username: admin')
-      //   })
-      // User
-      //   .create(adminUser)
-      //   .then(result => {
-      //     log.info('Created/Re-created admin user!');
-      //   })
-      //   .catch(err => {
-      //     log.error(err);
-      //   })
-      Class
-        .deleteMany({})
-        .then(result => {
-          log.info('Resetted!')
-        })
-      Class
-        .create([{
-          'ID': "",
-          'Value': 'Chung',
-          'path': '/dashboard/all',
-        }, {
-          'ID': 'CC',
-          'Value': 'Chiên Con',
-          'path': '/dashboard/CC',
-          'group': 'Ấu'
-        }, {
-          'ID': 'BD1A',
-          'Value': 'Bao Đồng 1A',
-          'path': '/dashboard/BD1A',
-          'group': 'Thiếu'
-        }])
-        .then(result => {
-          log.info('Created/Re-created class!');
-        })
+        let rootUser = {
+          'username': username,
+          'password': password,
+          'fullname': 'Root User',
+          'type': 'root',
+          'avatar': '',
+          'avatarLocation': '',
+          'avatarMimeType': '',
+        };
+        return User.create(rootUser);
+      }
+    })
+    .then(result => {
+      log.info('Created/Re-created root user!');
+      return Class.deleteMany({})
+    })
+    .then(result => {
+      log.info('Resetted!')
+      return Class.create([{
+        'ID': "",
+        'Value': 'Chung',
+        'path': '/dashboard/all',
+      }, {
+        'ID': 'CC',
+        'Value': 'Chiên Con',
+        'path': '/dashboard/CC',
+        'group': 'Ấu'
+      }, {
+        'ID': 'BD1A',
+        'Value': 'Bao Đồng 1A',
+        'path': '/dashboard/BD1A',
+        'group': 'Thiếu'
+      }])
+    })
+    .then(result => {
+      log.info('Created/Re-created class!');
     })
     .catch(err => {
       log.error(`Error when connecting to database: ${err}`);

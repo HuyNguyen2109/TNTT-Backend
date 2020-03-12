@@ -25,9 +25,9 @@ const modifiyExcelHeader = (key) => {
   switch(key) {
     case 'ID':
       return {
-        header: 'Mã số',
+        header: 'Tên',
         key: 'ID',
-        width: 5
+        width: 30
       }
     case 'name':
       return {
@@ -214,7 +214,7 @@ const countDocument = (req, res) => {
 const exportData = (req, res) => {
   const classID = req.query.classID;
   return Children
-    .find(classID === ''? {} : {class: classID})
+    .find(classID === ''? {} : {class: classID}).sort({name: 1})
     .lean()
     .then((records) => {
       if (!records) {
@@ -233,8 +233,9 @@ const exportData = (req, res) => {
       let worksheet = workbook.addWorksheet(`Danh sách Thiếu Nhi ${moment().format('YYYY')} - ${classID}`)
       // Modified records
       records.forEach(o => {
+        o.ID = o.name;
         delete o._id;
-        delete o.ID;
+        delete o.name;
         delete o.grades;
         delete o.absents;
         o.contact = o.contact.replace('&#10;', '-');
